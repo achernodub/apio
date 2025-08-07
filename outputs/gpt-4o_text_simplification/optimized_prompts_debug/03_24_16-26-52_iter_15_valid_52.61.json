@@ -1,0 +1,95 @@
+{
+    "config": {
+        "main": {
+            "use_llm_proxy": true,
+            "task_name": "text_simplification",
+            "task_description": "Text Simplification",
+            "few_shot_num_examples": 3,
+            "sample_num_train": -1,
+            "sample_num_valid": -1,
+            "sample_num_test": -1,
+            "save_prompt_builder_zero_shot": true,
+            "save_prompt_builder_few_shot": true,
+            "save_prompt_builder_instruction_induction": true,
+            "save_prompt_builder_mixed": false,
+            "save_prompt_builder_instruction_optimization": true
+        },
+        "backend_llm": {
+            "model_name": "gpt-4o",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "num_threads": 30,
+            "top_p": 0.1
+        },
+        "prompt_builder_llm": {
+            "model_name": "gpt-4o",
+            "temperature": 1.0,
+            "max_output_tokens": 4096,
+            "num_threads": 30,
+            "top_p": 1.0
+        },
+        "prompt_builder_zero_shot": {
+            "prompt_header": "Rewrite to make this easier to understand: <input_text>",
+            "prompt_footer": "\nANSWER:"
+        },
+        "prompt_builder_few_shot": {
+            "prompt_header": "",
+            "input_example_label": "Complex sentence:",
+            "output_example_label": "Simple sentence:",
+            "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:",
+            "random_search_num_trials": 10
+        },
+        "prompt_builder_instruction_induction": {
+            "prompt_header": "",
+            "input_example_label": "Complex sentence:",
+            "output_example_label": "Simple sentence:",
+            "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:",
+            "random_search_num_trials": 10
+        },
+        "prompt_builder_mixed": {
+            "prompt_header": "",
+            "input_example_label": "Complex sentence:",
+            "output_example_label": "Simple sentence:",
+            "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:"
+        },
+        "prompt_builder_instruction_optimization": {
+            "prompt_header": "",
+            "input_example_label": "Complex sentence:",
+            "output_example_label": "Simple sentence:",
+            "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:",
+            "beam_size": 4,
+            "num_optimization_iterations": 15,
+            "rephrase_random_instructions_num_samples": 2,
+            "rephrase_random_instructions_scale_factor": 2,
+            "generate_permuted_instructions_scale_factor": 2,
+            "improve_by_feedback_scale_factor": 2,
+            "train_batch_size": 4,
+            "max_instructions_num": 20,
+            "instructions_feedback_num_trials": 3
+        },
+        "args": {
+            "config": "text_simplification/config_text_simplification.yaml",
+            "output_path": "/Users/amansaini/code/prompts-instructions-induction/text_simplification/generated_prompts/aman_15_iters"
+        }
+    },
+    "PROMPT_TEMPLATE": "* In cases with higher word differences, carefully review the phrasing and wording choices for an exact match with the intended simple form. Ensure the choice of words strictly conforms to the simplest possible format while reflecting the input structure and content precisely.\n* To closely align with the expected output, systematically analyze the original sentence and aim for a verbatim transformation using the exact sequence and choice of words where simplification allows. Recheck each rewritten sentence to ensure all elements of the original are accurately reflected in the simplest possible form, prioritizing consistency in language and style.\n* Preserve the original sentence structure as closely as possible while simplifying the language to reduce word differences significantly. Focus on maintaining the specific sequence and choice of words to minimize variation in output.\n* Simplify the given complex sentence by breaking down information into shorter, clearer sentences and preserving the original meaning.\n* Pay close attention to the specific choice of words and phrasing used in the original sentences, particularly in cases where there is a large difference in word count. Aim to closely match the degree of formality and style while simplifying, ensuring the output is concise and directly reflective of the input content.\n* Emphasize selecting wording that precisely aligns with the simplest form of the input, while significantly reducing word changes by closely mimicking the expected output style and brevity in all cases. Pay particular attention to details that show higher word differences, striving to match them exactly.\n* Please rewrite the complex sentence in a simpler form, keeping the main idea intact so it's easier for everyone to understand.\n* Focus on matching the exact vocabulary and phrasing seen in the specific simple form associated with each word-for-word transformation to ensure minimal word differences. Give priority to adjustments in cases where errors have a substantial impact, striving to achieve precision in the chosen wording.\n* Concentrate on closely matching the phrasing and style of the original sentence, with minimal changes in wording and structure. Aim to reduce word differences, especially when errors are significant, to better match the target simplicity and tone.\n* Rewrite the complex sentence into simpler sentences while preserving the original meaning and information.\nComplex sentence: <input_text>\nSimple sentence:",
+    "initial_instructions": [
+        "Simplify the given complex sentence by breaking it into shorter, clearer sentences while retaining the original meaning. Remove any unnecessary abstract language and focus on conveying the core ideas directly.",
+        "Simplify the given complex sentence while retaining the original meaning and key information. Use simpler language and structure to make the sentence more accessible and easier to understand.",
+        "Rewrite the given complex sentence to make it easier to understand while preserving its original meaning."
+    ],
+    "initial_valid_score": 50.906620844048085,
+    "instructions": [
+        "In cases with higher word differences, carefully review the phrasing and wording choices for an exact match with the intended simple form. Ensure the choice of words strictly conforms to the simplest possible format while reflecting the input structure and content precisely.",
+        "To closely align with the expected output, systematically analyze the original sentence and aim for a verbatim transformation using the exact sequence and choice of words where simplification allows. Recheck each rewritten sentence to ensure all elements of the original are accurately reflected in the simplest possible form, prioritizing consistency in language and style.",
+        "Preserve the original sentence structure as closely as possible while simplifying the language to reduce word differences significantly. Focus on maintaining the specific sequence and choice of words to minimize variation in output.",
+        "Simplify the given complex sentence by breaking down information into shorter, clearer sentences and preserving the original meaning.",
+        "Pay close attention to the specific choice of words and phrasing used in the original sentences, particularly in cases where there is a large difference in word count. Aim to closely match the degree of formality and style while simplifying, ensuring the output is concise and directly reflective of the input content.",
+        "Emphasize selecting wording that precisely aligns with the simplest form of the input, while significantly reducing word changes by closely mimicking the expected output style and brevity in all cases. Pay particular attention to details that show higher word differences, striving to match them exactly.",
+        "Please rewrite the complex sentence in a simpler form, keeping the main idea intact so it's easier for everyone to understand.",
+        "Focus on matching the exact vocabulary and phrasing seen in the specific simple form associated with each word-for-word transformation to ensure minimal word differences. Give priority to adjustments in cases where errors have a substantial impact, striving to achieve precision in the chosen wording.",
+        "Concentrate on closely matching the phrasing and style of the original sentence, with minimal changes in wording and structure. Aim to reduce word differences, especially when errors are significant, to better match the target simplicity and tone.",
+        "Rewrite the complex sentence into simpler sentences while preserving the original meaning and information."
+    ],
+    "best_valid_score": 52.605769073424106
+}

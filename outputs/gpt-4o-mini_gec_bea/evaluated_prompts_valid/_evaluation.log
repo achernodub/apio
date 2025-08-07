@@ -1,0 +1,75 @@
+2025-02-14 10:11 - INFO - ********************************************************************************
+2025-02-14 10:11 - INFO - {
+    "main": {
+        "task_name": "gec_bea",
+        "task_description": "Grammatical Error Correction",
+        "few_shot_num_examples": 3,
+        "sample_num_train": -1,
+        "sample_num_valid": -1,
+        "sample_num_test": -1,
+        "save_prompt_builder_zero_shot": true,
+        "save_prompt_builder_few_shot": true,
+        "save_prompt_builder_instruction_induction": true,
+        "save_prompt_builder_mixed": false,
+        "save_prompt_builder_instruction_optimization": true
+    },
+    "backend_llm": {
+        "model_name": "gpt-4o-mini",
+        "temperature": 0.0,
+        "max_output_tokens": 256,
+        "num_threads": 40,
+        "top_p": 0.1
+    },
+    "prompt_builder_llm": {
+        "model_name": "gpt-4o-mini",
+        "temperature": 1.0,
+        "max_output_tokens": 4096,
+        "num_threads": 40,
+        "top_p": 1.0
+    },
+    "prompt_builder_zero_shot": {
+        "prompt_header": "",
+        "prompt_footer": "Reply with a corrected version of the sentence with all grammatical and spelling errors fixed. If there are no errors, reply with a copy of the original sentence.\nInput sentence: <input_text>\nCorrected sentence:"
+    },
+    "prompt_builder_few_shot": {
+        "prompt_header": "",
+        "input_example_label": "Sentence:",
+        "output_example_label": "Corrected sentence:",
+        "prompt_footer": "Sentence: <input_text>\nCorrected sentence:",
+        "random_search_num_trials": 10
+    },
+    "prompt_builder_instruction_induction": {
+        "prompt_header": "",
+        "input_example_label": "Sentence:",
+        "output_example_label": "Corrected sentence:",
+        "prompt_footer": "Sentence: <input_text>\nCorrected sentence:",
+        "random_search_num_trials": 10
+    },
+    "prompt_builder_mixed": {
+        "prompt_header": "",
+        "input_example_label": "Sentence:",
+        "output_example_label": "Corrected sentence:",
+        "prompt_footer": "Sentence: <input_text>\nCorrected sentence:"
+    },
+    "prompt_builder_instruction_optimization": {
+        "prompt_header": "",
+        "input_example_label": "Sentence:",
+        "output_example_label": "Corrected sentence:",
+        "prompt_footer": "Sentence: <input_text>\nCorrected sentence:",
+        "beam_size": 4,
+        "num_optimization_iterations": 15,
+        "rephrase_random_instructions_num_samples": 2,
+        "rephrase_random_instructions_scale_factor": 2,
+        "generate_permuted_instructions_scale_factor": 2,
+        "improve_by_feedback_scale_factor": 2,
+        "train_batch_size": 4,
+        "max_instructions_num": 20,
+        "instructions_feedback_num_trials": 3
+    }
+}
+2025-02-14 10:11 - INFO - ********************************************************************************
+2025-02-14 10:12 - INFO - [1/4]                                zero-shot | Test score: 47.78
+2025-02-14 10:12 - INFO - [2/4]               02_13_15-35-19_optimized_3 | Test score: 46.49
+2025-02-14 10:13 - INFO - [3/4]   02_13_15-35-19_instruction_induction_3 | Test score: 41.78
+2025-02-14 10:13 - INFO - [4/4]                02_13_15-35-19_few-shot_3 | Test score: 46.37
+2025-02-14 10:13 - INFO - ********************************************************************************

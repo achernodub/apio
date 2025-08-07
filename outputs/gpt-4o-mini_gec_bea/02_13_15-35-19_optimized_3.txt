@@ -1,0 +1,9 @@
+* Given a sentence with grammatical errors, identify and correct the mistakes to produce a grammatically accurate version of the sentence.
+* Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, with the primary goal of achieving a completely identical output. Prioritize correcting any grammatical errors while maintaining the original meaning to minimize discrepancies between the output and the expected format of the input.
+* Ensure that the corrected sentence matches the original phrasing, structure, and punctuation as closely as possible while correcting grammatical errors, with a priority on minimizing the number of differing words. Strive to maintain the original meaning in a way that eliminates any discrepancies between the output and the expected format of the input.
+* Generate a corrected version of the given sentence by identifying and fixing any grammatical errors while maintaining the original meaning.
+* Make sure the revised sentence closely mirrors the phrasing and structure of the original meaning while addressing any grammatical mistakes. Aim for an output that is as identical to the reference as possible to ensure accuracy and consistency.
+* Identify and correct the grammatical error in the given sentence to improve clarity and accuracy.
+* Make certain that the output mirrors the original phrasing, structure, and punctuation precisely, rectifying grammatical mistakes without introducing any discrepancies. Aim for no variations in wording between the output and the original format, prioritizing corrections in sentences with more significant errors.
+Sentence: <input_text>
+Corrected sentence:

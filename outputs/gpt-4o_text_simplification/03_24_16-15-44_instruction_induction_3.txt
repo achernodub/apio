@@ -1,0 +1,5 @@
+* Simplify the given complex sentence by breaking it into shorter, clearer sentences while retaining the original meaning. Remove any unnecessary abstract language and focus on conveying the core ideas directly.
+* Simplify the given complex sentence while retaining the original meaning and key information. Use simpler language and structure to make the sentence more accessible and easier to understand.
+* Rewrite the given complex sentence to make it easier to understand while preserving its original meaning.
+Complex sentence: <input_text>
+Simple sentence:

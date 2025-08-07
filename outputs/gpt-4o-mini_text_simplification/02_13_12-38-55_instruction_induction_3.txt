@@ -1,0 +1,5 @@
+* Simplify the complex sentence by rephrasing it into a more straightforward version while maintaining the original meaning and key information.
+* Break down the complex sentence into simpler, more concise sentences while maintaining the original meaning. Ensure clarity and ease of understanding in the rephrased sentences.
+* Simplify the given complex sentence by breaking it into shorter, clearer sentences while maintaining the original meaning. Focus on using straightforward language and avoiding any unnecessary jargon or complexity.
+Complex sentence: <input_text>
+Simple sentence:

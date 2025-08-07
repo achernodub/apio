@@ -1,0 +1,76 @@
+2025-03-24 22:23 - INFO - ********************************************************************************
+2025-03-24 22:23 - INFO - {
+    "main": {
+        "use_llm_proxy": true,
+        "task_name": "text_simplification",
+        "task_description": "Text Simplification",
+        "few_shot_num_examples": 3,
+        "sample_num_train": -1,
+        "sample_num_valid": -1,
+        "sample_num_test": -1,
+        "save_prompt_builder_zero_shot": true,
+        "save_prompt_builder_few_shot": true,
+        "save_prompt_builder_instruction_induction": true,
+        "save_prompt_builder_mixed": false,
+        "save_prompt_builder_instruction_optimization": true
+    },
+    "backend_llm": {
+        "model_name": "gpt-4o",
+        "temperature": 0.0,
+        "max_output_tokens": 256,
+        "num_threads": 30,
+        "top_p": 0.1
+    },
+    "prompt_builder_llm": {
+        "model_name": "gpt-4o",
+        "temperature": 1.0,
+        "max_output_tokens": 4096,
+        "num_threads": 30,
+        "top_p": 1.0
+    },
+    "prompt_builder_zero_shot": {
+        "prompt_header": "Rewrite to make this easier to understand: <input_text>",
+        "prompt_footer": "\nANSWER:"
+    },
+    "prompt_builder_few_shot": {
+        "prompt_header": "",
+        "input_example_label": "Complex sentence:",
+        "output_example_label": "Simple sentence:",
+        "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:",
+        "random_search_num_trials": 10
+    },
+    "prompt_builder_instruction_induction": {
+        "prompt_header": "",
+        "input_example_label": "Complex sentence:",
+        "output_example_label": "Simple sentence:",
+        "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:",
+        "random_search_num_trials": 10
+    },
+    "prompt_builder_mixed": {
+        "prompt_header": "",
+        "input_example_label": "Complex sentence:",
+        "output_example_label": "Simple sentence:",
+        "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:"
+    },
+    "prompt_builder_instruction_optimization": {
+        "prompt_header": "",
+        "input_example_label": "Complex sentence:",
+        "output_example_label": "Simple sentence:",
+        "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:",
+        "beam_size": 4,
+        "num_optimization_iterations": 15,
+        "rephrase_random_instructions_num_samples": 2,
+        "rephrase_random_instructions_scale_factor": 2,
+        "generate_permuted_instructions_scale_factor": 2,
+        "improve_by_feedback_scale_factor": 2,
+        "train_batch_size": 4,
+        "max_instructions_num": 20,
+        "instructions_feedback_num_trials": 3
+    }
+}
+2025-03-24 22:23 - INFO - ********************************************************************************
+2025-03-24 22:25 - INFO - [1/4]                                zero-shot | Test score: 47.73
+2025-03-24 22:26 - INFO - [2/4]               03_24_16-15-44_optimized_3 | Test score: 49.47
+2025-03-24 22:30 - INFO - [3/4]   03_24_16-15-44_instruction_induction_3 | Test score: 48.93
+2025-03-24 22:31 - INFO - [4/4]                03_24_16-15-44_few-shot_3 | Test score: 48.93
+2025-03-24 22:31 - INFO - ********************************************************************************

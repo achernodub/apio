@@ -1,0 +1,245 @@
+2025-03-24 16:27 - INFO - 
+iter_no = 00, valid_scores = [50.906620844048085, 50.552794634255896, 49.93715448938233, 49.253292716468394]
+2025-03-24 16:27 - INFO - --------------------------------------------------------------------------------
+2025-03-24 16:27 - INFO - init_valid_score = 50.91
+2025-03-24 16:27 - INFO - best_valid_score = 50.91 [ *** BEST *** ]
+2025-03-24 16:27 - INFO - --------------------------------------------------------------------------------
+2025-03-24 16:27 - INFO - best_instructions = [
+    "Simplify the given complex sentence by breaking it into shorter, clearer sentences while retaining the original meaning. Remove any unnecessary abstract language and focus on conveying the core ideas directly.",
+    "Simplify the given complex sentence while retaining the original meaning and key information. Use simpler language and structure to make the sentence more accessible and easier to understand.",
+    "Rewrite the given complex sentence to make it easier to understand while preserving its original meaning."
+]
+2025-03-24 16:27 - INFO - --------------------------------------------------------------------------------
+2025-03-24 16:50 - INFO - 
+iter_no = 01, valid_scores = [51.33508066390942, 51.21574249029542, 51.020076395391584, 51.016481038605356, 50.94552706606868, 50.850481348175116, 50.679107757463704, 50.56994193955205, 50.48802429341458, 50.37866384782169, 50.35526535262176, 50.32154546300986, 50.308850098057576, 50.05714800115851, 49.95463084380852, 49.82170733576792, 49.67701104345423, 49.660519942706664, 49.58950838581814, 49.439072856619156, 49.35581303955229, 49.3171075979894, 49.28094057873983, 49.11534856121051, 48.45366918025413, 48.24275560596007]
+2025-03-24 16:50 - INFO - --------------------------------------------------------------------------------
+2025-03-24 16:50 - INFO - init_valid_score = 50.91
+2025-03-24 16:50 - INFO - best_valid_score = 51.34 [ *** BEST *** ]
+2025-03-24 16:50 - INFO - --------------------------------------------------------------------------------
+2025-03-24 16:50 - INFO - best_instructions = [
+    "Prioritize using concise and straightforward language, avoiding unnecessary additional details while maintaining the main points. Match numerical formats and terminologies with the style present in the input.",
+    "Simplify the given complex sentence by breaking down information into shorter, clearer sentences and preserving the original meaning.",
+    "Please simplify the given complex sentence while retaining the essential information and meaning, ensuring it is easier to understand for a broader audience.",
+    "Rewrite the complex sentence into simpler sentences while preserving the original meaning and information."
+]
+2025-03-24 16:50 - INFO - --------------------------------------------------------------------------------
+2025-03-24 17:09 - INFO - 
+iter_no = 02, valid_scores = [51.538269679809986, 51.4781767409659, 51.429267775300595, 51.40904259256782, 51.407192907181674, 51.392207852659226, 51.24138813550062, 51.188039501258636, 51.165115315848794, 51.12489005551854, 51.05426857887272, 50.92755831493531, 50.91016296385766, 50.77134873703992, 50.572918601282936, 50.48792131268445, 50.45711589017723, 50.41809892986638, 50.33053087623295, 50.262043793419956, 50.25980413295114, 50.20967598045758, 50.003722781374414, 49.95623855216072, 49.94810943676381]
+2025-03-24 17:09 - INFO - --------------------------------------------------------------------------------
+2025-03-24 17:09 - INFO - init_valid_score = 50.91
+2025-03-24 17:09 - INFO - best_valid_score = 51.54 [ *** BEST *** ]
+2025-03-24 17:09 - INFO - --------------------------------------------------------------------------------
+2025-03-24 17:09 - INFO - best_instructions = [
+    "Please simplify the given complex sentence while retaining the essential information and meaning, ensuring it is easier to understand for a broader audience.",
+    "Simplify the given complex sentence by breaking down information into shorter, clearer sentences and preserving the original meaning.",
+    "Rewrite the complex sentence into simpler sentences while preserving the original meaning and information.",
+    "Pay close attention to the specific choice of words and phrasing used in the original sentences, particularly in cases where there is a large difference in word count. Aim to closely match the degree of formality and style while simplifying, ensuring the output is concise and directly reflective of the input content."
+]
+2025-03-24 17:09 - INFO - --------------------------------------------------------------------------------
+2025-03-24 17:29 - INFO - 
+iter_no = 03, valid_scores = [51.576370784298526, 51.560031482083275, 51.54041280854062, 51.535960708506856, 51.51915523789652, 51.48089124312469, 51.47798345960467, 51.389541908538966, 51.2492590797987, 51.22934943552849, 51.214578490265104, 51.20778625187469, 51.203829440233335, 51.175608398456895, 51.16194930530086, 51.06324017834288, 51.05187896129551, 51.04431835335373, 51.03500991720002, 50.99999800404316, 50.98500219898392, 50.973078118584226, 50.971622264377146, 50.909102915913536, 50.83229062471744, 50.771261962121486, 50.28510176588899, 50.04774105100819]
+2025-03-24 17:29 - INFO - --------------------------------------------------------------------------------
+2025-03-24 17:29 - INFO - init_valid_score = 50.91
+2025-03-24 17:29 - INFO - best_valid_score = 51.58 [ *** BEST *** ]
+2025-03-24 17:29 - INFO - --------------------------------------------------------------------------------
+2025-03-24 17:29 - INFO - best_instructions = [
+    "Please simplify the given complex sentence while retaining the essential information and meaning, ensuring it is easier to understand for a broader audience.",
+    "Simplify the given complex sentence by breaking down information into shorter, clearer sentences and preserving the original meaning.",
+    "Rewrite the complex sentence into simpler sentences while preserving the original meaning and information.",
+    "Preserve the original sentence structure as closely as possible while simplifying the language to reduce word differences significantly. Focus on maintaining the specific sequence and choice of words to minimize variation in output.",
+    "Pay close attention to the specific choice of words and phrasing used in the original sentences, particularly in cases where there is a large difference in word count. Aim to closely match the degree of formality and style while simplifying, ensuring the output is concise and directly reflective of the input content."
+]
+2025-03-24 17:29 - INFO - --------------------------------------------------------------------------------
+2025-03-24 17:51 - INFO - 
+iter_no = 04, valid_scores = [52.038562935857065, 52.00554173014091, 51.683565828255105, 51.67212575740931, 51.63746096771507, 51.608419101053904, 51.550565715961284, 51.5296773314646, 51.51341842889807, 51.36232781350998, 51.3331073096357, 51.292426113547556, 51.25448431144448, 51.18384346373688, 51.139514398785195, 51.11362127620606, 51.08747697712329, 51.08691650880252, 50.966727065180066, 50.95413676266143, 50.92297226443862, 50.79312626078689, 50.76178590479791, 50.70360739109612, 50.68000121154963, 50.6365981338674, 50.02915664955757]
+2025-03-24 17:51 - INFO - --------------------------------------------------------------------------------
+2025-03-24 17:51 - INFO - init_valid_score = 50.91
+2025-03-24 17:51 - INFO - best_valid_score = 52.04 [ *** BEST *** ]
+2025-03-24 17:51 - INFO - --------------------------------------------------------------------------------
+2025-03-24 17:51 - INFO - best_instructions = [
+    "When simplifying, closely match the sentence structure and specific wording of the input to minimize changes. Prioritize retaining key phrases and ensure that the rephrased text is concise and directly reflective of the original content.",
+    "Please simplify the given complex sentence while retaining the essential information and meaning, ensuring it is easier to understand for a broader audience.",
+    "Rewrite the complex sentence into simpler sentences while preserving the original meaning and information.",
+    "Pay close attention to the specific choice of words and phrasing used in the original sentences, particularly in cases where there is a large difference in word count. Aim to closely match the degree of formality and style while simplifying, ensuring the output is concise and directly reflective of the input content.",
+    "Simplify the given complex sentence by breaking down information into shorter, clearer sentences and preserving the original meaning."
+]
+2025-03-24 17:51 - INFO - --------------------------------------------------------------------------------
+2025-03-24 18:09 - INFO - 
+iter_no = 05, valid_scores = [52.268232889746734, 52.24807237113885, 51.974603479139894, 51.84165896529763, 51.827826659386176, 51.785556752996904, 51.76799033332893, 51.75539120360134, 51.74243272552754, 51.70953902616216, 51.68694088946802, 51.667131614376224, 51.62585977876017, 51.58500797080841, 51.56794762280598, 51.500097254920036, 51.47699007035882, 51.45717943744835, 51.43990940788348, 51.4295004427853, 51.37354249365683, 51.372987090319725, 51.360834017524475, 51.35092322184813, 51.08153706020949, 51.0432724057683, 50.808406222695304]
+2025-03-24 18:09 - INFO - --------------------------------------------------------------------------------
+2025-03-24 18:09 - INFO - init_valid_score = 50.91
+2025-03-24 18:09 - INFO - best_valid_score = 52.27 [ *** BEST *** ]
+2025-03-24 18:09 - INFO - --------------------------------------------------------------------------------
+2025-03-24 18:09 - INFO - best_instructions = [
+    "Preserve the original sentence structure as closely as possible while simplifying the language to reduce word differences significantly. Focus on maintaining the specific sequence and choice of words to minimize variation in output.",
+    "Focus on strictly matching the phrasing and style of the original sentence, ensuring minimal deviation in word choice and sentence structure. Prioritize reducing word differences in cases with a larger error to closely align with target simplicity and tone.",
+    "Please simplify the given complex sentence while retaining the essential information and meaning, ensuring it is easier to understand for a broader audience.",
+    "Rewrite the complex sentence into simpler sentences while preserving the original meaning and information.",
+    "Pay close attention to the specific choice of words and phrasing used in the original sentences, particularly in cases where there is a large difference in word count. Aim to closely match the degree of formality and style while simplifying, ensuring the output is concise and directly reflective of the input content.",
+    "Simplify the given complex sentence by breaking down information into shorter, clearer sentences and preserving the original meaning."
+]
+2025-03-24 18:09 - INFO - --------------------------------------------------------------------------------
+2025-03-24 18:30 - INFO - 
+iter_no = 06, valid_scores = [52.278782029909515, 51.974941617863955, 51.970607471561756, 51.94197868003037, 51.88042441865097, 51.86677144607979, 51.860158025061594, 51.84764728802683, 51.820667700281184, 51.73584744067218, 51.72772472091185, 51.68128233728688, 51.65317192675883, 51.64416585906368, 51.55843870310091, 51.55686735713078, 51.53659871223181, 51.4556000195592, 51.26342577413811, 51.249128561791714, 51.188797639930804, 51.188754636770135, 51.10048772438242, 51.05303465008848, 51.00355937706132]
+2025-03-24 18:30 - INFO - --------------------------------------------------------------------------------
+2025-03-24 18:30 - INFO - init_valid_score = 50.91
+2025-03-24 18:30 - INFO - best_valid_score = 52.28 [ *** BEST *** ]
+2025-03-24 18:30 - INFO - --------------------------------------------------------------------------------
+2025-03-24 18:30 - INFO - best_instructions = [
+    "Preserve the original sentence structure as closely as possible while simplifying the language to reduce word differences significantly. Focus on maintaining the specific sequence and choice of words to minimize variation in output.",
+    "Focus on strictly matching the phrasing and style of the original sentence, ensuring minimal deviation in word choice and sentence structure. Prioritize reducing word differences in cases with a larger error to closely align with target simplicity and tone.",
+    "Please simplify the given complex sentence while retaining the essential information and meaning, ensuring it is easier to understand for a broader audience.",
+    "Rewrite the complex sentence into simpler sentences while preserving the original meaning and information.",
+    "Pay close attention to the specific choice of words and phrasing used in the original sentences, particularly in cases where there is a large difference in word count. Aim to closely match the degree of formality and style while simplifying, ensuring the output is concise and directly reflective of the input content.",
+    "Simplify the given complex sentence by breaking down information into shorter, clearer sentences and preserving the original meaning."
+]
+2025-03-24 18:30 - INFO - --------------------------------------------------------------------------------
+2025-03-24 18:49 - INFO - 
+iter_no = 07, valid_scores = [52.193918471099174, 52.10457191969198, 52.052005039141754, 52.02977100336461, 51.97154906074609, 51.96731777057931, 51.9634701583411, 51.958158548836856, 51.95013008003946, 51.921737145296426, 51.897929498331415, 51.89194698100628, 51.8600862345129, 51.81475286812048, 51.758425128161775, 51.757614264019786, 51.70222137751788, 51.67497484514965, 51.58231791104104, 51.46880925879517, 51.26019418968779, 51.200022111596176, 50.99424716892181, 50.976727375712564, 50.731728117685684]
+2025-03-24 18:49 - INFO - --------------------------------------------------------------------------------
+2025-03-24 18:49 - INFO - init_valid_score = 50.91
+2025-03-24 18:49 - INFO - best_valid_score = 52.28 
+2025-03-24 18:49 - INFO - --------------------------------------------------------------------------------
+2025-03-24 18:49 - INFO - best_instructions = [
+    "Preserve the original sentence structure as closely as possible while simplifying the language to reduce word differences significantly. Focus on maintaining the specific sequence and choice of words to minimize variation in output.",
+    "Focus on strictly matching the phrasing and style of the original sentence, ensuring minimal deviation in word choice and sentence structure. Prioritize reducing word differences in cases with a larger error to closely align with target simplicity and tone.",
+    "Please simplify the given complex sentence while retaining the essential information and meaning, ensuring it is easier to understand for a broader audience.",
+    "Rewrite the complex sentence into simpler sentences while preserving the original meaning and information.",
+    "Pay close attention to the specific choice of words and phrasing used in the original sentences, particularly in cases where there is a large difference in word count. Aim to closely match the degree of formality and style while simplifying, ensuring the output is concise and directly reflective of the input content.",
+    "Simplify the given complex sentence by breaking down information into shorter, clearer sentences and preserving the original meaning."
+]
+2025-03-24 18:49 - INFO - --------------------------------------------------------------------------------
+2025-03-24 19:09 - INFO - 
+iter_no = 08, valid_scores = [52.399959395992255, 52.230667313245554, 52.1424415740104, 52.11939130412865, 52.079869009024655, 52.04822155110133, 51.90080207192931, 51.89543572614207, 51.86732619435472, 51.830479999522105, 51.813457222435375, 51.737338503387626, 51.714632309474716, 51.60463707129139, 51.5989735211827, 51.564110062611405, 51.492005062420326, 51.36898962378819, 51.301433641395136, 51.210987064432764, 51.19940134341096, 51.1803734115017, 51.09455471909374, 50.80958263868401, 50.743903645659124]
+2025-03-24 19:09 - INFO - --------------------------------------------------------------------------------
+2025-03-24 19:09 - INFO - init_valid_score = 50.91
+2025-03-24 19:09 - INFO - best_valid_score = 52.40 [ *** BEST *** ]
+2025-03-24 19:09 - INFO - --------------------------------------------------------------------------------
+2025-03-24 19:09 - INFO - best_instructions = [
+    "Preserve the original sentence structure as closely as possible while simplifying the language to reduce word differences significantly. Focus on maintaining the specific sequence and choice of words to minimize variation in output.",
+    "Concentrate on closely matching the phrasing and style of the original sentence, with minimal changes in wording and structure. Aim to reduce word differences, especially when errors are significant, to better match the target simplicity and tone.",
+    "Please rewrite the complex sentence in a simpler form, keeping the main idea intact so it's easier for everyone to understand.",
+    "Rewrite the complex sentence into simpler sentences while preserving the original meaning and information.",
+    "In cases with higher word differences, carefully review the phrasing and wording choices for an exact match with the intended simple form. Ensure the choice of words strictly conforms to the simplest possible format while reflecting the input structure and content precisely.",
+    "Pay close attention to the specific choice of words and phrasing used in the original sentences, particularly in cases where there is a large difference in word count. Aim to closely match the degree of formality and style while simplifying, ensuring the output is concise and directly reflective of the input content.",
+    "Simplify the given complex sentence by breaking down information into shorter, clearer sentences and preserving the original meaning."
+]
+2025-03-24 19:09 - INFO - --------------------------------------------------------------------------------
+2025-03-24 19:31 - INFO - 
+iter_no = 09, valid_scores = [52.54647180763525, 52.278420063803885, 52.226797057475515, 52.226559602381336, 52.21671996065896, 52.18836153451147, 52.15157478713197, 52.136347772325536, 52.00103575646401, 51.995830062839495, 51.89178389162049, 51.82426587347211, 51.793799764710066, 51.782955801134484, 51.7643005517043, 51.72790398765446, 51.7261434555755, 51.654023207303055, 51.643630129213854, 51.5842648780775, 51.56773315044283, 51.48600551695358, 51.291295261417254, 51.21386004720654, 51.11976372018041, 50.5338614659168, 49.90894206403291]
+2025-03-24 19:31 - INFO - --------------------------------------------------------------------------------
+2025-03-24 19:31 - INFO - init_valid_score = 50.91
+2025-03-24 19:31 - INFO - best_valid_score = 52.55 [ *** BEST *** ]
+2025-03-24 19:31 - INFO - --------------------------------------------------------------------------------
+2025-03-24 19:31 - INFO - best_instructions = [
+    "In cases with higher word differences, carefully review the phrasing and wording choices for an exact match with the intended simple form. Ensure the choice of words strictly conforms to the simplest possible format while reflecting the input structure and content precisely.",
+    "Preserve the original sentence structure as closely as possible while simplifying the language to reduce word differences significantly. Focus on maintaining the specific sequence and choice of words to minimize variation in output.",
+    "Simplify the given complex sentence by breaking down information into shorter, clearer sentences and preserving the original meaning.",
+    "Pay close attention to the specific choice of words and phrasing used in the original sentences, particularly in cases where there is a large difference in word count. Aim to closely match the degree of formality and style while simplifying, ensuring the output is concise and directly reflective of the input content.",
+    "Please rewrite the complex sentence in a simpler form, keeping the main idea intact so it's easier for everyone to understand.",
+    "Concentrate on closely matching the phrasing and style of the original sentence, with minimal changes in wording and structure. Aim to reduce word differences, especially when errors are significant, to better match the target simplicity and tone.",
+    "Rewrite the complex sentence into simpler sentences while preserving the original meaning and information."
+]
+2025-03-24 19:31 - INFO - --------------------------------------------------------------------------------
+2025-03-24 19:56 - INFO - 
+iter_no = 10, valid_scores = [52.41676755529581, 52.332236186505305, 52.32552991416455, 52.29598176858578, 52.29414491986171, 52.23263623322013, 52.22953156867222, 52.12956794977928, 52.09395002599681, 52.006887482140236, 51.98989782568793, 51.96377977713619, 51.93377194974611, 51.93190085265976, 51.77634616211444, 51.7350379327244, 51.704057387125864, 51.69875658156004, 51.595375727118004, 51.58099622347813, 51.527046220292306, 51.44723432138715, 51.38915821694693, 51.34308192096935, 51.3008715939554, 51.28860953077227, 51.14225910674727]
+2025-03-24 19:56 - INFO - --------------------------------------------------------------------------------
+2025-03-24 19:56 - INFO - init_valid_score = 50.91
+2025-03-24 19:56 - INFO - best_valid_score = 52.55 
+2025-03-24 19:56 - INFO - --------------------------------------------------------------------------------
+2025-03-24 19:56 - INFO - best_instructions = [
+    "In cases with higher word differences, carefully review the phrasing and wording choices for an exact match with the intended simple form. Ensure the choice of words strictly conforms to the simplest possible format while reflecting the input structure and content precisely.",
+    "Preserve the original sentence structure as closely as possible while simplifying the language to reduce word differences significantly. Focus on maintaining the specific sequence and choice of words to minimize variation in output.",
+    "Simplify the given complex sentence by breaking down information into shorter, clearer sentences and preserving the original meaning.",
+    "Pay close attention to the specific choice of words and phrasing used in the original sentences, particularly in cases where there is a large difference in word count. Aim to closely match the degree of formality and style while simplifying, ensuring the output is concise and directly reflective of the input content.",
+    "Please rewrite the complex sentence in a simpler form, keeping the main idea intact so it's easier for everyone to understand.",
+    "Concentrate on closely matching the phrasing and style of the original sentence, with minimal changes in wording and structure. Aim to reduce word differences, especially when errors are significant, to better match the target simplicity and tone.",
+    "Rewrite the complex sentence into simpler sentences while preserving the original meaning and information."
+]
+2025-03-24 19:56 - INFO - --------------------------------------------------------------------------------
+2025-03-24 20:18 - INFO - 
+iter_no = 11, valid_scores = [52.344165457291105, 52.33498597063144, 52.31646086573926, 52.29861356724732, 52.223222533543016, 52.22090503237876, 52.201042124964005, 52.140526381242985, 52.13958555527811, 52.11453317175261, 52.1116489587478, 52.05759387973725, 52.0066167132994, 51.997300974005846, 51.944101307407, 51.9163522895887, 51.87702998677144, 51.81831259062949, 51.81614693532285, 51.77824811592984, 51.696662911373544, 51.64646137108762, 51.53637626282847, 51.535002577609816, 51.3141623906094, 51.293235252830414]
+2025-03-24 20:18 - INFO - --------------------------------------------------------------------------------
+2025-03-24 20:18 - INFO - init_valid_score = 50.91
+2025-03-24 20:18 - INFO - best_valid_score = 52.55 
+2025-03-24 20:18 - INFO - --------------------------------------------------------------------------------
+2025-03-24 20:18 - INFO - best_instructions = [
+    "In cases with higher word differences, carefully review the phrasing and wording choices for an exact match with the intended simple form. Ensure the choice of words strictly conforms to the simplest possible format while reflecting the input structure and content precisely.",
+    "Preserve the original sentence structure as closely as possible while simplifying the language to reduce word differences significantly. Focus on maintaining the specific sequence and choice of words to minimize variation in output.",
+    "Simplify the given complex sentence by breaking down information into shorter, clearer sentences and preserving the original meaning.",
+    "Pay close attention to the specific choice of words and phrasing used in the original sentences, particularly in cases where there is a large difference in word count. Aim to closely match the degree of formality and style while simplifying, ensuring the output is concise and directly reflective of the input content.",
+    "Please rewrite the complex sentence in a simpler form, keeping the main idea intact so it's easier for everyone to understand.",
+    "Concentrate on closely matching the phrasing and style of the original sentence, with minimal changes in wording and structure. Aim to reduce word differences, especially when errors are significant, to better match the target simplicity and tone.",
+    "Rewrite the complex sentence into simpler sentences while preserving the original meaning and information."
+]
+2025-03-24 20:18 - INFO - --------------------------------------------------------------------------------
+2025-03-24 20:36 - INFO - 
+iter_no = 12, valid_scores = [52.25988636049963, 52.23032728881941, 52.21248552261338, 52.20342924738272, 52.090962240450345, 52.050621562421384, 52.021375767955256, 52.00766484630443, 51.97248324811071, 51.94062780909437, 51.926168226361675, 51.878443836797906, 51.87069591867902, 51.76210914145818, 51.730601782452275, 51.71980312814142, 51.64241022996445, 51.5895632011868, 51.560913051848466, 51.44772703203851, 51.322119650310476, 51.15865440851727, 50.91747301569804]
+2025-03-24 20:36 - INFO - --------------------------------------------------------------------------------
+2025-03-24 20:36 - INFO - init_valid_score = 50.91
+2025-03-24 20:36 - INFO - best_valid_score = 52.55 
+2025-03-24 20:36 - INFO - --------------------------------------------------------------------------------
+2025-03-24 20:36 - INFO - best_instructions = [
+    "In cases with higher word differences, carefully review the phrasing and wording choices for an exact match with the intended simple form. Ensure the choice of words strictly conforms to the simplest possible format while reflecting the input structure and content precisely.",
+    "Preserve the original sentence structure as closely as possible while simplifying the language to reduce word differences significantly. Focus on maintaining the specific sequence and choice of words to minimize variation in output.",
+    "Simplify the given complex sentence by breaking down information into shorter, clearer sentences and preserving the original meaning.",
+    "Pay close attention to the specific choice of words and phrasing used in the original sentences, particularly in cases where there is a large difference in word count. Aim to closely match the degree of formality and style while simplifying, ensuring the output is concise and directly reflective of the input content.",
+    "Please rewrite the complex sentence in a simpler form, keeping the main idea intact so it's easier for everyone to understand.",
+    "Concentrate on closely matching the phrasing and style of the original sentence, with minimal changes in wording and structure. Aim to reduce word differences, especially when errors are significant, to better match the target simplicity and tone.",
+    "Rewrite the complex sentence into simpler sentences while preserving the original meaning and information."
+]
+2025-03-24 20:36 - INFO - --------------------------------------------------------------------------------
+2025-03-24 20:57 - INFO - 
+iter_no = 13, valid_scores = [52.44989785585148, 52.4354101486401, 52.395337490458985, 52.38567525513961, 52.35538881521246, 52.34029368180531, 52.32325247041077, 52.30181139701393, 52.28807190348217, 52.18453638125902, 52.164663495350986, 52.032042638552745, 51.9466069461256, 51.90736072198223, 51.81256399846584, 51.73507007217415, 51.685459852833844, 51.64194618186534, 51.48456708721036, 51.4414142060213, 51.34723073495752, 51.197516596727816, 51.136967340328304]
+2025-03-24 20:57 - INFO - --------------------------------------------------------------------------------
+2025-03-24 20:57 - INFO - init_valid_score = 50.91
+2025-03-24 20:57 - INFO - best_valid_score = 52.55 
+2025-03-24 20:57 - INFO - --------------------------------------------------------------------------------
+2025-03-24 20:57 - INFO - best_instructions = [
+    "In cases with higher word differences, carefully review the phrasing and wording choices for an exact match with the intended simple form. Ensure the choice of words strictly conforms to the simplest possible format while reflecting the input structure and content precisely.",
+    "Preserve the original sentence structure as closely as possible while simplifying the language to reduce word differences significantly. Focus on maintaining the specific sequence and choice of words to minimize variation in output.",
+    "Simplify the given complex sentence by breaking down information into shorter, clearer sentences and preserving the original meaning.",
+    "Pay close attention to the specific choice of words and phrasing used in the original sentences, particularly in cases where there is a large difference in word count. Aim to closely match the degree of formality and style while simplifying, ensuring the output is concise and directly reflective of the input content.",
+    "Please rewrite the complex sentence in a simpler form, keeping the main idea intact so it's easier for everyone to understand.",
+    "Concentrate on closely matching the phrasing and style of the original sentence, with minimal changes in wording and structure. Aim to reduce word differences, especially when errors are significant, to better match the target simplicity and tone.",
+    "Rewrite the complex sentence into simpler sentences while preserving the original meaning and information."
+]
+2025-03-24 20:57 - INFO - --------------------------------------------------------------------------------
+2025-03-24 21:15 - INFO - 
+iter_no = 14, valid_scores = [52.605769073424106, 52.473697720479755, 52.4676962208306, 52.417639975317705, 52.31166698342102, 52.301681273628645, 52.2966429717012, 52.188626784696375, 52.14876522214943, 52.13938563507497, 52.01444404190161, 52.00297540393806, 51.7903266814944, 51.77741429744977, 51.75124979109611, 51.70787797599883, 51.66017278413485, 51.65405614188338, 51.52437612224995, 51.5026054436565, 51.4460607541616, 51.263728953108654, 51.26030535646191, 51.19552098146401, 50.5146680829993, 49.47572936950049]
+2025-03-24 21:15 - INFO - --------------------------------------------------------------------------------
+2025-03-24 21:15 - INFO - init_valid_score = 50.91
+2025-03-24 21:15 - INFO - best_valid_score = 52.61 [ *** BEST *** ]
+2025-03-24 21:15 - INFO - --------------------------------------------------------------------------------
+2025-03-24 21:15 - INFO - best_instructions = [
+    "In cases with higher word differences, carefully review the phrasing and wording choices for an exact match with the intended simple form. Ensure the choice of words strictly conforms to the simplest possible format while reflecting the input structure and content precisely.",
+    "To closely align with the expected output, systematically analyze the original sentence and aim for a verbatim transformation using the exact sequence and choice of words where simplification allows. Recheck each rewritten sentence to ensure all elements of the original are accurately reflected in the simplest possible form, prioritizing consistency in language and style.",
+    "Preserve the original sentence structure as closely as possible while simplifying the language to reduce word differences significantly. Focus on maintaining the specific sequence and choice of words to minimize variation in output.",
+    "Simplify the given complex sentence by breaking down information into shorter, clearer sentences and preserving the original meaning.",
+    "Pay close attention to the specific choice of words and phrasing used in the original sentences, particularly in cases where there is a large difference in word count. Aim to closely match the degree of formality and style while simplifying, ensuring the output is concise and directly reflective of the input content.",
+    "Emphasize selecting wording that precisely aligns with the simplest form of the input, while significantly reducing word changes by closely mimicking the expected output style and brevity in all cases. Pay particular attention to details that show higher word differences, striving to match them exactly.",
+    "Please rewrite the complex sentence in a simpler form, keeping the main idea intact so it's easier for everyone to understand.",
+    "Focus on matching the exact vocabulary and phrasing seen in the specific simple form associated with each word-for-word transformation to ensure minimal word differences. Give priority to adjustments in cases where errors have a substantial impact, striving to achieve precision in the chosen wording.",
+    "Concentrate on closely matching the phrasing and style of the original sentence, with minimal changes in wording and structure. Aim to reduce word differences, especially when errors are significant, to better match the target simplicity and tone.",
+    "Rewrite the complex sentence into simpler sentences while preserving the original meaning and information."
+]
+2025-03-24 21:15 - INFO - --------------------------------------------------------------------------------
+2025-03-24 21:32 - INFO - 
+iter_no = 15, valid_scores = [52.56554520225353, 52.52489035755386, 52.43119320032616, 52.424944090792074, 52.34502282758255, 52.24955937799941, 52.20959881662884, 52.20575690240249, 52.200201042204526, 52.128680700820205, 52.10347053614731, 52.097827661409305, 52.07242432077671, 52.071041935806285, 52.008267982459465, 52.000515775000714, 51.9644006186432, 51.94599899405437, 51.908899770220216, 51.702873325780836, 51.63898339782933, 51.15909934885472, 51.0759134453621, 50.65823535071511]
+2025-03-24 21:32 - INFO - --------------------------------------------------------------------------------
+2025-03-24 21:32 - INFO - init_valid_score = 50.91
+2025-03-24 21:32 - INFO - best_valid_score = 52.61 
+2025-03-24 21:32 - INFO - --------------------------------------------------------------------------------
+2025-03-24 21:32 - INFO - best_instructions = [
+    "In cases with higher word differences, carefully review the phrasing and wording choices for an exact match with the intended simple form. Ensure the choice of words strictly conforms to the simplest possible format while reflecting the input structure and content precisely.",
+    "To closely align with the expected output, systematically analyze the original sentence and aim for a verbatim transformation using the exact sequence and choice of words where simplification allows. Recheck each rewritten sentence to ensure all elements of the original are accurately reflected in the simplest possible form, prioritizing consistency in language and style.",
+    "Preserve the original sentence structure as closely as possible while simplifying the language to reduce word differences significantly. Focus on maintaining the specific sequence and choice of words to minimize variation in output.",
+    "Simplify the given complex sentence by breaking down information into shorter, clearer sentences and preserving the original meaning.",
+    "Pay close attention to the specific choice of words and phrasing used in the original sentences, particularly in cases where there is a large difference in word count. Aim to closely match the degree of formality and style while simplifying, ensuring the output is concise and directly reflective of the input content.",
+    "Emphasize selecting wording that precisely aligns with the simplest form of the input, while significantly reducing word changes by closely mimicking the expected output style and brevity in all cases. Pay particular attention to details that show higher word differences, striving to match them exactly.",
+    "Please rewrite the complex sentence in a simpler form, keeping the main idea intact so it's easier for everyone to understand.",
+    "Focus on matching the exact vocabulary and phrasing seen in the specific simple form associated with each word-for-word transformation to ensure minimal word differences. Give priority to adjustments in cases where errors have a substantial impact, striving to achieve precision in the chosen wording.",
+    "Concentrate on closely matching the phrasing and style of the original sentence, with minimal changes in wording and structure. Aim to reduce word differences, especially when errors are significant, to better match the target simplicity and tone.",
+    "Rewrite the complex sentence into simpler sentences while preserving the original meaning and information."
+]
+2025-03-24 21:32 - INFO - --------------------------------------------------------------------------------

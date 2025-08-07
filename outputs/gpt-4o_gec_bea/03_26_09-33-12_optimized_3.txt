@@ -1,0 +1,13 @@
+* Ensure that all corrections strictly maintain the original intention and phrasing as closely as possible, including punctuation. Do not add or omit any information that is not present in the original sentence.
+* If a sentence is grammatically correct, leave it as it is. When making corrections, try to keep the original wording and structure to maintain the intended meaning.
+* Fix any typos in the provided sentence without altering its original meaning or structure.
+* Correct the grammatical errors in the given sentence while retaining its original meaning.
+* Focus on retaining the original tense and conjunctions used to connect clauses, and pay attention to the specific words chosen in the input, ensuring they align closely with the intended meaning.
+* When correcting punctuation, consider replacing dashes with periods if it aligns better with standard grammar conventions, ensuring sentences remain clear and concise. Pay close attention to British versus American English spellings, and maintain consistency with the input's original spelling style.
+* Ensure the precise replication of hyphenation and British/American spelling from the original text, and adhere strictly to the inclusion or omission of definite articles like "the" where specified in the input sentence.
+* Certainly! Here is an appropriate instruction for the given example:
+
+"Identify and correct any grammatical errors in the provided sentence, paying attention to punctuation, syntax, and overall clarity to ensure the sentence is grammatically correct."
+* Pay close attention to the exact placement and repetition of words in the original sentence to ensure the output matches exactly. Only modify words like "the" and "a" when necessary, and keep any phrases that repeat, even if they seem redundant.
+Sentence: <input_text>
+Corrected sentence:
