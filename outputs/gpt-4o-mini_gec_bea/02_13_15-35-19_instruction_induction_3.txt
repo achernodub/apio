@@ -1,0 +1,5 @@
+* Identify and correct the grammatical error in the given sentence to improve clarity and accuracy.
+* Generate a corrected version of the given sentence by identifying and fixing any grammatical errors while maintaining the original meaning.
+* Given a sentence with grammatical errors, identify and correct the mistakes to produce a grammatically accurate version of the sentence.
+Sentence: <input_text>
+Corrected sentence:

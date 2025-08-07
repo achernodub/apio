@@ -1,0 +1,11 @@
+Sentence: Although I came to Spain ten years later so I can speak with them in Spanish if it was necessary.
+Corrected sentence: Although I came to Spain ten years later, so I could speak with them in Spanish if it was necessary.
+
+Sentence: After having tea, we play hide - and - seek altogether in Winnie's garden.
+Corrected sentence: After having tea, we played hide - and - seek together in Winnie's garden.
+
+Sentence: In my eyes and probably the eyes of others this is reason enough for the banning of boxing.
+Corrected sentence: In my eyes and probably the eyes of others, this is reason enough for the banning of boxing.
+
+Sentence: <input_text>
+Corrected sentence:

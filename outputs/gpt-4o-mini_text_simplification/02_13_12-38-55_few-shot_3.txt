@@ -1,0 +1,11 @@
+Complex sentence: Reality television is a genre of television programming that presents purportedly unscripted dramatic or humorous situations, documents actual events, and usually features ordinary people instead of professional actors.
+Simple sentence: Reality TV is a genre of program that appears to be true, but isn't in an unscripted exciting or funny situations, records real events, and tends to show regular people and not real actors.
+
+Complex sentence: On January 4, 1999, Mick Foley, who had wrestled for WCW during the early 1990s as Cactus Jack, won the WWF Title as Mankind on Raw.
+Simple sentence: On January 4, 1999, Mick Foley won the WWF Title as Mankind on Raw.
+
+Complex sentence: Roman conquest Judea lost its independence to the Romans in the 1st century BCE, by becoming first a tributary kingdom, then a province, of the Roman Empire.
+Simple sentence: Judea lost its independence to the Romans in the 1st century BCE. Judea first became a tributary kingdom and later became a province of the Roman Empire.
+
+Complex sentence: <input_text>
+Simple sentence:

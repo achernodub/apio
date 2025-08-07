@@ -1,0 +1,89 @@
+2025-03-24 16:20 - INFO - sorted_valid_scores = (51.650671936752616, 49.95825383586678, 49.79245904744696, 49.57642905428222, 49.40773209056874, 49.24303883844496, 48.58930321034021, 48.27665612863948, 47.60463547639315, 46.58011465690819)
+2025-03-24 16:20 - INFO - best_prompt:
+
+ {
+    "config": {
+        "main": {
+            "use_llm_proxy": true,
+            "task_name": "text_simplification",
+            "task_description": "Text Simplification",
+            "few_shot_num_examples": 3,
+            "sample_num_train": -1,
+            "sample_num_valid": -1,
+            "sample_num_test": -1,
+            "save_prompt_builder_zero_shot": true,
+            "save_prompt_builder_few_shot": true,
+            "save_prompt_builder_instruction_induction": true,
+            "save_prompt_builder_mixed": false,
+            "save_prompt_builder_instruction_optimization": true
+        },
+        "backend_llm": {
+            "model_name": "gpt-4o",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "num_threads": 30,
+            "top_p": 0.1
+        },
+        "prompt_builder_llm": {
+            "model_name": "gpt-4o",
+            "temperature": 1.0,
+            "max_output_tokens": 4096,
+            "num_threads": 30,
+            "top_p": 1.0
+        },
+        "prompt_builder_zero_shot": {
+            "prompt_header": "Rewrite to make this easier to understand: <input_text>",
+            "prompt_footer": "\nANSWER:"
+        },
+        "prompt_builder_few_shot": {
+            "prompt_header": "",
+            "input_example_label": "Complex sentence:",
+            "output_example_label": "Simple sentence:",
+            "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:",
+            "random_search_num_trials": 10
+        },
+        "prompt_builder_instruction_induction": {
+            "prompt_header": "",
+            "input_example_label": "Complex sentence:",
+            "output_example_label": "Simple sentence:",
+            "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:",
+            "random_search_num_trials": 10
+        },
+        "prompt_builder_mixed": {
+            "prompt_header": "",
+            "input_example_label": "Complex sentence:",
+            "output_example_label": "Simple sentence:",
+            "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:"
+        },
+        "prompt_builder_instruction_optimization": {
+            "prompt_header": "",
+            "input_example_label": "Complex sentence:",
+            "output_example_label": "Simple sentence:",
+            "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:",
+            "beam_size": 4,
+            "num_optimization_iterations": 15,
+            "rephrase_random_instructions_num_samples": 2,
+            "rephrase_random_instructions_scale_factor": 2,
+            "generate_permuted_instructions_scale_factor": 2,
+            "improve_by_feedback_scale_factor": 2,
+            "train_batch_size": 4,
+            "max_instructions_num": 20,
+            "instructions_feedback_num_trials": 3
+        },
+        "args": {
+            "config": "text_simplification/config_text_simplification.yaml",
+            "output_path": "/Users/amansaini/code/prompts-instructions-induction/text_simplification/generated_prompts/aman_15_iters"
+        }
+    },
+    "PROMPT_TEMPLATE": "Complex sentence: If you absolutely must specify a font size, use a relative size like font-size: 80%, not an absolute size like font-size: 8pt.\nSimple sentence: If you need a a font size, a relative size like 80% or not an absolute size like font-size 8pt.\n\nComplex sentence: If you are reading this page it is possible that this has happened to your RfA.\nSimple sentence: If you are reading this it is possible this happened to your RfA.\n\nComplex sentence: French troops land at Kilcummin in County Mayo to assist the Irish rebellion.\nSimple sentence: French troops land at Kilcummin in County Mayo. They land here to help the Irish rebellion.\n\nComplex sentence: <input_text>\nSimple sentence:",
+    "few_shot_input_examples": [
+        "If you absolutely must specify a font size, use a relative size like font-size: 80%, not an absolute size like font-size: 8pt.",
+        "If you are reading this page it is possible that this has happened to your RfA.",
+        "French troops land at Kilcummin in County Mayo to assist the Irish rebellion."
+    ],
+    "few_shot_output_examples": [
+        "If you need a a font size, a relative size like 80% or not an absolute size like font-size 8pt.",
+        "If you are reading this it is possible this happened to your RfA.",
+        "French troops land at Kilcummin in County Mayo. They land here to help the Irish rebellion."
+    ]
+}

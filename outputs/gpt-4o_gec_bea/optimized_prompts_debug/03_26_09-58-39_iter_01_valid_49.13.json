@@ -1,0 +1,89 @@
+{
+    "config": {
+        "main": {
+            "use_llm_proxy": true,
+            "task_name": "gec_bea",
+            "task_description": "Grammatical Error Correction",
+            "few_shot_num_examples": 3,
+            "sample_num_train": -1,
+            "sample_num_valid": -1,
+            "sample_num_test": -1,
+            "save_prompt_builder_zero_shot": true,
+            "save_prompt_builder_few_shot": true,
+            "save_prompt_builder_instruction_induction": true,
+            "save_prompt_builder_mixed": false,
+            "save_prompt_builder_instruction_optimization": true
+        },
+        "backend_llm": {
+            "model_name": "gpt-4o",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "num_threads": 40,
+            "top_p": 0.1
+        },
+        "prompt_builder_llm": {
+            "model_name": "gpt-4o",
+            "temperature": 1.0,
+            "max_output_tokens": 4096,
+            "num_threads": 40,
+            "top_p": 1.0
+        },
+        "prompt_builder_zero_shot": {
+            "prompt_header": "",
+            "prompt_footer": "Reply with a corrected version of the sentence with all grammatical and spelling errors fixed. If there are no errors, reply with a copy of the original sentence.\nInput sentence: <input_text>\nCorrected sentence:"
+        },
+        "prompt_builder_few_shot": {
+            "prompt_header": "",
+            "input_example_label": "Sentence:",
+            "output_example_label": "Corrected sentence:",
+            "prompt_footer": "Sentence: <input_text>\nCorrected sentence:",
+            "random_search_num_trials": 10
+        },
+        "prompt_builder_instruction_induction": {
+            "prompt_header": "",
+            "input_example_label": "Sentence:",
+            "output_example_label": "Corrected sentence:",
+            "prompt_footer": "Sentence: <input_text>\nCorrected sentence:",
+            "random_search_num_trials": 10
+        },
+        "prompt_builder_mixed": {
+            "prompt_header": "",
+            "input_example_label": "Sentence:",
+            "output_example_label": "Corrected sentence:",
+            "prompt_footer": "Sentence: <input_text>\nCorrected sentence:"
+        },
+        "prompt_builder_instruction_optimization": {
+            "prompt_header": "",
+            "input_example_label": "Sentence:",
+            "output_example_label": "Corrected sentence:",
+            "prompt_footer": "Sentence: <input_text>\nCorrected sentence:",
+            "beam_size": 4,
+            "num_optimization_iterations": 15,
+            "rephrase_random_instructions_num_samples": 2,
+            "rephrase_random_instructions_scale_factor": 2,
+            "generate_permuted_instructions_scale_factor": 2,
+            "improve_by_feedback_scale_factor": 2,
+            "train_batch_size": 4,
+            "max_instructions_num": 20,
+            "instructions_feedback_num_trials": 3
+        },
+        "args": {
+            "config": "gec_bea/config_gec_bea.yaml",
+            "output_path": "/Users/amansaini/code/prompts-instructions-induction/gec_bea/generated_prompts/aman_15_iters"
+        }
+    },
+    "PROMPT_TEMPLATE": "* Ensure that no unnecessary changes are made to word choice, phrasing, or structure beyond correcting grammatical errors to preserve the original expression.\n* Identify and correct any grammatical or spelling errors in the given sentence while preserving the original meaning.\n* Please correct the grammatical errors in the given sentence while maintaining its original meaning.\n* Sure! Here's an instruction for the given task:\n\n\"Identify and correct any grammatical errors in the provided sentence while maintaining the original meaning as closely as possible.\"\nSentence: <input_text>\nCorrected sentence:",
+    "initial_instructions": [
+        "Identify and correct any grammatical errors present in the given sentence.",
+        "Identify and correct any grammatical errors in the given sentence to ensure it is grammatically accurate.",
+        "Identify any grammatical errors in the provided sentence and correct them, ensuring the sentence is grammatically accurate. If the sentence is already correct, leave it unchanged."
+    ],
+    "initial_valid_score": 46.03,
+    "instructions": [
+        "Ensure that no unnecessary changes are made to word choice, phrasing, or structure beyond correcting grammatical errors to preserve the original expression.",
+        "Identify and correct any grammatical or spelling errors in the given sentence while preserving the original meaning.",
+        "Please correct the grammatical errors in the given sentence while maintaining its original meaning.",
+        "Sure! Here's an instruction for the given task:\n\n\"Identify and correct any grammatical errors in the provided sentence while maintaining the original meaning as closely as possible.\""
+    ],
+    "best_valid_score": 49.13
+}

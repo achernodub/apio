@@ -1,0 +1,11 @@
+Complex sentence: If you absolutely must specify a font size, use a relative size like font-size: 80%, not an absolute size like font-size: 8pt.
+Simple sentence: If you need a a font size, a relative size like 80% or not an absolute size like font-size 8pt.
+
+Complex sentence: If you are reading this page it is possible that this has happened to your RfA.
+Simple sentence: If you are reading this it is possible this happened to your RfA.
+
+Complex sentence: French troops land at Kilcummin in County Mayo to assist the Irish rebellion.
+Simple sentence: French troops land at Kilcummin in County Mayo. They land here to help the Irish rebellion.
+
+Complex sentence: <input_text>
+Simple sentence:

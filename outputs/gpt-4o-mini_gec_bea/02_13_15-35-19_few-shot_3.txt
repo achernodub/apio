@@ -1,0 +1,11 @@
+Sentence: The British tend to be very proud and possessive of the law, and changes may well cause illfeeling and discontent.
+Corrected sentence: The British tend to be very proud and possessive of the law, and changes may well cause ill - feeling and discontent.
+
+Sentence: This fresh start came about because of three main factors.
+Corrected sentence: This fresh start came about because of three main factors.
+
+Sentence: "Now lookee here," he said, "the question being whether you're to be let to live. You know
+Corrected sentence: "Now lookee here," he said, "the question being whether you're to be let to live. You know
+
+Sentence: <input_text>
+Corrected sentence:

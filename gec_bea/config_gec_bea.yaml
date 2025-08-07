@@ -1,0 +1,79 @@
+main:
+  use_llm_proxy: False
+  task_name: gec_bea
+  task_description: Grammatical Error Correction # Task description is included in some meta-optimization prompts
+  few_shot_num_examples: 3               # Number of examples for Few-Shot, Instruction Induction, and Instruction Optimization
+  sample_num_train: -1                   # If value is more than zero, the train dataset will be reduced to this value
+  sample_num_valid: -1                   # If value is more than zero, the validation dataset will be reduced to this value
+  sample_num_test: -1                    # If value is more than zero, the test dataset will be reduced to this value
+  save_prompt_builder_zero_shot: True                # Captain Obvious
+  save_prompt_builder_few_shot: True                 # Captain Obvious
+  save_prompt_builder_instruction_induction: True    # Captain Obvious
+  save_prompt_builder_mixed: False                   # Captain Obvious
+  save_prompt_builder_instruction_optimization: True # Captain Obvious
+
+backend_llm: # LLM parameters for prompt-generation
+  #model_name: gpt-4o
+  model_name: gpt-4o-mini
+  temperature: 0.0
+  max_output_tokens: 256
+  num_threads: 40
+  top_p: 0.1
+
+prompt_builder_llm: # LLM parameters for prompt-optimization
+  #model_name: gpt-4o
+  model_name: gpt-4o-mini
+  temperature: 1.0
+  max_output_tokens: 4096
+  num_threads: 40
+  top_p: 1.0
+
+prompt_builder_zero_shot:
+  prompt_header: ""
+  prompt_footer: "Reply with a corrected version of the sentence with all grammatical and spelling errors fixed. If
+there are no errors, reply with a copy of the original sentence.\nInput sentence: <input_text>\nCorrected sentence:"
+
+prompt_builder_few_shot:
+  prompt_header: ""
+  input_example_label: "Sentence:"
+  output_example_label: "Corrected sentence:"
+  prompt_footer: "Sentence: <input_text>\nCorrected sentence:"
+  random_search_num_trials: 10
+
+prompt_builder_instruction_induction:
+  prompt_header: ""
+  input_example_label: "Sentence:"
+  output_example_label: "Corrected sentence:"
+  prompt_footer: "Sentence: <input_text>\nCorrected sentence:"
+  random_search_num_trials: 10
+
+prompt_builder_mixed:
+  prompt_header: ""
+  input_example_label: "Sentence:"
+  output_example_label: "Corrected sentence:"
+  prompt_footer: "Sentence: <input_text>\nCorrected sentence:"
+
+prompt_builder_instruction_optimization:
+  prompt_header: ""
+  input_example_label: "Sentence:"
+  output_example_label: "Corrected sentence:"
+  prompt_footer: "Sentence: <input_text>\nCorrected sentence:"
+  beam_size: 4                                    # Beam size of optimization. This is the number of best samples which stay after each epoch.
+  num_optimization_iterations: 15                 # Number of optimization epochs.
+  rephrase_random_instructions_num_samples: 2     # Number of instructions to rephrase. They are choosen randomly.
+  rephrase_random_instructions_scale_factor: 2    # Number of prompts where a few instructions are rephrased.
+  generate_permuted_instructions_scale_factor: 2  # Number of prompts where the instructions are randomly permuted.
+  improve_by_feedback_scale_factor: 2             # Number of prompts where the instructions are improved using feedback.
+  train_batch_size: 4                             # Train batch size.
+  max_instructions_num: 20                        # Maximum number of instructions in prompt
+  instructions_feedback_num_trials: 3             # Number of trials for each train batch
+  # Use the parameters below to run the pipeline quickly as a smoke test
+  #beam_size: 2                                     # For debug purposes
+  #num_optimization_iterations: 3                   # For debug purposes
+  #rephrase_random_instructions_num_samples: 3      # For debug purposes
+  #rephrase_random_instructions_scale_factor: 2     # For debug purposes
+  #generate_permuted_instructions_scale_factor: 1   # For debug purposes
+  #improve_by_feedback_scale_factor: 1              # For debug purposes
+  #train_batch_size: 4                              # For debug purposes
+  #max_instructions_num: 15                         # For debug purposes
+  #instructions_feedback_num_trials: 3              # For debug purposes

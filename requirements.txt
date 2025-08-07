@@ -1,0 +1,9 @@
+openai==1.58.1
+nltk==3.9.1
+python-Levenshtein==0.26.1
+litellm==1.57.0
+errant==3.0.0
+pep-talk
+sacremoses
+vertexai
+scipy

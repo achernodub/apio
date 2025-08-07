@@ -1,0 +1,794 @@
+{
+    "config": {
+        "main": {
+            "use_llm_proxy": true,
+            "task_name": "gec_bea",
+            "task_description": "Grammatical Error Correction",
+            "few_shot_num_examples": 3,
+            "sample_num_train": -1,
+            "sample_num_valid": -1,
+            "sample_num_test": -1,
+            "save_prompt_builder_zero_shot": true,
+            "save_prompt_builder_few_shot": true,
+            "save_prompt_builder_instruction_induction": true,
+            "save_prompt_builder_mixed": false,
+            "save_prompt_builder_instruction_optimization": true
+        },
+        "backend_llm": {
+            "model_name": "gpt-4o",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "num_threads": 40,
+            "top_p": 0.1
+        },
+        "prompt_builder_llm": {
+            "model_name": "gpt-4o",
+            "temperature": 1.0,
+            "max_output_tokens": 4096,
+            "num_threads": 40,
+            "top_p": 1.0
+        },
+        "prompt_builder_zero_shot": {
+            "prompt_header": "",
+            "prompt_footer": "Reply with a corrected version of the sentence with all grammatical and spelling errors fixed. If there are no errors, reply with a copy of the original sentence.\nInput sentence: <input_text>\nCorrected sentence:"
+        },
+        "prompt_builder_few_shot": {
+            "prompt_header": "",
+            "input_example_label": "Sentence:",
+            "output_example_label": "Corrected sentence:",
+            "prompt_footer": "Sentence: <input_text>\nCorrected sentence:",
+            "random_search_num_trials": 10
+        },
+        "prompt_builder_instruction_induction": {
+            "prompt_header": "",
+            "input_example_label": "Sentence:",
+            "output_example_label": "Corrected sentence:",
+            "prompt_footer": "Sentence: <input_text>\nCorrected sentence:",
+            "random_search_num_trials": 10
+        },
+        "prompt_builder_mixed": {
+            "prompt_header": "",
+            "input_example_label": "Sentence:",
+            "output_example_label": "Corrected sentence:",
+            "prompt_footer": "Sentence: <input_text>\nCorrected sentence:"
+        },
+        "prompt_builder_instruction_optimization": {
+            "prompt_header": "",
+            "input_example_label": "Sentence:",
+            "output_example_label": "Corrected sentence:",
+            "prompt_footer": "Sentence: <input_text>\nCorrected sentence:",
+            "beam_size": 4,
+            "num_optimization_iterations": 15,
+            "rephrase_random_instructions_num_samples": 2,
+            "rephrase_random_instructions_scale_factor": 2,
+            "generate_permuted_instructions_scale_factor": 2,
+            "improve_by_feedback_scale_factor": 2,
+            "train_batch_size": 4,
+            "max_instructions_num": 20,
+            "instructions_feedback_num_trials": 3
+        },
+        "args": {
+            "config": "gec_bea/config_gec_bea.yaml",
+            "output_path": "/Users/amansaini/code/prompts-instructions-induction/gec_bea/generated_prompts/aman_15_iters"
+        }
+    },
+    "PROMPT_TEMPLATE": "* Identify and correct any grammatical errors present in the given sentence.\n* Identify and correct any grammatical errors in the given sentence to ensure it is grammatically accurate.\n* Identify any grammatical errors in the provided sentence and correct them, ensuring the sentence is grammatically accurate. If the sentence is already correct, leave it unchanged.\nSentence: <input_text>\nCorrected sentence:",
+    "few_shot_input_examples": [
+        "Nowadays people have different views about reading books and watching movies.",
+        "Bodies can start their days in a test tubes.",
+        "I love to spend time doing what I like and with people I love."
+    ],
+    "few_shot_output_examples": [
+        "Nowadays, people have different views about reading books and watching movies.",
+        "Bodies can start their days in a test tube.",
+        "I love to spend time doing what I like and with people I love."
+    ],
+    "instructions": [
+        "Identify and correct any grammatical errors present in the given sentence.",
+        "Identify and correct any grammatical errors in the given sentence to ensure it is grammatically accurate.",
+        "Identify any grammatical errors in the provided sentence and correct them, ensuring the sentence is grammatically accurate. If the sentence is already correct, leave it unchanged."
+    ],
+    "TEST_SCORE": 45.629999999999995,
+    "llm_outputs": [
+        {
+            "input": "Dear Sir,",
+            "references": [
+                "Dear Sir ,"
+            ],
+            "output": "It's difficult to answer the question \"What are you going to do in the future?\" if the only one who has to know is in two minds."
+        },
+        {
+            "input": "I have seen your advertisement for a job on the internet and I am writing to apply for a summer job as an instructor and keeper of children in your camp.",
+            "references": [
+                "I have seen your advertisement for a job on the internet and I am writing to apply for a summer job as an instructor and keeper of children in your camp ."
+            ],
+            "output": "When I was younger, I used to say that I wanted to be a teacher, a saleswoman, and even a butcher. I don't know why."
+        },
+        {
+            "input": "I am working as a teacher in Spanish school with children aged between 8 and 14.",
+            "references": [
+                "I am working as a teacher in Spanish school with children aged between 8 and 14 ."
+            ],
+            "output": "I would like to study psychology because one day I would like to open my own psychology office and help people."
+        },
+        {
+            "input": "I am an easy going person with a lot of empathy for children.",
+            "references": [
+                "I am an easy going person with a lot of empathy for children ."
+            ],
+            "output": "It's difficult because I'll have to study hard and a lot, but I think that if you like a subject, you'll study it more easily."
+        },
+        {
+            "input": "On the other hand, in my leisure time, I usually do sports like jogging or swimming, adventures activities like trekking, climbing o espeleology too for 20 years ago.",
+            "references": [
+                "On the other hand , in my leisure time , I usually do sports like jogging or swimming , adventures activities like trekking , climbing o espeleology too for 20 years ago ."
+            ],
+            "output": "The sentence is already grammatically correct. No changes are needed."
+        },
+        {
+            "input": "I have travelled around most of European countries and I be able to understanding, talking and writin highly three languages: Spanish, English and French.",
+            "references": [
+                "I have travelled around most of European countries and I be able to understanding , talking and writin highly three languages : Spanish , English and French ."
+            ],
+            "output": "I think that public transport will always be important in the future."
+        },
+        {
+            "input": "It is the reason which I believe that I could be suitable candidate for the job.",
+            "references": [
+                "It is the reason which I believe that I could be suitable candidate for the job ."
+            ],
+            "output": "The rich people will buy a car, but the poor people always need to use a bus or taxi."
+        },
+        {
+            "input": "I would like to tell you I will be able to work in the months of July and August.",
+            "references": [
+                "I would like to tell you I will be able to work in the months of July and August ."
+            ],
+            "output": "I consider that it is more convenient to drive a car because you can carry more things in your own car than when traveling by bus."
+        },
+        {
+            "input": "I hope it is not been involved an inconvenience to you.",
+            "references": [
+                "I hope it is not been involved an inconvenience to you ."
+            ],
+            "output": "Also, you'll meet friendly people who usually ask you to be friends and exchange telephone numbers."
+        },
+        {
+            "input": "To the end, Could you please tell me what salary you are offering for his job?",
+            "references": [
+                "To the end , Could you please tell me what salary you are offering for his job ?"
+            ],
+            "output": "In my experience, when I didn't have a car, I used to take the bus to go to school and return to my house."
+        },
+        {
+            "input": "I look forward to hearing from you.",
+            "references": [
+                "I look forward to hearing from you ."
+            ],
+            "output": "In my opinion, a car isn't necessary when you have crashed in the street; in that moment, you realize the importance of public transport."
+        },
+        {
+            "input": "Best regards,",
+            "references": [
+                "Best regards ,"
+            ],
+            "output": "In India, we have various types of public transport, such as cycling, biking, cars, trains, and flights."
+        },
+        {
+            "input": "Mirta Rojo",
+            "references": [
+                "Mirta Rojo"
+            ],
+            "output": "Depending on the distance and duration to the desired place, the mode of transport is chosen accordingly."
+        },
+        {
+            "input": "Hi. I am so happy to write here .My favorite sport it ride of the bike (Bicycle).",
+            "references": [
+                "Hi . I am so happy to write here .My favorite sport it ride of the bike ( Bicycle ) ."
+            ],
+            "output": "Generally speaking, traveling by car is much more fun compared to other modes of transport."
+        },
+        {
+            "input": "It is nice and good sport specially when we try at morning .It is give to the body the energy as well as regular the work of the heart.",
+            "references": [
+                "It is nice and good sport specially when we try at morning .It is give to the body the energy as well as regular the work of the heart ."
+            ],
+            "output": "This reminds me of a trip that I recently went on to Agra."
+        },
+        {
+            "input": "For me, i used this kind of sport for ten minutes daily .I do this sport because i like it from me child.",
+            "references": [
+                "For me , i used this kind of sport for ten minutes daily .I do this sport because i like it from me child ."
+            ],
+            "output": "It takes around 6 hours by national highway to go from Delhi to Agra."
+        },
+        {
+            "input": "My advice to any one start learn this sport to become carefully from the accident becaouse it is need more concentration from the person to ride .That is all.",
+            "references": [
+                "My advice to any one start learn this sport to become carefully from the accident becaouse it is need more concentration from the person to ride .That is all ."
+            ],
+            "output": "We have stopped at hotels to have food, and just in case any of us feels hungry, we purchased some snacks just before the trip."
+        },
+        {
+            "input": "Thank you",
+            "references": [
+                "Thank you"
+            ],
+            "output": "Since we have the option to wait anytime we want when we travel by car (which is impossible when traveling by train or flight)."
+        },
+        {
+            "input": "I've been study English for several years, but I'm not really sure what exactly my current goal is.",
+            "references": [
+                "I 've been study English for several years , but I 'm not really sure what exactly my current goal is ."
+            ],
+            "output": "In addition, we can also take a comfortable short nap in the back seat and wake up refreshed."
+        },
+        {
+            "input": "I've been changing the places and I don't know which one is the best for me.",
+            "references": [
+                "I've been changing the places and I do n't know which one is the best for me ."
+            ],
+            "output": "Due to the above-mentioned reasons, I am going to conclude that traveling by car is much more convenient."
+        },
+        {
+            "input": "What I'm sure about is the fact that I'm going to need an oficial certificate in order to prove that I've studied the language.",
+            "references": [
+                "What I 'm sure about is the fact that I 'm going to need an oficial certificate in order to prove that I 've studied the language ."
+            ],
+            "output": "My name is Sarah."
+        },
+        {
+            "input": "I study English because I love it and I'd like to speak very fluently and watch a movie without the subtitle.",
+            "references": [
+                "I study English because I love it and I 'd like to speak very fluently and watch a movie without the subtitle ."
+            ],
+            "output": "I am 17 years old."
+        },
+        {
+            "input": "I understand perfectly when a native speaker is talking but when I have to talk in English it's not so easy.",
+            "references": [
+                "I understand perfectly when a native speaker is talking but when I have to talk in English it 's not so easy ."
+            ],
+            "output": "I am looking forward to joining you in this year's summer camps."
+        },
+        {
+            "input": "I'm very motivated and I'm going to continue with my studies, but I need to have clear where I'm going.",
+            "references": [
+                "I 'm very motivated and I 'm going to continue with my studies , but I need to have clear where I 'm going ."
+            ],
+            "output": "I love children, and I enjoy looking after them. Also, I organized many sports activities before in my school."
+        },
+        {
+            "input": "I'd like to teach the language to little children.",
+            "references": [
+                "I 'd like to teach the language to little children ."
+            ],
+            "output": "In addition to that, I enjoy cooking."
+        },
+        {
+            "input": "Next year, I'm going to focus on speaking and perhaps I do a formal test.",
+            "references": [
+                "Next year , I 'm going to focus on speaking and perhaps I do a formal test ."
+            ],
+            "output": "My family thinks that my cooking is amazing."
+        },
+        {
+            "input": "Otherwise, I'd like to improve my grammar and writing so I'll keep on trying hard.",
+            "references": [
+                "Otherwise , I 'd like to improve my grammar and writing so I 'll keep on trying hard ."
+            ],
+            "output": "I hope that you give me the chance to join you."
+        },
+        {
+            "input": "Thank you for helping me.",
+            "references": [
+                "Thank you for helping me ."
+            ],
+            "output": "Thanks."
+        },
+        {
+            "input": "The British parliamentary electoral system is unfair and undemocratic.",
+            "references": [
+                "The British parliamentary electoral system is unfair and undemocratic ."
+            ],
+            "output": "My favourite sport is volleyball because I love playing with my friends."
+        },
+        {
+            "input": "It is, however, in my opinion, the best way for the basis of government.",
+            "references": [
+                "It is , however , in my opinion , the best way for the basis of government ."
+            ],
+            "output": "Volleyball is a sport played everywhere. When I travel to the beach, I like to play with my sister in the sand, and afterward, we go to the sea."
+        },
+        {
+            "input": "Consider a general election, in which three parties stand, X, Y, and Z, in a country of 5000 voters.",
+            "references": [
+                "Consider a general election , in which three parties stand , X , Y , and Z , in a country of 5000 voters ."
+            ],
+            "output": "It is very funny."
+        },
+        {
+            "input": "Supposing 2000 people vote for party X and 1500 vote for parties Y and Z. Party X would come into power because they had the most votes.",
+            "references": [
+                "Supposing 2000 people vote for party X and 1500 vote for parties Y and Z. Party X would come into power because they had the most votes ."
+            ],
+            "output": "When I was young, I liked playing with the ball in the playground, and my friend and I used the soccer goals as a volleyball net."
+        },
+        {
+            "input": "However there were 3000 people who did not want them to be in power, which is not the majority of the country.",
+            "references": [
+                "However there were 3000 people who did not want them to be in power , which is not the majority of the country ."
+            ],
+            "output": "Dear Jo,"
+        },
+        {
+            "input": "Also, the idea of each constituency having an MP who fights for that constituency's beliefs in parliament.",
+            "references": [
+                "Also , the idea of each constituency having an MP who fights for that constituency 's beliefs in parliament ."
+            ],
+            "output": "How are you? I'm writing to inform you that I need some advice on traveling and working in my country."
+        },
+        {
+            "input": "This has major flaws.",
+            "references": [
+                "This has major flaws ."
+            ],
+            "output": "On the one hand, in my country there are a lot of places to travel."
+        },
+        {
+            "input": "Consider, for example, the MP who recently decided she wanted to change parties.",
+            "references": [
+                "Consider , for example , the MP who recently decided she wanted to change parties ."
+            ],
+            "output": "For example: Barcelona, Madrid, Sevilla, Valencia."
+        },
+        {
+            "input": "Yes, I know it is the MP's belief's the constituents are meant to vote on the ideas of that MP but this simply isn't the case in many circumstances, the voter votes on how that party for which that MP represents is doing at the moment.",
+            "references": [
+                "Yes , I know it is the MP 's belief 's the constituents are meant to vote on the ideas of that MP but this simply is n't the case in many circumstances , the voter votes on how that party for which that MP represents is doing at the moment ."
+            ],
+            "output": "There are wonderful cities because there are a lot of things to visit. For example, in Madrid, you can visit \"Puerta del Sol\" and \"Las Cibeles."
+        },
+        {
+            "input": "Once a party is in government it is free to do as it likes, changing it's policies, until the next general election, at which point it will make hollow promises about what it will do when it next gets in power, just to gain votes.",
+            "references": [
+                "Once a party is in government it is free to do as it likes , changing it 's policies , until the next general election , at which point it will make hollow promises about what it will do when it next gets in power , just to gain votes ."
+            ],
+            "output": "I visit Madrid twice a year."
+        },
+        {
+            "input": "It is, as I said before, the best system.",
+            "references": [
+                "It is , as I said before , the best system ."
+            ],
+            "output": "All summer, I visit Sevilla because I love this city, and I suggest that you visit Sevilla."
+        },
+        {
+            "input": "Consider dictatorships, this falls at the first hurdle.",
+            "references": [
+                "Consider dictatorships , this falls at the first hurdle ."
+            ],
+            "output": "On the other hand, in my country, there are few jobs because the economy is very bad."
+        },
+        {
+            "input": "With this system any madman can control a country, having economic disasters for not only that country but other related countries.",
+            "references": [
+                "With this system any madman can control a country , having economic disasters for not only that country but other related countries ."
+            ],
+            "output": "But, if you want, I will look for a job for you."
+        },
+        {
+            "input": "There is no fair and perfect way to run a country.",
+            "references": [
+                "There is no fair and perfect way to run a country ."
+            ],
+            "output": "My best friend is looking for a person responsible for looking after her sister."
+        },
+        {
+            "input": "One please some people some of the time, but not all people all of the time.",
+            "references": [
+                "One please some people some of the time , but not all people all of the time ."
+            ],
+            "output": "Her sister is 6 years old, and you should look after her every weekend."
+        },
+        {
+            "input": "The only way a fair system of government can come about is in a group of about ten people at the most, and even then people are discontent.",
+            "references": [
+                "The only way a fair system of government can come about is in a group of about ten people at the most , and even then people are discontent ."
+            ],
+            "output": "You will be interested in this job."
+        },
+        {
+            "input": "Hi karina,",
+            "references": [
+                "Hi karina ,"
+            ],
+            "output": "Thank you for your email; it was wonderful to hear from you."
+        },
+        {
+            "input": "Thanks for your letter.",
+            "references": [
+                "Thanks for your letter ."
+            ],
+            "output": "I'm looking forward to seeing you."
+        },
+        {
+            "input": "Of course I can tell you about Dulan.",
+            "references": [
+                "Of course I can tell you about Dulan ."
+            ],
+            "output": "Take care, Laura."
+        },
+        {
+            "input": "He's 23, and he's studying electronic engineering in Kelaniya university and he's a second year student.",
+            "references": [
+                "He 's 23 , and he 's studying electronic engineering in Kelaniya university and he 's a second year student ."
+            ],
+            "output": "Today, public transport still plays an important role in the transport system, and it will continue to do so in the future."
+        },
+        {
+            "input": "He has an elder sister, who has just finished her IT degree and now she is looking for a job.",
+            "references": [
+                "He has an elder sister , who has just finished her IT degree and now she is looking for a job ."
+            ],
+            "output": "Because public transport is a cost-effective means of resource allocation in the mass transport system."
+        },
+        {
+            "input": "His mother teaches biology science for advanced level students in Ananda College - Colombo 10 and father works in Peoples' Bank as an assistant manager.",
+            "references": [
+                "His mother teaches biology science for advanced level students in Ananda College - Colombo 10 and father works in Peoples ' Bank as an assistant manager ."
+            ],
+            "output": "Also, people need not suffer the high operating costs of running their own cars."
+        },
+        {
+            "input": "he's a cool, charming and very sociable person.",
+            "references": [
+                "he 's a cool , charming and very sociable person ."
+            ],
+            "output": "But they can use a cheaper way to get to their destination, especially if it is far from home."
+        },
+        {
+            "input": "He's also sensitive.",
+            "references": [
+                "He 's also sensitive ."
+            ],
+            "output": "For example, I think that it is not affordable for an ordinary person to own a private airplane for traveling to another country."
+        },
+        {
+            "input": "When someone face a trouble, he doesn't look at others and he go forward to help them as much as he can.",
+            "references": [
+                "When someone face a trouble , he does n't look at others and he go forward to help them as much as he can ."
+            ],
+            "output": "Instead, it will be common to buy an air ticket and ride on a public plane."
+        },
+        {
+            "input": "Not only that he's a responsible and reliable guy.",
+            "references": [
+                "Not only that he 's a responsible and reliable guy ."
+            ],
+            "output": "In my opinion, public transport in the future is going to continue to be used because there are a lot of people who don't have enough money to pay for a car, even if it is used. Therefore, public transport will continue to have a future, but people are going to use cars more than buses or the underground."
+        },
+        {
+            "input": "Sometimes he borrows my personal things(laptop, pen drives) and gives me back on time as it is.",
+            "references": [
+                "Sometimes he borrows my personal things(laptop , pen drives ) and gives me back on time as it is ."
+            ],
+            "output": "If we think about it, the car is better because we don't need to wait for it as we do when waiting for the bus or underground, but in another way, a car costs more money than public transport."
+        },
+        {
+            "input": "He's incredibly hard working.that's the secret behind his exams results.",
+            "references": [
+                "He 's incredibly hard working.that's the secret behind his exams results ."
+            ],
+            "output": "By car, we can just stay by ourselves, which can be good because we can listen to the music that we like, and we don't need to be around people who are unknown. However, if we choose public transport, we can meet friends or family. So, both modes of transportation are good, and cars don't necessarily need to replace public transport."
+        },
+        {
+            "input": "He likes going out with friends, watching movies and listening to music - using his hi - fi headset, so don't worry about noise!He's a good rugby player and he plays for his university team.he's crazy about computer games.",
+            "references": [
+                "He likes going out with friends , watching movies and listening to music - using his hi - fi headset , so do n't worry about noise!He 's a good rugby player and he plays for his university team.he's crazy about computer games ."
+            ],
+            "output": "If I had to choose between both modes of transportation, I think I would probably choose a car because it is better for me to go by car than to go by bus."
+        },
+        {
+            "input": "He had already finished many famous computer games when we left school, but he knows the limit and knows how to manage with studies without any disturbance.",
+            "references": [
+                "He had already finished many famous computer games when we left school , but he knows the limit and knows how to manage with studies without any disturbance ."
+            ],
+            "output": "In my community, we are very interested in the environment and ecological things."
+        },
+        {
+            "input": "He's keen on sports cars.",
+            "references": [
+                "He 's keen on sports cars ."
+            ],
+            "output": "We have solar panels and a place to make compost in the last garden, with worms that eat and degrade all the organic waste from the school."
+        },
+        {
+            "input": "He has a large collection of pictures and videos about sports cars.",
+            "references": [
+                "He has a large collection of pictures and videos about sports cars ."
+            ],
+            "output": "In some strategic points of the building, we have special trashcans to separate the garbage into organic, paper and cardboard, cans, and PET bottles, and they also hold talks and presentations about environmental problems like global warming and contamination."
+        },
+        {
+            "input": "Also he has a quite good knowledge about automobiles.",
+            "references": [
+                "Also he has a quite good knowledge about automobiles ."
+            ],
+            "output": "The manager of all these projects is Miss June Sid, our science teacher."
+        },
+        {
+            "input": "I know most of the time he does some repairs himself.",
+            "references": [
+                "I know most of the time he does some repairs himself ."
+            ],
+            "output": "All these initiatives have made us, over the years, a recognized ecological community."
+        },
+        {
+            "input": "So it may be helpful for you during his holiday.",
+            "references": [
+                "So it may be helpful for you during his holiday ."
+            ],
+            "output": "Good morning, everyone. Today I want to share with you my favorite sport."
+        },
+        {
+            "input": "The only negative things I can think of are he's a bit untidy and not well organised.",
+            "references": [
+                "The only negative things I can think of are he 's a bit untidy and not well organised ."
+            ],
+            "output": "My favorite sport is football. Why do I choose it? Well, football is an international sport, and people around the world love it so much! Examples include the Barclays Premier League, the Premier League, the FIFA World Cup, and so on."
+        },
+        {
+            "input": "His room is usually in a mess and sometimes he looks for his belongings for hours.",
+            "references": [
+                "His room is usually in a mess and sometimes he looks for his belongings for hours ."
+            ],
+            "output": "I believe that will delight us all."
+        },
+        {
+            "input": "His English writing is very well, but he isn't a fluent speaker. I'm sure he'll learn it fast.",
+            "references": [
+                "His English writing is very well , but he is n't a fluent speaker . I'm sure he 'll learn it fast ."
+            ],
+            "output": "By the way, my favorite football team is Manchester United. They are brilliant, they have amazing football players, and they are awesome."
+        },
+        {
+            "input": "Finally I think he's really nice and that you and your family will get on well with him.",
+            "references": [
+                "Finally I think he 's really nice and that you and your family will get on well with him ."
+            ],
+            "output": "Michael was a little kid when he had a dream: to be a superhero!"
+        },
+        {
+            "input": "I hope above information is useful.",
+            "references": [
+                "I hope above information is useful ."
+            ],
+            "output": "After many years, he still dreams of becoming a superhero."
+        },
+        {
+            "input": "Let me know if you need more information about him.",
+            "references": [
+                "Let me know if you need more information about him ."
+            ],
+            "output": "He entered the university of medicine because he thinks that this profession is the most similar to being a superhero."
+        },
+        {
+            "input": "Love,",
+            "references": [
+                "Love ,"
+            ],
+            "output": "After some years at the university, he met a girl named Kate, and he fell in love with her, and she fell in love with him."
+        },
+        {
+            "input": "Lioyni",
+            "references": [
+                "Lioyni"
+            ],
+            "output": "Kate was cursing the University of Fashion."
+        },
+        {
+            "input": "A very important characteristic of the UK constitution, and one which is central to the question of sovereignty, is that it is the Westminster Parliament that is the supreme legal authority in the UK.",
+            "references": [
+                "A very important characteristic of the UK constitution , and one which is central to the question of sovereignty , is that it is the Westminster Parliament that is the supreme legal authority in the UK ."
+            ],
+            "output": "The sentence \"Then the two started to date.\" is grammatically correct. No changes are needed."
+        },
+        {
+            "input": "According to the orthodox school which subscribes to the views of Albert Venn Dicey, the Westminster Parliament is omnicompetent and can pass laws on any subject it likes to regulate the activities of any person, anywhere, even those of aliens outside British territory.",
+            "references": [
+                "According to the orthodox school which subscribes to the views of Albert Venn Dicey , the Westminster Parliament is omnicompetent and can pass laws on any subject it likes to regulate the activities of any person , anywhere , even those of aliens outside British territory ."
+            ],
+            "output": "Michael and Kate were so happy until one day when Michael said his dream was to be a superhero. Kate got so nervous, saying that it was ridiculous and just a child's dream, and that Michael was only dreaming, but it would never happen and that superheroes don't exist."
+        },
+        {
+            "input": "In theory, then, the Westminster Parliament could pass a law banning smoking on the streets of Paris.",
+            "references": [
+                "In theory , then , the Westminster Parliament could pass a law banning smoking on the streets of Paris ."
+            ],
+            "output": "When she said that, Michael started to cry and get mad, saying that she was lying and didn't have a heart."
+        },
+        {
+            "input": "If our Parliament did so, British courts would be obliged to accept Parliament's decision and pass judgement accordingly.",
+            "references": [
+                "If our Parliament did so , British courts would be obliged to accept Parliament 's decision and pass judgement accordingly ."
+            ],
+            "output": "The sentence is already grammatically correct. Therefore, it remains unchanged:He got so mad that he asked her to get out of his apartment."
+        },
+        {
+            "input": "Of course, in practise, as the Radical school (who believe that the Westminster Parliament is not legislatively supreme) point out, in this hypothetical situation, the Parisiens would take no notice whatever of the UK Parliament's legislation; and Parliament would in effect be fettered.",
+            "references": [
+                "Of course , in practise , as the Radical school ( who believe that the Westminster Parliament is not legislatively supreme ) point out , in this hypothetical situation , the Parisiens would take no notice whatever of the UK Parliament 's legislation ; and Parliament would in effect be fettered ."
+            ],
+            "output": "The following day, she apologized, and they were happy again."
+        },
+        {
+            "input": "Dicey said that as each Parliament is omnipotent, and therefore has the power to make or unmake any law, no Parliament could bind its successors as to the content or manner and form of subsequent legislation.",
+            "references": [
+                "Dicey said that as each Parliament is omnipotent , and therefore has the power to make or unmake any law , no Parliament could bind its successors as to the content or manner and form of subsequent legislation ."
+            ],
+            "output": "But when they get to Michael's home, they fight again, and Michael gets a knife and kills her."
+        },
+        {
+            "input": "The Radical like to point out that since the passing of the European Communities Act in 1972, the Westminster Parliament has ceded its sovereignty and supremacy to Europe.",
+            "references": [
+                "The Radical like to point out that since the passing of the European Communities Act in 1972 , the Westminster Parliament has ceded its sovereignty and supremacy to Europe ."
+            ],
+            "output": "He cried with a lot of blood around."
+        },
+        {
+            "input": "The orthodox school retaliate by pointing out that since a Westminster Parliament passed the 1972 Act thereby putting the UK into the European Communities, a future Parliament could just as easily repeal this Act, and take us out of Europe again.",
+            "references": [
+                "The orthodox school retaliate by pointing out that since a Westminster Parliament passed the 1972 Act thereby putting the UK into the European Communities , a future Parliament could just as easily repeal this Act , and take us out of Europe again ."
+            ],
+            "output": "Michael, get away from there."
+        },
+        {
+            "input": "In this case, Britain would have retained her sovereignty and Parliamentary supremacy.",
+            "references": [
+                "In this case , Britain would have retained her sovereignty and Parliamentary supremacy ."
+            ],
+            "output": "The sentence is already grammatically correct. No changes are needed."
+        },
+        {
+            "input": "Of course, this whole question is still a subject of fierce debate.",
+            "references": [
+                "Of course , this whole question is still a subject of fierce debate ."
+            ],
+            "output": "Public transportation is an important invention in human history; it brings numerous benefits to our lives."
+        },
+        {
+            "input": "British courts have avoided a head - on clash by finding ambiguity in a domestic statute and resolving that ambiguity so as to give effect to our Community obligations, or by finding that a statute passed prior to the 1972 European Communities Act is repealed by implication by that Act and does not represent the latest intention of the Westminster Parliament or by arguing that subsequent legislation was inadvertant and that the Westminster Parliament could not have intended to come into conflict with community law.",
+            "references": [
+                "British courts have avoided a head - on clash by finding ambiguity in a domestic statute and resolving that ambiguity so as to give effect to our Community obligations , or by finding that a statute passed prior to the 1972 European Communities Act is repealed by implication by that Act and does not represent the latest intention of the Westminster Parliament or by arguing that subsequent legislation was inadvertant and that the Westminster Parliament could not have intended to come into conflict with community law ."
+            ],
+            "output": "For instance, we take the subway in order to avoid getting stuck in traffic."
+        },
+        {
+            "input": "In a recent development, the European Court of Justice rule in the case of R v Secretary of State for Transport ex parte Factortame and others (1990) that courts in Britain must suspend an Act of the Westminster Parliament where the rights of the citizens guaranteed by European Community law may be at risk.",
+            "references": [
+                "In a recent development , the European Court of Justice rule in the case of R v Secretary of State for Transport ex parte Factortame and others ( 1990 ) that courts in Britain must suspend an Act of the Westminster Parliament where the rights of the citizens guaranteed by European Community law may be at risk ."
+            ],
+            "output": "It is true that moving by car is more convenient than taking public transportation; however, it would cause more damage to our lives and harm our environment."
+        },
+        {
+            "input": "This case for the first time said that it is a principle of UK law as influenced by the European Court that our Parliament is not supreme in every circumstance.",
+            "references": [
+                "This case for the first time said that it is a principle of UK law as influenced by the European Court that our Parliament is not supreme in every circumstance ."
+            ],
+            "output": "Therefore, we need to think more about our future, our offspring."
+        },
+        {
+            "input": "It would seem, therefore, that the advent of a single Europe is indeed meaning a loss of sovereignty for Britain, whatever the orthodox school may think to the contrary.",
+            "references": [
+                "It would seem , therefore , that the advent of a single Europe is indeed meaning a loss of sovereignty for Britain , whatever the orthodox school may think to the contrary ."
+            ],
+            "output": "To give them a safe, clean, and comfortable place to live."
+        },
+        {
+            "input": "Young people are interested in many things like games, music, television programmes and the clothes they wear.",
+            "references": [
+                "Young people are interested in many things like games , music , television programmes and the clothes they wear ."
+            ],
+            "output": "If there is no public transportation, traffic jams will be more serious than before."
+        },
+        {
+            "input": "young people like children they like to play games, listen to music, watch TV, wear special clothes.",
+            "references": [
+                "young people like children they like to play games , listen to music , watch TV , wear special clothes ."
+            ],
+            "output": "In my country, Taipei, we always get stuck in traffic for about one hour in the morning."
+        },
+        {
+            "input": "Now in 2015 the game that young people are interested in is speed stack.",
+            "references": [
+                "Now in 2015 the game that young people are interested in is speed stack ."
+            ],
+            "output": "I cannot imagine how long it would take to get to school if there were no bus or MRT."
+        },
+        {
+            "input": "In music they are interested in Taylor Swift songs because they are so wonderful even me hear it every day.",
+            "references": [
+                "In music they are interested in Taylor Swift songs because they are so wonderful even me hear it every day ."
+            ],
+            "output": "Cars are convenient for humans, but they also cause damage to humans."
+        },
+        {
+            "input": "Television programmes actually young people don't like them but they like channels that have horror films, romantic films and films with happy ending.",
+            "references": [
+                "Television programmes actually young people do n't like them but they like channels that have horror films , romantic films and films with happy ending ."
+            ],
+            "output": "For example, carbon dioxide, which is created by cars."
+        },
+        {
+            "input": "This year there is a fantastic clothes everywhere especially in UAE.",
+            "references": [
+                "This year there is a fantastic clothes everywhere especially in UAE ."
+            ],
+            "output": "It causes global warming, which threatens our environment and harms our daily life."
+        },
+        {
+            "input": "Dear Sirs,",
+            "references": [
+                "Dear Sirs ,"
+            ],
+            "output": "We can see that there have been many serious and frequent weather disasters in recent decades, such as typhoons, hurricanes, wildfires, and mudslides."
+        },
+        {
+            "input": "I am writing in connection with your job advertisement about the summer camps in the USA.",
+            "references": [
+                "I am writing in connection with your job advertisement about the summer camps in the USA ."
+            ],
+            "output": "What other precautions are usually taken?"
+        },
+        {
+            "input": "I am a twenty - year - old student from Poland and I am looking for an interesting job for the summer holidays.",
+            "references": [
+                "I am a twenty - year - old student from Poland and I am looking for an interesting job for the summer holidays ."
+            ],
+            "output": "The NG Office is notified by the photographer when the film is shipped."
+        },
+        {
+            "input": "I would like to apply for the job you are offering and I will intend to prove that I am an appropriate candidate.",
+            "references": [
+                "I would like to apply for the job you are offering and I will intend to prove that I am an appropriate candidate ."
+            ],
+            "output": "If the film doesn't arrive on time, it will be canceled immediately."
+        },
+        {
+            "input": "In Poland I have been a Scout for ten years.",
+            "references": [
+                "In Poland I have been a Scout for ten years ."
+            ],
+            "output": "Lost shipments have been found more easily when this process is started right away."
+        },
+        {
+            "input": "There I had various tasks, one of them was looking after younger children.",
+            "references": [
+                "There I had various tasks , one of them was looking after younger children ."
+            ],
+            "output": "The pleasure of traveling"
+        },
+        {
+            "input": "I helped to organise Scout camps all over my country.",
+            "references": [
+                "I helped to organise Scout camps all over my country ."
+            ],
+            "output": "People come, people go."
+        },
+        {
+            "input": "We organised many sport and cultural actvities.",
+            "references": [
+                "We organised many sport and cultural actvities ."
+            ],
+            "output": "Every day, lots of people are traveling abroad, but what's the best way to travel internationally?"
+        },
+        {
+            "input": "Apart from being a Scout, I also have been a lifeguard on kitesurfing camps in Poland.",
+            "references": [
+                "Apart from being a Scout , I also have been a lifeguard on kitesurfing camps in Poland ."
+            ],
+            "output": "The most important option for travel is, by far, the plane."
+        }
+    ]
+}

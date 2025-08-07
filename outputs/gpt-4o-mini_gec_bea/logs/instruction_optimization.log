@@ -1,0 +1,242 @@
+2025-02-13 15:53 - INFO - 
+iter_no = 00, valid_scores = [41.33, 40.45, 39.6, 39.44]
+2025-02-13 15:53 - INFO - --------------------------------------------------------------------------------
+2025-02-13 15:53 - INFO - init_valid_score = 41.33
+2025-02-13 15:53 - INFO - best_valid_score = 41.33 [ *** BEST *** ]
+2025-02-13 15:53 - INFO - --------------------------------------------------------------------------------
+2025-02-13 15:53 - INFO - best_instructions = [
+    "Provide a corrected version of the given text while ensuring that the grammar and formatting are accurate. If the text is already correct, respond with the text as is.",
+    "Please correct the grammatical errors in the provided sentence to ensure clarity and proper usage of language.",
+    "Identify and correct the grammatical errors in the provided sentence to enhance clarity and accuracy. Ensure the revised sentence adheres to standard English grammar rules."
+]
+2025-02-13 15:53 - INFO - --------------------------------------------------------------------------------
+2025-02-13 16:09 - INFO - 
+iter_no = 01, valid_scores = [45.93, 45.269999999999996, 44.82, 44.76, 43.96, 43.95, 43.84, 43.2, 42.59, 42.15, 41.69, 41.69, 41.33, 41.07, 41.0, 40.9, 40.45, 40.29, 40.2, 39.43, 39.11, 38.800000000000004, 38.78, 38.05, 37.769999999999996, 34.699999999999996, 31.319999999999997]
+2025-02-13 16:09 - INFO - --------------------------------------------------------------------------------
+2025-02-13 16:09 - INFO - init_valid_score = 41.33
+2025-02-13 16:09 - INFO - best_valid_score = 45.93 [ *** BEST *** ]
+2025-02-13 16:09 - INFO - --------------------------------------------------------------------------------
+2025-02-13 16:09 - INFO - best_instructions = [
+    "Provide a corrected version of the given text while ensuring that the grammar and formatting are accurate. If the text is already correct, respond with the text as is.",
+    "Please correct the grammatical errors in the provided sentence to ensure clarity and proper usage of language.",
+    "The system must ensure that its corrected outputs match the original intent and phrasing of the input text, focusing on minimizing any changes to the wording. Prioritize preserving the original meaning while correcting grammatical errors, especially in cases where the differences are more pronounced.",
+    "Identify and correct the grammatical errors in the provided sentence to enhance clarity and accuracy. Ensure the revised sentence adheres to standard English grammar rules."
+]
+2025-02-13 16:09 - INFO - --------------------------------------------------------------------------------
+2025-02-13 16:25 - INFO - 
+iter_no = 02, valid_scores = [46.78, 45.67, 45.48, 45.4, 45.24, 45.24, 45.17, 45.1, 44.89, 44.690000000000005, 44.5, 44.48, 44.3, 44.21, 44.06, 44.019999999999996, 43.64, 43.63, 43.45, 43.34, 43.29, 43.28, 41.510000000000005, 41.07, 36.74]
+2025-02-13 16:25 - INFO - --------------------------------------------------------------------------------
+2025-02-13 16:25 - INFO - init_valid_score = 41.33
+2025-02-13 16:25 - INFO - best_valid_score = 46.78 [ *** BEST *** ]
+2025-02-13 16:25 - INFO - --------------------------------------------------------------------------------
+2025-02-13 16:25 - INFO - best_instructions = [
+    "Ensure that the corrected sentence matches the original phrasing and structure as closely as possible while only correcting grammatical errors. Prioritize maintaining the original word choice to minimize discrepancies.",
+    "Correct the grammatical errors in the provided sentence, ensuring proper punctuation and clarity.",
+    "Ensure that the corrected sentence retains all original phrasing while addressing grammatical errors, punctuation, and clarity to achieve a precise and accurate expression of the intended meaning. Focus on minimizing any variations in word choice or structure to align closely with the original input's context and flow.",
+    "Please review the provided sentence and identify any grammatical errors. Correct the errors to produce a grammatically accurate sentence while maintaining the original meaning.",
+    "Identify and correct any grammatical errors or awkward phrasing in the provided sentence while maintaining its original meaning and context. If the sentence is already grammatically correct, simply confirm it as is."
+]
+2025-02-13 16:25 - INFO - --------------------------------------------------------------------------------
+2025-02-13 16:38 - INFO - 
+iter_no = 03, valid_scores = [47.64, 46.71, 46.489999999999995, 46.21, 45.910000000000004, 45.69, 45.68, 45.65, 45.59, 45.34, 45.33, 45.31, 45.019999999999996, 44.97, 44.92, 44.89, 44.84, 44.67, 44.65, 43.96, 43.93, 43.76, 43.65]
+2025-02-13 16:38 - INFO - --------------------------------------------------------------------------------
+2025-02-13 16:38 - INFO - init_valid_score = 41.33
+2025-02-13 16:38 - INFO - best_valid_score = 47.64 [ *** BEST *** ]
+2025-02-13 16:38 - INFO - --------------------------------------------------------------------------------
+2025-02-13 16:38 - INFO - best_instructions = [
+    "Identify and correct the grammatical error in the given sentence to improve clarity and accuracy.",
+    "Generate a corrected version of the given sentence by identifying and fixing any grammatical errors while maintaining the original meaning.",
+    "Ensure that the corrected sentence matches the original phrasing, structure, and punctuation as closely as possible while correcting grammatical errors, with a priority on minimizing the number of differing words. Strive to maintain the original meaning in a way that eliminates any discrepancies between the output and the expected format of the input.",
+    "Given a sentence with grammatical errors, identify and correct the mistakes to produce a grammatically accurate version of the sentence.",
+    "Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, eliminating any discrepancies while correcting grammatical errors. Focus on achieving zero differing words between the output and the expected format of the input by prioritizing corrections in sentences with larger errors.",
+    "Ensure that the corrected sentence replicates the phrasing and structure of the original meaning as closely as possible, while correcting grammatical errors. Focus on achieving an identical output to the reference for enhanced accuracy and consistency."
+]
+2025-02-13 16:38 - INFO - --------------------------------------------------------------------------------
+2025-02-13 16:53 - INFO - 
+iter_no = 04, valid_scores = [47.17, 47.089999999999996, 46.78, 46.64, 46.63, 46.589999999999996, 46.379999999999995, 46.339999999999996, 46.150000000000006, 46.11, 46.03, 45.79, 45.64, 45.6, 45.58, 45.25, 45.25, 45.08, 45.06, 45.04, 44.58, 44.42, 44.269999999999996, 43.91, 43.05]
+2025-02-13 16:53 - INFO - --------------------------------------------------------------------------------
+2025-02-13 16:53 - INFO - init_valid_score = 41.33
+2025-02-13 16:53 - INFO - best_valid_score = 47.64 
+2025-02-13 16:53 - INFO - --------------------------------------------------------------------------------
+2025-02-13 16:53 - INFO - best_instructions = [
+    "Identify and correct the grammatical error in the given sentence to improve clarity and accuracy.",
+    "Generate a corrected version of the given sentence by identifying and fixing any grammatical errors while maintaining the original meaning.",
+    "Ensure that the corrected sentence matches the original phrasing, structure, and punctuation as closely as possible while correcting grammatical errors, with a priority on minimizing the number of differing words. Strive to maintain the original meaning in a way that eliminates any discrepancies between the output and the expected format of the input.",
+    "Given a sentence with grammatical errors, identify and correct the mistakes to produce a grammatically accurate version of the sentence.",
+    "Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, eliminating any discrepancies while correcting grammatical errors. Focus on achieving zero differing words between the output and the expected format of the input by prioritizing corrections in sentences with larger errors.",
+    "Ensure that the corrected sentence replicates the phrasing and structure of the original meaning as closely as possible, while correcting grammatical errors. Focus on achieving an identical output to the reference for enhanced accuracy and consistency."
+]
+2025-02-13 16:53 - INFO - --------------------------------------------------------------------------------
+2025-02-13 17:06 - INFO - 
+iter_no = 05, valid_scores = [47.599999999999994, 47.55, 47.4, 47.38, 47.12, 47.08, 47.07, 47.04, 46.949999999999996, 46.650000000000006, 46.650000000000006, 46.53, 46.48, 46.46, 46.39, 46.22, 45.87, 45.85, 45.81, 45.45, 45.42]
+2025-02-13 17:06 - INFO - --------------------------------------------------------------------------------
+2025-02-13 17:06 - INFO - init_valid_score = 41.33
+2025-02-13 17:06 - INFO - best_valid_score = 47.64 
+2025-02-13 17:06 - INFO - --------------------------------------------------------------------------------
+2025-02-13 17:06 - INFO - best_instructions = [
+    "Identify and correct the grammatical error in the given sentence to improve clarity and accuracy.",
+    "Generate a corrected version of the given sentence by identifying and fixing any grammatical errors while maintaining the original meaning.",
+    "Ensure that the corrected sentence matches the original phrasing, structure, and punctuation as closely as possible while correcting grammatical errors, with a priority on minimizing the number of differing words. Strive to maintain the original meaning in a way that eliminates any discrepancies between the output and the expected format of the input.",
+    "Given a sentence with grammatical errors, identify and correct the mistakes to produce a grammatically accurate version of the sentence.",
+    "Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, eliminating any discrepancies while correcting grammatical errors. Focus on achieving zero differing words between the output and the expected format of the input by prioritizing corrections in sentences with larger errors.",
+    "Ensure that the corrected sentence replicates the phrasing and structure of the original meaning as closely as possible, while correcting grammatical errors. Focus on achieving an identical output to the reference for enhanced accuracy and consistency."
+]
+2025-02-13 17:06 - INFO - --------------------------------------------------------------------------------
+2025-02-13 17:20 - INFO - 
+iter_no = 06, valid_scores = [47.64, 47.58, 47.349999999999994, 47.3, 47.22, 46.949999999999996, 46.82, 46.78, 46.58, 46.57, 46.5, 46.489999999999995, 46.46, 46.44, 46.300000000000004, 46.25, 46.23, 46.2, 46.14, 46.1, 45.98, 45.73, 45.17]
+2025-02-13 17:20 - INFO - --------------------------------------------------------------------------------
+2025-02-13 17:20 - INFO - init_valid_score = 41.33
+2025-02-13 17:20 - INFO - best_valid_score = 47.64 
+2025-02-13 17:20 - INFO - --------------------------------------------------------------------------------
+2025-02-13 17:20 - INFO - best_instructions = [
+    "Identify and correct the grammatical error in the given sentence to improve clarity and accuracy.",
+    "Generate a corrected version of the given sentence by identifying and fixing any grammatical errors while maintaining the original meaning.",
+    "Ensure that the corrected sentence matches the original phrasing, structure, and punctuation as closely as possible while correcting grammatical errors, with a priority on minimizing the number of differing words. Strive to maintain the original meaning in a way that eliminates any discrepancies between the output and the expected format of the input.",
+    "Given a sentence with grammatical errors, identify and correct the mistakes to produce a grammatically accurate version of the sentence.",
+    "Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, eliminating any discrepancies while correcting grammatical errors. Focus on achieving zero differing words between the output and the expected format of the input by prioritizing corrections in sentences with larger errors.",
+    "Ensure that the corrected sentence replicates the phrasing and structure of the original meaning as closely as possible, while correcting grammatical errors. Focus on achieving an identical output to the reference for enhanced accuracy and consistency."
+]
+2025-02-13 17:20 - INFO - --------------------------------------------------------------------------------
+2025-02-13 17:33 - INFO - 
+iter_no = 07, valid_scores = [47.55, 47.53, 47.42, 47.27, 47.12, 46.96, 46.949999999999996, 46.949999999999996, 46.82, 46.7, 46.7, 46.550000000000004, 46.42, 46.300000000000004, 46.14, 46.07, 46.03, 45.910000000000004, 45.83, 45.64, 45.61]
+2025-02-13 17:33 - INFO - --------------------------------------------------------------------------------
+2025-02-13 17:33 - INFO - init_valid_score = 41.33
+2025-02-13 17:33 - INFO - best_valid_score = 47.64 
+2025-02-13 17:33 - INFO - --------------------------------------------------------------------------------
+2025-02-13 17:33 - INFO - best_instructions = [
+    "Identify and correct the grammatical error in the given sentence to improve clarity and accuracy.",
+    "Generate a corrected version of the given sentence by identifying and fixing any grammatical errors while maintaining the original meaning.",
+    "Ensure that the corrected sentence matches the original phrasing, structure, and punctuation as closely as possible while correcting grammatical errors, with a priority on minimizing the number of differing words. Strive to maintain the original meaning in a way that eliminates any discrepancies between the output and the expected format of the input.",
+    "Given a sentence with grammatical errors, identify and correct the mistakes to produce a grammatically accurate version of the sentence.",
+    "Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, eliminating any discrepancies while correcting grammatical errors. Focus on achieving zero differing words between the output and the expected format of the input by prioritizing corrections in sentences with larger errors.",
+    "Ensure that the corrected sentence replicates the phrasing and structure of the original meaning as closely as possible, while correcting grammatical errors. Focus on achieving an identical output to the reference for enhanced accuracy and consistency."
+]
+2025-02-13 17:33 - INFO - --------------------------------------------------------------------------------
+2025-02-13 17:48 - INFO - 
+iter_no = 08, valid_scores = [47.69, 47.599999999999994, 47.55, 47.410000000000004, 47.32, 47.17, 47.17, 47.14, 46.949999999999996, 46.650000000000006, 46.58, 46.53, 46.52, 46.48, 46.400000000000006, 46.29, 46.21, 46.19, 46.01, 46.0, 45.45, 45.39, 44.940000000000005, 44.84]
+2025-02-13 17:48 - INFO - --------------------------------------------------------------------------------
+2025-02-13 17:48 - INFO - init_valid_score = 41.33
+2025-02-13 17:48 - INFO - best_valid_score = 47.69 [ *** BEST *** ]
+2025-02-13 17:48 - INFO - --------------------------------------------------------------------------------
+2025-02-13 17:48 - INFO - best_instructions = [
+    "Identify and correct the grammatical error in the given sentence to improve clarity and accuracy.",
+    "Generate a corrected version of the given sentence by identifying and fixing any grammatical errors while maintaining the original meaning.",
+    "Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, with the primary goal of achieving a completely identical output. Prioritize correcting any grammatical errors while maintaining the original meaning to minimize discrepancies between the output and the expected format of the input.",
+    "Ensure that the corrected sentence matches the original phrasing, structure, and punctuation as closely as possible while correcting grammatical errors, with a priority on minimizing the number of differing words. Strive to maintain the original meaning in a way that eliminates any discrepancies between the output and the expected format of the input.",
+    "Given a sentence with grammatical errors, identify and correct the mistakes to produce a grammatically accurate version of the sentence.",
+    "Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, eliminating any discrepancies while correcting grammatical errors. Focus on achieving zero differing words between the output and the expected format of the input by prioritizing corrections in sentences with larger errors.",
+    "Ensure that the corrected sentence replicates the phrasing and structure of the original meaning as closely as possible, while correcting grammatical errors. Focus on achieving an identical output to the reference for enhanced accuracy and consistency."
+]
+2025-02-13 17:48 - INFO - --------------------------------------------------------------------------------
+2025-02-13 18:01 - INFO - 
+iter_no = 09, valid_scores = [47.64, 47.64, 47.64, 47.3, 47.29, 46.910000000000004, 46.910000000000004, 46.82, 46.73, 46.69, 46.61, 46.46, 46.410000000000004, 46.33, 46.26, 45.95, 45.85, 45.81, 45.58, 45.36, 45.08, 44.5]
+2025-02-13 18:01 - INFO - --------------------------------------------------------------------------------
+2025-02-13 18:01 - INFO - init_valid_score = 41.33
+2025-02-13 18:01 - INFO - best_valid_score = 47.69 
+2025-02-13 18:01 - INFO - --------------------------------------------------------------------------------
+2025-02-13 18:01 - INFO - best_instructions = [
+    "Identify and correct the grammatical error in the given sentence to improve clarity and accuracy.",
+    "Generate a corrected version of the given sentence by identifying and fixing any grammatical errors while maintaining the original meaning.",
+    "Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, with the primary goal of achieving a completely identical output. Prioritize correcting any grammatical errors while maintaining the original meaning to minimize discrepancies between the output and the expected format of the input.",
+    "Ensure that the corrected sentence matches the original phrasing, structure, and punctuation as closely as possible while correcting grammatical errors, with a priority on minimizing the number of differing words. Strive to maintain the original meaning in a way that eliminates any discrepancies between the output and the expected format of the input.",
+    "Given a sentence with grammatical errors, identify and correct the mistakes to produce a grammatically accurate version of the sentence.",
+    "Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, eliminating any discrepancies while correcting grammatical errors. Focus on achieving zero differing words between the output and the expected format of the input by prioritizing corrections in sentences with larger errors.",
+    "Ensure that the corrected sentence replicates the phrasing and structure of the original meaning as closely as possible, while correcting grammatical errors. Focus on achieving an identical output to the reference for enhanced accuracy and consistency."
+]
+2025-02-13 18:01 - INFO - --------------------------------------------------------------------------------
+2025-02-13 18:17 - INFO - 
+iter_no = 10, valid_scores = [47.85, 47.599999999999994, 47.410000000000004, 47.32, 47.3, 47.260000000000005, 47.17, 47.17, 47.03, 46.949999999999996, 46.910000000000004, 46.82, 46.78, 46.69, 46.5, 46.44, 46.2, 46.12, 46.050000000000004, 45.989999999999995, 45.800000000000004, 45.79, 45.78, 45.769999999999996, 44.95]
+2025-02-13 18:17 - INFO - --------------------------------------------------------------------------------
+2025-02-13 18:17 - INFO - init_valid_score = 41.33
+2025-02-13 18:17 - INFO - best_valid_score = 47.85 [ *** BEST *** ]
+2025-02-13 18:17 - INFO - --------------------------------------------------------------------------------
+2025-02-13 18:17 - INFO - best_instructions = [
+    "Identify and correct the grammatical error in the given sentence to improve clarity and accuracy.",
+    "Generate a corrected version of the given sentence by identifying and fixing any grammatical errors while maintaining the original meaning.",
+    "Make sure the output closely mirrors the input in phrasing, structure, and punctuation, aiming for an identical result. Focus on correcting grammatical mistakes while preserving the original intent to reduce any differences between the output and the input format.",
+    "Ensure that the corrected sentence matches the original phrasing, structure, and punctuation as closely as possible while correcting grammatical errors, with a priority on minimizing the number of differing words. Strive to maintain the original meaning in a way that eliminates any discrepancies between the output and the expected format of the input.",
+    "Given a sentence with grammatical errors, identify and correct the mistakes to produce a grammatically accurate version of the sentence.",
+    "Make sure the output matches the input's phrasing, structure, and punctuation perfectly, addressing any grammatical mistakes. Aim for no differences in wording between the output and the intended input format, prioritizing corrections in sentences with significant errors.",
+    "Ensure that the corrected sentence replicates the phrasing and structure of the original meaning as closely as possible, while correcting grammatical errors. Focus on achieving an identical output to the reference for enhanced accuracy and consistency."
+]
+2025-02-13 18:17 - INFO - --------------------------------------------------------------------------------
+2025-02-13 18:31 - INFO - 
+iter_no = 11, valid_scores = [48.22, 47.82, 47.58, 47.47, 47.349999999999994, 47.33, 47.22, 46.949999999999996, 46.550000000000004, 46.53, 46.52, 46.51, 46.48, 46.050000000000004, 45.800000000000004, 45.769999999999996, 45.75, 45.73, 45.64, 45.629999999999995, 45.61, 45.26, 44.91]
+2025-02-13 18:31 - INFO - --------------------------------------------------------------------------------
+2025-02-13 18:31 - INFO - init_valid_score = 41.33
+2025-02-13 18:31 - INFO - best_valid_score = 48.22 [ *** BEST *** ]
+2025-02-13 18:31 - INFO - --------------------------------------------------------------------------------
+2025-02-13 18:31 - INFO - best_instructions = [
+    "Identify and correct the grammatical error in the given sentence to improve clarity and accuracy.",
+    "Generate a corrected version of the given sentence by identifying and fixing any grammatical errors while maintaining the original meaning.",
+    "Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, with the primary goal of achieving a completely identical output. Prioritize correcting any grammatical errors while maintaining the original meaning to minimize discrepancies between the output and the expected format of the input.",
+    "Ensure that the corrected sentence matches the original phrasing, structure, and punctuation as closely as possible while correcting grammatical errors, with a priority on minimizing the number of differing words. Strive to maintain the original meaning in a way that eliminates any discrepancies between the output and the expected format of the input.",
+    "Given a sentence with grammatical errors, identify and correct the mistakes to produce a grammatically accurate version of the sentence.",
+    "Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, eliminating any discrepancies while correcting grammatical errors. Focus on achieving zero differing words between the output and the expected format of the input by prioritizing corrections in sentences with larger errors.",
+    "Ensure that the corrected sentence replicates the phrasing and structure of the original meaning as closely as possible, while correcting grammatical errors. Focus on achieving an identical output to the reference for enhanced accuracy and consistency."
+]
+2025-02-13 18:31 - INFO - --------------------------------------------------------------------------------
+2025-02-13 18:45 - INFO - 
+iter_no = 12, valid_scores = [48.199999999999996, 47.47, 47.24, 47.199999999999996, 47.12, 47.08, 46.949999999999996, 46.910000000000004, 46.82, 46.78, 46.739999999999995, 46.64, 46.489999999999995, 46.2, 46.14, 46.12, 46.03, 45.76, 45.58, 45.48, 45.33, 44.91]
+2025-02-13 18:45 - INFO - --------------------------------------------------------------------------------
+2025-02-13 18:45 - INFO - init_valid_score = 41.33
+2025-02-13 18:45 - INFO - best_valid_score = 48.22 
+2025-02-13 18:45 - INFO - --------------------------------------------------------------------------------
+2025-02-13 18:45 - INFO - best_instructions = [
+    "Identify and correct the grammatical error in the given sentence to improve clarity and accuracy.",
+    "Generate a corrected version of the given sentence by identifying and fixing any grammatical errors while maintaining the original meaning.",
+    "Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, with the primary goal of achieving a completely identical output. Prioritize correcting any grammatical errors while maintaining the original meaning to minimize discrepancies between the output and the expected format of the input.",
+    "Ensure that the corrected sentence matches the original phrasing, structure, and punctuation as closely as possible while correcting grammatical errors, with a priority on minimizing the number of differing words. Strive to maintain the original meaning in a way that eliminates any discrepancies between the output and the expected format of the input.",
+    "Given a sentence with grammatical errors, identify and correct the mistakes to produce a grammatically accurate version of the sentence.",
+    "Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, eliminating any discrepancies while correcting grammatical errors. Focus on achieving zero differing words between the output and the expected format of the input by prioritizing corrections in sentences with larger errors.",
+    "Ensure that the corrected sentence replicates the phrasing and structure of the original meaning as closely as possible, while correcting grammatical errors. Focus on achieving an identical output to the reference for enhanced accuracy and consistency."
+]
+2025-02-13 18:45 - INFO - --------------------------------------------------------------------------------
+2025-02-13 19:00 - INFO - 
+iter_no = 13, valid_scores = [48.339999999999996, 47.81, 47.57, 47.39, 47.339999999999996, 47.3, 47.29, 47.03, 46.989999999999995, 46.949999999999996, 46.949999999999996, 46.949999999999996, 46.949999999999996, 46.7, 46.589999999999996, 46.54, 46.400000000000006, 46.32, 46.1, 46.08, 45.910000000000004, 45.85, 45.75, 45.42]
+2025-02-13 19:00 - INFO - --------------------------------------------------------------------------------
+2025-02-13 19:00 - INFO - init_valid_score = 41.33
+2025-02-13 19:00 - INFO - best_valid_score = 48.34 [ *** BEST *** ]
+2025-02-13 19:00 - INFO - --------------------------------------------------------------------------------
+2025-02-13 19:00 - INFO - best_instructions = [
+    "Identify and correct the grammatical error in the given sentence to improve clarity and accuracy.",
+    "Generate a corrected version of the given sentence by identifying and fixing any grammatical errors while maintaining the original meaning.",
+    "Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, with the primary goal of achieving a completely identical output. Prioritize correcting any grammatical errors while maintaining the original meaning to minimize discrepancies between the output and the expected format of the input.",
+    "Ensure that the corrected sentence matches the original phrasing, structure, and punctuation as closely as possible while correcting grammatical errors, with a priority on minimizing the number of differing words. Strive to maintain the original meaning in a way that eliminates any discrepancies between the output and the expected format of the input.",
+    "Given a sentence with grammatical errors, identify and correct the mistakes to produce a grammatically accurate version of the sentence.",
+    "Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, eliminating any discrepancies while correcting grammatical errors. Focus on achieving zero differing words between the output and the expected format of the input by prioritizing corrections in sentences with larger errors.",
+    "Ensure that the corrected sentence replicates the phrasing and structure of the original meaning as closely as possible, while correcting grammatical errors. Focus on achieving an identical output to the reference for enhanced accuracy and consistency."
+]
+2025-02-13 19:00 - INFO - --------------------------------------------------------------------------------
+2025-02-13 19:13 - INFO - 
+iter_no = 14, valid_scores = [48.61, 48.309999999999995, 47.92, 47.67, 47.599999999999994, 47.449999999999996, 47.410000000000004, 46.989999999999995, 46.86, 46.73, 46.64, 46.489999999999995, 46.300000000000004, 46.26, 46.2, 45.96, 45.910000000000004, 45.45, 45.269999999999996, 45.08, 44.879999999999995]
+2025-02-13 19:13 - INFO - --------------------------------------------------------------------------------
+2025-02-13 19:13 - INFO - init_valid_score = 41.33
+2025-02-13 19:13 - INFO - best_valid_score = 48.61 [ *** BEST *** ]
+2025-02-13 19:13 - INFO - --------------------------------------------------------------------------------
+2025-02-13 19:13 - INFO - best_instructions = [
+    "Identify and correct the grammatical error in the given sentence to improve clarity and accuracy.",
+    "Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, with the primary goal of achieving a completely identical output. Prioritize correcting any grammatical errors while maintaining the original meaning to minimize discrepancies between the output and the expected format of the input.",
+    "Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, eliminating any discrepancies while correcting grammatical errors. Focus on achieving zero differing words between the output and the expected format of the input by prioritizing corrections in sentences with larger errors.",
+    "Ensure that the corrected sentence matches the original phrasing, structure, and punctuation as closely as possible while correcting grammatical errors, with a priority on minimizing the number of differing words. Strive to maintain the original meaning in a way that eliminates any discrepancies between the output and the expected format of the input.",
+    "Given a sentence with grammatical errors, identify and correct the mistakes to produce a grammatically accurate version of the sentence.",
+    "Ensure that the corrected sentence replicates the phrasing and structure of the original meaning as closely as possible, while correcting grammatical errors. Focus on achieving an identical output to the reference for enhanced accuracy and consistency.",
+    "Generate a corrected version of the given sentence by identifying and fixing any grammatical errors while maintaining the original meaning."
+]
+2025-02-13 19:13 - INFO - --------------------------------------------------------------------------------
+2025-02-13 19:27 - INFO - 
+iter_no = 15, valid_scores = [48.67, 48.0, 47.94, 47.8, 47.18, 47.089999999999996, 47.08, 46.589999999999996, 46.550000000000004, 46.489999999999995, 46.32, 46.300000000000004, 46.300000000000004, 46.25, 46.01, 45.61, 45.39, 45.36, 45.29, 44.85]
+2025-02-13 19:27 - INFO - --------------------------------------------------------------------------------
+2025-02-13 19:27 - INFO - init_valid_score = 41.33
+2025-02-13 19:27 - INFO - best_valid_score = 48.67 [ *** BEST *** ]
+2025-02-13 19:27 - INFO - --------------------------------------------------------------------------------
+2025-02-13 19:27 - INFO - best_instructions = [
+    "Given a sentence with grammatical errors, identify and correct the mistakes to produce a grammatically accurate version of the sentence.",
+    "Ensure that the output replicates the phrasing, structure, and punctuation of the input exactly, with the primary goal of achieving a completely identical output. Prioritize correcting any grammatical errors while maintaining the original meaning to minimize discrepancies between the output and the expected format of the input.",
+    "Ensure that the corrected sentence matches the original phrasing, structure, and punctuation as closely as possible while correcting grammatical errors, with a priority on minimizing the number of differing words. Strive to maintain the original meaning in a way that eliminates any discrepancies between the output and the expected format of the input.",
+    "Generate a corrected version of the given sentence by identifying and fixing any grammatical errors while maintaining the original meaning.",
+    "Make sure the revised sentence closely mirrors the phrasing and structure of the original meaning while addressing any grammatical mistakes. Aim for an output that is as identical to the reference as possible to ensure accuracy and consistency.",
+    "Identify and correct the grammatical error in the given sentence to improve clarity and accuracy.",
+    "Make certain that the output mirrors the original phrasing, structure, and punctuation precisely, rectifying grammatical mistakes without introducing any discrepancies. Aim for no variations in wording between the output and the original format, prioritizing corrections in sentences with more significant errors."
+]
+2025-02-13 19:27 - INFO - --------------------------------------------------------------------------------

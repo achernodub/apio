@@ -1,0 +1,1293 @@
+{
+    "config": {
+        "main": {
+            "task_name": "text_simplification",
+            "task_description": "Text Simplification",
+            "few_shot_num_examples": 3,
+            "sample_num_train": -1,
+            "sample_num_valid": -1,
+            "sample_num_test": -1,
+            "save_prompt_builder_zero_shot": true,
+            "save_prompt_builder_few_shot": true,
+            "save_prompt_builder_instruction_induction": true,
+            "save_prompt_builder_mixed": false,
+            "save_prompt_builder_instruction_optimization": true
+        },
+        "backend_llm": {
+            "model_name": "gpt-4o-mini",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "num_threads": 30,
+            "top_p": 0.1
+        },
+        "prompt_builder_llm": {
+            "model_name": "gpt-4o-mini",
+            "temperature": 1.0,
+            "max_output_tokens": 4096,
+            "num_threads": 30,
+            "top_p": 1.0
+        },
+        "prompt_builder_zero_shot": {
+            "prompt_header": "Rewrite to make this easier to understand: <input_text>",
+            "prompt_footer": "\nANSWER:"
+        },
+        "prompt_builder_few_shot": {
+            "prompt_header": "",
+            "input_example_label": "Complex sentence:",
+            "output_example_label": "Simple sentence:",
+            "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:",
+            "random_search_num_trials": 10
+        },
+        "prompt_builder_instruction_induction": {
+            "prompt_header": "",
+            "input_example_label": "Complex sentence:",
+            "output_example_label": "Simple sentence:",
+            "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:",
+            "random_search_num_trials": 10
+        },
+        "prompt_builder_mixed": {
+            "prompt_header": "",
+            "input_example_label": "Complex sentence:",
+            "output_example_label": "Simple sentence:",
+            "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:"
+        },
+        "prompt_builder_instruction_optimization": {
+            "prompt_header": "",
+            "input_example_label": "Complex sentence:",
+            "output_example_label": "Simple sentence:",
+            "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:",
+            "beam_size": 4,
+            "num_optimization_iterations": 15,
+            "rephrase_random_instructions_num_samples": 2,
+            "rephrase_random_instructions_scale_factor": 2,
+            "generate_permuted_instructions_scale_factor": 2,
+            "improve_by_feedback_scale_factor": 2,
+            "train_batch_size": 4,
+            "max_instructions_num": 20,
+            "instructions_feedback_num_trials": 3
+        },
+        "args": {
+            "config": "text_simplification/config_text_simplification.yaml",
+            "output_path": "/home/a_chernodub/prompts-instructions-induction/text_simplification/generated_prompts"
+        }
+    },
+    "PROMPT_TEMPLATE": "* Simplify the complex sentence by rephrasing it into a more straightforward version while maintaining the original meaning and key information.\n* Break down the complex sentence into simpler, more concise sentences while maintaining the original meaning. Ensure clarity and ease of understanding in the rephrased sentences.\n* Simplify the given complex sentence by breaking it into shorter, clearer sentences while maintaining the original meaning. Focus on using straightforward language and avoiding any unnecessary jargon or complexity.\nComplex sentence: <input_text>\nSimple sentence:",
+    "few_shot_input_examples": [
+        "While at the Cowles Foundation, his research focused mainly on neo-classical growth theory, following the seminal work of Solow.",
+        "Bergman stated that the film would be his last, and that afterwards he would focus on directing theatre.",
+        "The petitions at the end of the hymn (beginning Salvum fac populum tuum) are a selection of verses from the book of Psalms, appended subsequently to the original hymn."
+    ],
+    "few_shot_output_examples": [
+        "His research focused mainly on neo-classical growth theory while at the Cowles Foundation.",
+        "Bergman stated that the film would be his last. He said after the film he would focus on directing theatre.",
+        "The petitions at the hymn's end are a selection of verses from the book of Psalms. They were added to the original hymn."
+    ],
+    "instructions": [
+        "Simplify the complex sentence by rephrasing it into a more straightforward version while maintaining the original meaning and key information.",
+        "Break down the complex sentence into simpler, more concise sentences while maintaining the original meaning. Ensure clarity and ease of understanding in the rephrased sentences.",
+        "Simplify the given complex sentence by breaking it into shorter, clearer sentences while maintaining the original meaning. Focus on using straightforward language and avoiding any unnecessary jargon or complexity."
+    ],
+    "TEST_SCORE": 50.794999139490606,
+    "llm_outputs": [
+        {
+            "input": "One side of the armed conflicts is composed mainly of the Sudanese military and the Janjaweed, a Sudanese militia group recruited mostly from the Afro-Arab Abbala tribes of the northern Rizeigat region in Sudan.",
+            "references": [
+                "On one side of the conflicts are the Sudanese military and the Janjaweed, a Sudanese militia group.  They are mostly recruited from the Afro-Arab Abbala tribes.",
+                "One side of the armed conflicts is composed mainly of the Sudanese military and the Janjaweed. The Janjaweed are a Sudanese militia group recruited mostly from the Afro-Arab Abbala tribes of the northern Rizeigat region in Sudan.",
+                "One side of the armed conflicts is mainly the Sudanese military and the Janjaweed militia group.",
+                "One side of the war is made up of the Sudanese military and the Janjaweed, a Sudanese militia group from the Afro-Arab Abbala tribes of the northern Rizeigat region in Sudan.",
+                "One side of the war is mainly made up of the Sudanese military and the Janjaweed. The Janjaweed is a Sudanese militia group who come mostly from the Afro-Arab Abbala tribes of the northern Rizeigat region in Sudan.",
+                "One side of the fighters is made up of the Sudanese military and the Janjaweed.  The Janjaweed is a Sudanese militia group.  It is recruited mostly from the Afro-Arab Abbala tribes located in the northern Rizeigat region of Sudan.",
+                "One side of the armed conflict includes the Sudanese military and the Janjaweed, a Sudanese militia group made up of Afro-Arab Abbala tribesmen.",
+                "One side of the armed conflicts is composed mainly of the Sudanese military and the Janjaweed.  The Janjaweed are a Sudanese militia group, with recruits from the Afro-Arab Abbala tribes of the northern Rizeigat region in Sudan.",
+                "One side of the war is mainly the Sudanese military and a Sudanese milita group called the Janjaweed. The Janjaweed is mostly from the Afro-Arab Abbala tribes of the northern Rizeigat region in Sudan.",
+                "The Sudanese military and Janjaweed work together. The Janjaweed is a militia group. The members were recruited from Afro-Arab Abbala tribes. These tribes are from the northern region of Sudan."
+            ],
+            "output": "The adjacent counties are Marin to the south, Mendocino to the north, Lake to the northeast, Napa to the east, and Solano and Contra Costa to the southeast."
+        },
+        {
+            "input": "Jeddah is the principal gateway to Mecca, Islam's holiest city, which able-bodied Muslims are required to visit at least once in their lifetime.",
+            "references": [
+                "Muslims are required to visit Mecca once in their lifetime.",
+                "Able-bodied Muslims are required to visit Mecca, Islam's holiest city, at least once in their lifetime.",
+                "Jeddah is the way to Mecca, Islam's holiest city, which Muslims who are strong enough must visit at least once a lifetime.",
+                "Jeddah is the principal gateway to Mecca, Islam's holiest city. Able-bodied Muslims are required to visit Mecca at least once in their lifetime.",
+                "Jeddah is the gateway to Mecca, Islam's holiest city, which Muslims must visit once in their life.",
+                "Jeddah is the known way to Mecca, where Muslims are required to visit.",
+                "Jeddah is the main way to get into Mecca, Islam's holiest city, where able-bodied Muslims are required to visit at least once in their life.",
+                "Jeddah is the main access point to Mecca. Healthy Muslims are required to visit Mecca at least once in their lifetime.",
+                "Jeddah is the main gateway to Mecca.  Mecca is Islam's holies city.  Muslims are required to visit Mecca at least once in their life if they are physically capable of doing so.",
+                "Jeddah is the main gateway to Mecca, Islam's holiest city, which able-bodied Muslims need to visit at least once in their lives."
+            ],
+            "output": "A Georgian inscription on the drum shows his name."
+        },
+        {
+            "input": "The Great Dark Spot is thought to represent a hole in the methane cloud deck of Neptune.",
+            "references": [
+                "The dark spot on Ne;tune may be a hole in the methane clouds.",
+                "It is likely that Neptune's Great Dark Spot is a hole in the methane cloud deck.",
+                "The Great Dark Spot is a hole in the methane cloud deck of Neptune.",
+                "The Great Dark Spot is thought to be a hole in the methane cloud deck of Neptune.",
+                "The Great Dark Spot is thought to be a hole in Neptune's methane clouds.",
+                "The Great Dark Spot represents a hole in the methane cloud of Neptune.",
+                "The Great Dark Spot is believed to be a hole in the methane cloud deck of Neptune.",
+                "The Great Dark Spot is thought to show a hole in the methane cloud deck of Neptune.",
+                "The Great Dark Spot represents a hole in the methane cloud deck of Neptune.",
+                "The Great Dark Spot is a hole in Neptune's methane cloud."
+            ],
+            "output": "They returned to the revived series in the 2008 Christmas Special titled \"The Next Doctor.\" In this episode, they introduced two new types of Cybermen: the Cyber-Shades and the Cyber-King."
+        },
+        {
+            "input": "His next work, Saturday, follows an especially eventful day in the life of a successful neurosurgeon.",
+            "references": [
+                "Next Saturday is a presentation of a successful neurosurgeon.",
+                "An eventful day in the life of a neurosurgeon is shown in his next work, Saturday.",
+                "His next workday on Saturday is after a busy day as a great neurosurgeon.",
+                "His next work, Saturday, shows an especially eventful day in the life of a successful neurosurgeon.",
+                "Saturday follows an eventful day in the life of a neurosurgeon.",
+                "Saturday tells of an eventful day of a neurosurgeon.",
+                "His next work, Saturday, follows a very eventful day in the life of a successful neurosurgeon.",
+                "His next work, Saturday, follows an very busy day in the life of a neurosurgeon.",
+                "Saturday\" records a very eventful day in the life of a successful neurosurgeon.",
+                "His next work, Saturday ,shows especially eventful day for a successful neurosurgeon."
+            ],
+            "output": "Jameson's autobiography is titled \"How to Make Love Like a Porn Star: A Cautionary Tale.\" It was published on August 17, 2004."
+        },
+        {
+            "input": "The tarantula, the trickster character, spun a black cord and, attaching it to the ball, crawled away fast to the east, pulling on the cord with all his strength.",
+            "references": [
+                "The tarantula spun a black cord and attached it to the ball. It crawled away fast to the east, pulling on the cord.",
+                "The tarantula was the trickster character.  It spun a black cord.  Then it attached the cord to the ball, quickly crawled away and pulled on the ball with all its strength.",
+                "The tarantula which is a trickster, spun a black cord , attached it to the ball, crawled away fast to the east and pulled on the cord with all his strength.",
+                "The trickster tarantula.spun a black cord and, attaching it to the ball, crawled away fast to the east, pulling on the cord with all his strength.",
+                "The tarantula which is tricky spun a black cord to join with a ball and pull it east with all its power.",
+                "The tarantula spun a cord and attached it to a ball while going to the east and pulling this cord.",
+                "The tarantula, spun a black cord and crawled away fast to pull on the cord with all his strength.",
+                "The tarantula character spun a black cord and attached it to the ball.  He crawled away to the east, pulling on the cord with all his strength.",
+                "The tarantula (the trickster) spun a black cord and attached it to the ball before it crawled away fast to the east while pulling on the cord with all his strength.",
+                "The trickster tarantula spun a black cord. It attached it to a ball. Then it crawled away fast, pulling on it with all his strength."
+            ],
+            "output": "It is well-known for growing kiwifruit."
+        },
+        {
+            "input": "There he died six weeks later, on 13 January 888.",
+            "references": [
+                "He died there six weeks later on 13 January 888.",
+                "He died there six weeks later.  The date was January 13, 888.",
+                "He died  over there six weeks later, on 13 January 1888.",
+                "He died six weeks later, on 13 January 888.",
+                "He died there six weeks later on 13 January 888.",
+                "He died in January 888.",
+                "He died there on 13 January 888.",
+                "He died six weeks later on January 13th, 888.",
+                "He died there six weeks later on 13 January 888.",
+                "He died there six weeks later in 888."
+            ],
+            "output": "After years in the tag team division, Hardy competed in singles competition from 2002 to 2003. He faced The Undertaker in a ladder match for the Undisputed Championship."
+        },
+        {
+            "input": "They are culturally akin to the coastal peoples of Papua New Guinea.",
+            "references": [
+                "They are culturally similar to the coastal peoples of Papua New Guinea.",
+                "Their culture is similar to that of the coastal communities of Papua New Guinea.",
+                "They have the same culture to the coastal people of Papua New Guinea.",
+                "They are similar to the coastal peoples of Papua New Guinea.",
+                "They are similar to the Papua New Guinea people living on the coast.",
+                "They are culturally like Papua New Guinea people.",
+                "They are related to the peoples of Papua New Guinea.",
+                "They are culturally similar to the people of Papua New Guinea.",
+                "They are culturally similar to the coastal peoples of Papua New Guinea.",
+                "Their culture is like the people who live on the coast of Papua New Guinea."
+            ],
+            "output": "Many churches collaborate on town-wide projects. They do this under the name \"Churches Together in Stevenage."
+        },
+        {
+            "input": "Since 2000, the recipient of the Kate Greenaway Medal has also been presented with the Colin Mears Award to the value of \u00a35000.",
+            "references": [
+                "Since 2000, the recipient of the Kate Greenaway Medal has also won the \u00a35000 Colin Mears Award.",
+                "Since 2000, the winner of the Kate Greenaway Medal also receives the Colin Mears Award.  The value of the prize is \u00a35000.",
+                "Since 2000, the person that receives the Kate Greenaway Medal has also been presented with the Colin Mears Award that has a value of \u00a35000.",
+                "Since 2000, the Kate Greenaway Medal winner has also been presented with the Colin Mears Award, valued \u00a35000.",
+                "Since 2000, the winner of the Kate Greenaway Medal won the  Colin Mears Award to the value of \u00a35000.",
+                "Whoever wins the Kate Greenway Medal also gets The Colin Mears award which is L5000.",
+                "Since 2000, the recipient of the Kate Greenaway Medal will also receive the Colin Mears Awad which worth 5000 pounds.",
+                "Since 2000, the recipient of the Kate Greenaway Medal has also been given the Colin Mears Award.",
+                "The winner of the Kate Greenaway Medal has also been given the Colin Mears Award (valued at \u00a35000) since the year 2000.",
+                "Many people who receive the Kate Greenaway Medal also win the Colin Mears Award. Its worth \u00a35000."
+            ],
+            "output": "Word processing templates save time by eliminating the need for initial setup. They help users quickly create standardized documents, like resumes."
+        },
+        {
+            "input": "Following the drummers are dancers, who often play the sogo (a tiny drum that makes almost no sound) and tend to have more elaborate \u2014 even acrobatic \u2014 choreography.",
+            "references": [
+                "After the drummers are dancers, who often play the sogo (a tiny drum making almost no sound) and usually hav more elaborate \u2014 even acrobatic \u2014 choreography.",
+                "After the drummers are dancers with elaborate movements. They often play a tiny drum called the sogo.",
+                "After the drummers are dancers. The dancers often play the sogo (a small, quiet drum) and usually perform more difficult moves.",
+                "Following the drummers are dancers, who often play the sogo (a tiny drum that makes almost no sound). They tend to have more elaborate \u2014 even acrobatic \u2014 choreography.",
+                "Following the drummers are dancers, who often play the sogo and have more elaborate choreography.",
+                "After the drummers are dancers that play sogo with more difficult choreography.",
+                "After the drummers come dangers who often play the sogo.  The sogo is a tiny, almost noiseless drum.  The dancers usually have fancier acrobatic-like dance moves.",
+                "The dancers play a small soundless drum and have elaborate choreography.",
+                "The dancers come after the drummers. They often play the sogo which is a tiny drum that makes almost no sound and tend to have more detailed \u2014 even acrobatic \u2014 dance styles.",
+                "Dancers come after the drummers who play the sogo ( a tiny drum that makes not too much sound) and has harder dancing."
+            ],
+            "output": "Rollins retired in 1962. He chose to become a coach."
+        },
+        {
+            "input": "The spacecraft consists of two main elements: the NASA Cassini orbiter, named after the Italian-French astronomer Giovanni Domenico Cassini, and the ESA Huygens probe, named after the Dutch astronomer, mathematician and physicist Christiaan Huygens.",
+            "references": [
+                "The spacecraft's two main elements are the NASA Cassini orbiter, named after the Italian-French astronomer Giovanni Domenico Cassini, and the ESA Huygens probe, named after the Dutch astronomer, mathematician and physicist Christiaan Huygens.",
+                "The spacecraft has two parts: NASA's Cassini orbiter, named after the Italian-French astronomer, and the ESA Huygens probe, named after the Dutch astronomer, mathematician and physicist.",
+                "The spacecraft has two main parts: the NASA Cassini orbiter, and the ESA Huygens probe.",
+                "The spacecraft consists of two main elements. The NASA Cassini orbiter is named after the Italian-French astronomer Giovanni Domenico Cassini.The ESA Huygens probe is named after the Dutch astronomer, mathematician and physicist Christiaan Huygens.",
+                "The spacecraft is made up of two main parts:  the NASA Cassini orbiter, named after the astronomer Giovanni Domenico Cassini, and the ESA Huygens probe, named after the astronomer, mathematician and physicist Christiaan Huygens.",
+                "The spacecraft hasof two main elements: the NASA Cassini orbiter and the ESA Huygens probe.",
+                "The spacecraft has two main parts: the NASA Cassini orbiter and the ESA Huygens probe.  The orbiter is named after the Italian-French astronomer Giovanni Domenico Cassini.  The probe is named after the Dutch astronomer, mathematician and physicist Christiaan Huygens.",
+                "The spacecraft has two main parts:  the Cassini orbiter and the Huygens probe.",
+                "The spacecraft made up of two main part; the first one is the NASA Cassini orbiter, named after the Italian-French astronomer Giovanni Domenico Cassini. The other part is the ESA Huygens probe, named after the Dutch astronomer, mathematician and physicist Christiaan Huygens.",
+                "The NASA Cassini orbiter, named after Italian-French scientist Giovanni Domenico Cassini, and the ESA Huygens probe, named after the Dutch scientist Christiaan Huygens has two parts."
+            ],
+            "output": "Landsberg prison is located on the western outskirts of the town. It was completed in 1910."
+        },
+        {
+            "input": "Alessandro (\"Sandro\") Mazzola (born 8 November 1942) is an Italian former football player.",
+            "references": [
+                "Alessandro (\"Sandro\") Mazzola (born 8 November 1942) is an Italian former footballer.",
+                "Allesandro \"Sandro\" Mazzola is an Italian former football player.",
+                "Alessandro Mazzola is an Italian former football player.",
+                "Alessandro (\"Sandro\") Mazzola is a former Italian football player. He was born on 8 November 1942.",
+                "Alessandro Mazzolo is an Italian former football player.",
+                "Alessandro Mazzola  is an Italian former football player.",
+                "Alessandro Mazzola, born November 8, 1942 was an Italian football player.",
+                "Allessandro Mazzola born in 1942 is a former football player.",
+                "Alessandro (\"Sandro\") Mazzola who was born on 8 November 1942 is an Italian former football player.",
+                "IItalian Alessandro (\"Sandro\") Mazzola (born 8 November 1942) was a football player."
+            ],
+            "output": "A hunting dog is a dog that helps humans hunt."
+        },
+        {
+            "input": "It was originally thought that the debris thrown up by the collision filled in the smaller craters.",
+            "references": [
+                "The smaller craters were originally thought to be filled by collision debris.",
+                "Originally, it was thought that debris from the collision filled in the smaller craters.",
+                "It was thought at first that the impact threw up dirt and sand that filled in the smaller craters.",
+                "It was thought that the debris thrown up by the collision filled in the smaller craters.",
+                "It was once thought that the debris from the collision filled the smaller craters.",
+                "It was thought that the debris left by the impact filled in the craters.",
+                "It was first thought that the debris thrown up by the crash filled in the smaller craters.",
+                "It was thought that the rubble from the collision filled in the smaller craters.",
+                "Originally, the thought was that the debris thrown up by the collision will fill n the smaller craters.",
+                "It was thought at first that junk thrown by the banging together filled in small holes."
+            ],
+            "output": "The Empire of Nicaea captured Constantinople. They also took control of the rest of the Latin Empire. This led to the re-establishment of the Byzantine Empire."
+        },
+        {
+            "input": "Graham attended Wheaton College from 1939 to 1943, when he graduated with a BA in anthropology.",
+            "references": [
+                "Graham graduated with a BA in anthropology from Wheaton College.",
+                "Graham was a student at Wheaton College from 1939 to 1943, and he graduated with a four year degree in anthropology.",
+                "Graham went to Wheaton College 1939 to 1943 and graduated with a BA in studying human societies.",
+                "Graham graduated from Wheaton College in 1943 with a BA in anthropology.",
+                "Graham went to school at Wheaton College from 1939 to 1943. He graduated and earned a BA in anthropology.",
+                "Graham graduated from Wheaton College with a BA in anthropology.",
+                "Graham went to Wheaton College from 1939-1943.  He graduated with a BA in anthropology.",
+                "Graham went to Wheaton College from 1939 to 1943 and received a BA in anthropology.",
+                "Graham went to Wheaton College and earned a degree in anthropology.",
+                "Graham attended Wheaton College  from 1939 to 1943 and  graduated with a BA in anthropology."
+            ],
+            "output": "Scientists re-examined the old photos. They finally found the satellite in the images."
+        },
+        {
+            "input": "However, the BZ\u00d6 differs a bit in comparison to the Freedom Party, as is in favor of a referendum about the Lisbon Treaty but against an EU-Withdrawal.",
+            "references": [
+                "However, the BZO is not the same as the Freedom Party.",
+                "The BZ\u00d6 is different from the Freedom Party because it is against an EU-WIthdrawal.",
+                "The BZO is different from the Freedom Party because it supports changes to the Lisbon Treaty but is not for the EU-Withdrawel.",
+                "The BZ\u00d6 is in favor of a referendum about the Lisbon Treaty but against an EU-Withdrawal.",
+                "BZ\u00d6 is a little different from the Freedom Party. BZ\u00d6 supports a public vote on the Lisbon Treaty. It is also against leaving the EU.",
+                "The BZO is a bit different than the Freedom Party.  They are in favor of a referendum about the Lisbon Treaty but against an EU-Withdrawal.",
+                "The BZO differs slightly from the Freedom Party, in that it supports a referendum about the Lisbon Treaty but is against an EU-Withdrawal.",
+                "Unlike the Freedom Party, the BZ\u00d6 supports voting about the Lisbon Treaty but against an EU-Withdrawal.",
+                "The BZO approves of the Lisbon Treaty but doesn't like the EU-Withdrawal",
+                "However, the BZ\u00d6 is slightly different compared to the Freedom Party, which supports a referendum about the Lisbon Treaty but against an EU-Withdrawal."
+            ],
+            "output": "Marcel Junod was a physician from Geneva. He was a well-known delegate during the Second World War. He lived from 1904 to 1961."
+        },
+        {
+            "input": "Many species had vanished by the end of the nineteenth century, with European settlement.",
+            "references": [
+                "Many species had vanished with European settlement.",
+                "A lot of species had disappeared by the end of the nineteenth century because of European settlement.",
+                "Many types of animals had been gone by the end of the nineteenth century with European communities coming there.",
+                "Many species disappeared by the end of the nineteenth century, with European settlement.",
+                "Europeans settled on the land, so many species disappeared by the end of the 1800s.",
+                "By the end of the 19th century many species had disappeared, with European settlement.",
+                "Due to European settlements, many types had disappeared by the end of the 19th century.",
+                "European settlement caused many species to disappear by the end of the nineteenth century.",
+                "The Europeans pushed many animals off of the land.",
+                "Many species had died by the end of the 19th century because of the European community."
+            ],
+            "output": "Whisenhunt played as a tight end for the Atlanta Falcons for four years, from 1985 to 1988. The Falcons drafted him in the twelfth round. He also played for the Washington Redskins and the New York Jets."
+        },
+        {
+            "input": "In 1987 Wexler was inducted into the Rock and Roll Hall of Fame.",
+            "references": [
+                "In 1987 Wexler was recognized into the Rock and Roll Hall of Fame.",
+                "In 1987 Wexler became a part of the Rock and Roll Hall of Fame.",
+                "In 1987 Wexler was put into the Rock and Roll Hall of Fame.",
+                "Wexler was inducted into the Rock and Roll Hall of Fame in 1987.",
+                "Wexler was added to the Rock and Roll Hall of Fame in 1987.",
+                "Wexler was admitted into the Rock and Roll Hall of Fame in 1987.",
+                "In 1987 Wexler became a member of the Rock and Roll Hall of Fame.",
+                "The Rock and Roll Hall of Fame put in Wexler in 1987",
+                "Wexler went into the Rock and Roll Hall of Fame in 1987",
+                "In 1987 Wexler was introduced to the Rock and Roll Hall of Fame."
+            ],
+            "output": "Romania gave three southern districts of Bessarabia to Russia. In exchange, Romania gained Dobruja."
+        },
+        {
+            "input": "In its pure form, dextromethorphan occurs as a white powder.",
+            "references": [
+                "Dextromethorphan appears as a white powder in its natural form.",
+                "Pure dextromethorphan is a white powder.",
+                "In its natural form dextromethorphan is a white powder.",
+                "In its pure form, dextromethorphan looks like a white powder.",
+                "In the pure form the chemical is a white powder.",
+                "Pure dextromethorphan is a white powder.",
+                "Dextromethorphan is a white powder in pure form.",
+                "Dextromethohpan is a white powder when pure.",
+                "Dextromethorphan is a white powder in its pure form.",
+                "Pure dexdextromethorphan is a white powder."
+            ],
+            "output": "In March 2001, the World Wrestling Federation bought World Championship Wrestling."
+        },
+        {
+            "input": "Admission to Tsinghua is extremely competitive.",
+            "references": [
+                "It is very hard to be admitted to Tsinghua.",
+                "Getting admitted to Tsinghua is difficult.  There is a lot of competition.",
+                "It is really hard to get into Tsinghua.",
+                "It is extremely competitive to get in to Tsinghua.",
+                "To get into Tsinghua is really hard.",
+                "Tsinghua admission is extremely competitive.",
+                "Admission to Tsinghua is very competitive.",
+                "Tsinghua is very hard to get into.",
+                "It is not easy to get into Tsinghua.",
+                "There is alot of competition to get into Tsinghua."
+            ],
+            "output": "West Coast blues is a style of blues music. It features influences from jazz and jump blues. This music is known for its strong piano sounds and jazzy guitar solos. West Coast blues originated in the 1940s when Texas blues players moved to California."
+        },
+        {
+            "input": "Today NRC is organised as an independent, private foundation.",
+            "references": [
+                "NRC is run as an independent, private foundation.",
+                "NRC is an independent, private foundation.",
+                "The NRC is an independent, private foundation.",
+                "Today, NRC is managed as an independent and private company.",
+                "Today NRC is a free group and does things on their own.",
+                "Today NRC is an independent, private foundation.",
+                "NRC is now an independent, private foundation.",
+                "NRC is a private company.",
+                "Today NRC is an independent private foundation.",
+                "NRC is now an independent, private organization."
+            ],
+            "output": "Later visits noted that the flag was displayed in prominent locations."
+        },
+        {
+            "input": "It is situated at the coast of the Baltic Sea, where it encloses the city of Stralsund.",
+            "references": [
+                "It is located at the coast of the Baltic Sea and encloses the city of Stralsund.",
+                "It encloses the city of Stalsund on the coast of the Baltic Sea.",
+                "It is located at the coast of the Baltic sea where it surrounds the city of Stralsund.",
+                "It happened at the coast of the Baltic Sea, where it surrounded the city of Stralsund.",
+                "It is on the coast of the Baltic Sea around Stralsund.",
+                "It's at the coast of the Baltic Sea, enclosing the city of Stralsund.",
+                "It is by the Baltic Sea and encloses the city of Stralsund.",
+                "It surrounds Stralsund on the coast of the Baltic Sea",
+                "It is at the coast of the Baltic Sea.",
+                "It is on the coast of the Baltic Sea.  There, it surrounds the city of Stralsund."
+            ],
+            "output": "Local farmers grow seasonal crops like maize and wheat."
+        },
+        {
+            "input": "He was also named 1982 \"Sportsman of the Year\" by Sports Illustrated.",
+            "references": [
+                "He was Sports Illustrated\\'s \"Sportsman of the Year\" in 1982 .",
+                "He was named \"Sportsman of the Year\" by Sports Illustrated in 1982.",
+                "He was called 1982 Sportsman of the Year by Sports Illustrated.",
+                "He also received the title of 1982 \"Sportsman of the Year\" by the magazine Sports Illustrated.",
+                "He was also 1982 \"Sportsman of the Year\" in Sports Illustrated.",
+                "He was named \"Sportsman of the Year\" by Sports Illustrated in 1982.",
+                "Sports Illustrated named him 1982\\'s \"Sportsman of the Year\".",
+                "He was also named 1982 \"Sportsman of the Year\" by Sports Illustrated.",
+                "He was also named Sports Illustrated\\'s 1982 \"Sportsman of the Year.",
+                "He was 1982 \"Sportsman of the Year\" by Sports Illustrated."
+            ],
+            "output": "In 2004, a panel of 41 writers chose Roy as the greatest goaltender in NHL history. This decision was supported by a fan poll that took place at the same time."
+        },
+        {
+            "input": "Fives is a British sport believed to derive from the same origins as many racquet sports.",
+            "references": [
+                "Fives is a British sport.",
+                "Fives is a British Sport thought to have the same origins as many racquet sports.",
+                "Fives is a British sport that had the same beginnings as many racquet sports.",
+                "Fives is a British sport believed to have come from the same place as many racquet sports.",
+                "Fives is a British sport believed to come from the same origins as many racquet sports.",
+                "Fives is a British sport developed from the same origins as many racquet sports.",
+                "Fives is a British racquet sport.",
+                "Fives is a British racquet sport that has the same origins as many racquet sports.",
+                "Fives is a British sport believed to have the same origins as many racquet sports.",
+                "British fives is a relative of many racquet sports."
+            ],
+            "output": "Frances was absorbed by an extratropical cyclone. This happened on November 21."
+        },
+        {
+            "input": "For example, King Bhumibol was born on Monday, so on his birthday throughout Thailand will be decorated with yellow color.",
+            "references": [
+                "King Bhumibol was born on a Monday,so his birthday in Thailand would be decorated with yellow.",
+                "King Bhumibol was born on Monday. Thailand will be decorated with yellow color on his birthday.",
+                "For example, King Bhumibol was born Monday so they make things fancy with yellow on his birthday in Thailand.",
+                "For example, King Bhumibol was born on Monday, so on his birthday places throughout Thailand will be decorated with yellow color.",
+                "For example, King Bhumibol was born on Monday. Because of his, Thailand will be decorated with yellow color for his birthday.",
+                "King Bhumibol was born on a Monday.  On his birthday Thailand will be decorated with yellow colors.",
+                "King Bhumibol was born on Monday.  It will be celebrated throughout Thailand with yellow decorations.",
+                "For example, King Bhumibol was born on Monday. On his birthday Thailand will be decorated with yellow.",
+                "For example, King Bhumibol was born Monday, so on his birthday throughout Thailand will be decorated with yellow color.",
+                "Thailand's King Bhumibol's birthday is celebrated with the color yellow."
+            ],
+            "output": "The depression moved northwest and made landfall near Fort Walton Beach early on September 22. Soon after, it dissipated over southeastern Alabama."
+        },
+        {
+            "input": "Both names became defunct in 2007 when they were merged into The National Museum of Scotland.",
+            "references": [
+                "Both names became unused when they joined The National Museum of Scotland.",
+                "Both names became unusable in 2007 when they were combined into The National Museum of Scotland.",
+                "Both names went away in 2007 when they were joined into the National Museum of Scotland.",
+                "Both names stopped existing in 2007, when they were merged into The National Museum of Scotland.",
+                "Both names stopped being used in 2007 when they were combined into The National Museum of Scotland.",
+                "Both names became obsolete in 2007.  They were merged into The National Museum of Scotland.",
+                "Both names were discontinued in 2007.  That year they joined and became The National Museum of Scotland.",
+                "Both names were no longer used after 2007 when they merged into The National Museum of Scotland.",
+                "Both names became defunct in 2007 when they merged into The National Museum of Scotland.",
+                "The merged into The National Museum of Scotland in 2007."
+            ],
+            "output": "Anthony McGill is the principal clarinetist. He plays for the Metropolitan Opera."
+        },
+        {
+            "input": "Nevertheless, Tagore emulated numerous styles, including craftwork from northern New Ireland, Haida carvings from the west coast of Canada (British Columbia), and woodcuts by Max Pechstein.",
+            "references": [
+                "Nevertheless, Tagore emulated numerous styles, including craftwork from northern New Ireland, Haida carvings from British Columbia, and woodcuts by Max Pechstein.",
+                "Tagore matched a number of styles, including craftwork from northern Ireland, Haida carvings from British Columbia, and woodcuts by Max Pechstein.",
+                "Tagore copied many styles. These include: craftwork from northern New Ireland, Haida carvings from western Canada, and woodcuts by Max Pechstein.",
+                "Tagore copied numerous styles including crafts from North New Ireland, Haida carvings from west Canada's coast (British Columbia) and woodcuts from Max Pechstein.",
+                "However, Tagore followed a lot of styles such as craftwork from northern New Ireland, Haida carvings from the west coast of Canada (British Columbia), and woodcuts by Max Pechstein",
+                "Regardless, Tagore imitated several styles, including craftwork from northern New Ireland, Haida carvings from the west coast of Canada (British Columbia), and woodcuts by Max Pechstein.",
+                "Tagore copied lots of styles. One style was craftwork from northern New Ireland. Tagore also liked to copy the style of Haida carvings from British Columbia, Canada. Tagore's other favorite style was the woodcuts of Max Pechstein.",
+                "Tagore copied many styles.  These included craftwork from northern New Ireland, Haida carvings from western Canada and woodcuts by Max Pechstein.",
+                "Tagore emulated numerous styles, including craftwork from northern New Ireland, Haida carvings from the west coast of Canada (British Columbia), and woodcuts by Max Pechstein.",
+                "Tagore copied many styles."
+            ],
+            "output": "The authors and publishers of the Document do not allow their names to be used for publicity. They also do not permit anyone to claim or suggest that they endorse any Modified Version."
+        },
+        {
+            "input": "On October 14, 1960, Presidential candidate John F. Kennedy proposed the concept of what became the Peace Corps on the steps of Michigan Union.",
+            "references": [
+                "On October 14, 1960, Presidential candidate John F. Kennedy proposed the concept for the Peace Corps at the Michigan Union.",
+                "On October 14, 1960, Presidential candidate John F. Kennedy proposed the concept of the Peace Corps.",
+                "John F. Kennedy proposed the concept of the Peace Corps on the steps of the Michigan Union in October 1960.",
+                "On October 14, 1960, Presidential candidate John F. Kennedy made the idea of the Peace Corps on Michigan Union steps.",
+                "On October 14, 1960, a presidential candidate,  John F. Kennedy suggested the idea of what later became the Peace Corps on the steps of Michigan Union.",
+                "On October 14, 1960, Presidential candidate John F. Kennedy suggested the idea of what would later become the Peace Corps on the steps of Michigan Union.",
+                "On October 14, 1960, Presidential candidate John F. Kennedy spoke on the steps of Michigan Union. He proposed the idea of the Peace Corps.",
+                "On October 14, 1960, Presidential Candidate John F. Kennedy suggested the creation of the Peace Corps.  He made his suggestion while standing on the steps of Michigan Union.",
+                "On October 14, 1960, Presidential candidate John F. Kennedy proposed the concept of what became the Peace Corps.",
+                "Presidential candidate John F. Kennedy proposed the idea of the Peace Corps."
+            ],
+            "output": "The British Rail Class 91 is a type of electric locomotive. It can reach speeds of 140 mph (225 km/h) and has a power output of 4.54 MW (6,300 hp). These locomotives were ordered as part of the East Coast Main Line modernization and electrification program in the late 1980s."
+        },
+        {
+            "input": "She performed for President Reagan in 1988's Great Performances at the White House series, which aired on the Public Broadcasting Service.",
+            "references": [
+                "She performed for Reagan in 1988's Great Performances at the White House series, which aired on the Public Broadcasting Service.",
+                "She performed for President Reagan in 1988's Great Performances at the White House series, which aired on PBS.",
+                "She performed for President Reagan in 1988 for the Great Performances at the While House series on the Public Broadcasting Service.",
+                "She performed for President Reagan in 1988's Great Performances at the White House tv shows on the Public Broadcasting Service.",
+                "She played for President Reagan in 1988's Great Performances at the White House series, which shown on the Public Broadcasting Service.",
+                "She performed for President Reagan in 1988's Great Performances at the White House series that aired on the Public Broadcasting Service.",
+                "In 1988, she was a performer in the Great Performances at the White House series. She performed for President Reagan. The performance aired on the Public Broadcasting Service.",
+                "She performed for President Reagan in 1988's Great Performances at the White House series.  The series aired on PBS.",
+                "She performed for President Reagan in 1988's Great Performances at the White House series.The series aired on the Public Broadcasting Service.",
+                "She performed for President Reagan in 1988. The series was called Great Performances at the White House. It aired on PBS."
+            ],
+            "output": "The premiere received a rating of 2.79. This made it the highest-rated show on cable during its time slot."
+        },
+        {
+            "input": "Perry Saturn (with Terri) defeated Eddie Guerrero (with Chyna) to win the WWF European Championship (8:10) Saturn pinned Guerrero after a Diving elbow drop.",
+            "references": [
+                "Perry Saturn (with Terri) defeated Eddie Guerrero (with Chyna) in the WWF European Championship (8:10) Saturn pinned Guerrero after a Diving elbow drop.",
+                "Perry Saturn defeated Eddie Guerrero in the WWF European Championship.  Saturn pinned Guerrero after a diving elbow drop.",
+                "Perry Saturn and Terri beat Eddie Guerrero and Chyna to win the WWF European Championship. Saturn pinned Guerrero after a Diving elbow drop.",
+                "Perry Saturn (with Terri) beat Eddie Guerrero (with Chyna) to win the WWF European Championship (8:10) Saturn took down Guerrero after a Diving elbow drop.",
+                "Perry Saturn-Terri defeated Eddie Guerrero-Chyna to win the WWF European Championship. At the moment (8:10) Saturn held Guerrero down after a Diving elbow drop.",
+                "Perry Saturn (with Terri) defeated Eddie Guerrero (with Chyna) and won the WWF European Championship (8:10). Saturn pinned Guerrero after a diving elbow drop.",
+                "Perry Saturn and Terri won the WWF European Championship. They defeated Eddie Guerrero and Chyna. Saturn used a diving elbow drop to pin Guerrero.",
+                "Perry Saturn beat Eddie Guerrero to win the WWF European Championship (8:10).  Saturn pinned Guerrero after a Diving elbow drop.",
+                "Perry Saturn and Terri defeated Eddie Guerrero and Chyna to win the WWF European Championship (8:10). Saturn pinned Guerrero after a Diving elbow drop.",
+                "Perry Saturn won the WWF European Championship. He pinned his opponent with a Diving elbow drop."
+            ],
+            "output": "Thousands of people were reportedly impaled at once."
+        },
+        {
+            "input": "She remained in the United States until 1927 when she and her husband returned to France.",
+            "references": [
+                "She remained in the United States until returning to France with her husband in 1927.",
+                "She stayed in the United States until 1927 when she and her husband went back to France.",
+                "She stayed in the US until 1927. Then, she and her husband went back to France.",
+                "She stayed in the United States until 1927 until she moved to France with her husband.",
+                "She remained in the United States until 1927 and then she and her husband returned to France.",
+                "She stayed in the United States until 1927.  Then she and her husband went back to France.",
+                "She stayed in the United States in 1927.  Then she and her husband returned to France.",
+                "She stayed in the United States until 1927. Then, she and her husband went back to France.",
+                "She remained in the United states until returning to France with her husband in 1927.",
+                "She stayed in the United States until 1927 when she and her husband went back to France."
+            ],
+            "output": "The name \"hornet\" is used for this species and similar ones. This name comes from their habit of building aerial nests, like true hornets, instead of underground nests."
+        },
+        {
+            "input": "Despina was discovered in late July, 1989 from the images taken by the Voyager 2 probe.",
+            "references": [
+                "In 1989, Despina was discovered from the images that were taken by the Voyager 2 probe.",
+                "Despina was found in late July, 1989 from photos taken by the Voyager 2 probe.",
+                "Despina was discovered at the end of July 1989. People saw it in the pictures the Voyager 2 probe took.",
+                "Despina was discovered in late July, 1989.",
+                "Despina was found at the end of July 1989 from the images taken by the Voyager 2 tool.",
+                "Despina was discovered in late July 1989.  It was seen in pictures taken by the Voyager 2 probe.",
+                "Despina was found in July 1989 from the images taken by the Voyager 2 probe.",
+                "Despina was discovered in July, 1989. It was seen in pictures sent by the Voyager 2 space craft.",
+                "Despina was discovered in 1989 from images taken by the Voyager 2 probe.",
+                "Despina was found in late July 1989 from pictures made by Voyager 2."
+            ],
+            "output": "In 1589, they started making salt in Sunderland."
+        },
+        {
+            "input": "The first Italian Grand Prix motor racing championship took place on 4 September 1921 at Brescia.",
+            "references": [
+                "The first Grand Prix championship took place on September 4, 1921 at Brescia.",
+                "The first Italian Grand Prix motor racing championship took place 4 September 1921 at Brescia.",
+                "The first Italian Grand Prix motor racing championship was held on September 4, 1921. It was held at Brescia.",
+                "The first Italian Grand Prix motor racing championship was at Brescia on September 4th, 1921.",
+                "The first Italian Grand Prix motor racing championship was held at Brescia on September 4th 1921.",
+                "The first Italian Grand Prix motor racing championship was on September 4, 1921.  It took place at Brescia.",
+                "On September 4, 1921, the first Grand Prix took place at Brescia.",
+                "The first Italian Grand Prix motor racing championship was on 4 September 1921 at Brescia.",
+                "The first Italian Grand Prix took place on 4 September 1921 at Brescia.",
+                "The first Italian Grand Prix racing championship was on 4 September 1921 at Brescia."
+            ],
+            "output": "Some trails are called nature trails. People use these trails to learn about the natural world."
+        },
+        {
+            "input": "He also completed two collections of short stories entitled The Ribbajack & Other Curious Yarns and Seven Strange and Ghostly Tales.",
+            "references": [
+                "He also completed two short story collections. These were titled The Ribbajack & Other Curious Yarns and Seven Strange and Ghostly Tales.",
+                "He also completed wrote short story collections called The Ribbajack & Other Curious Yarns and Seven Strange and Ghostly Tales.",
+                "He completed two collections of short stories. The collections were called The Ribbajack & Other Curious Yarns and Seven Strange and Ghostly Tales.",
+                "He also wrote two books of short stories; they were called The Ribbajack & Other Curious Yarns and Seven Strange and Ghostly Tales.",
+                "He also finished two collections of short stories of The Ribbajack & Other Curious Yarns and Seven Strange and Ghostly Tales.",
+                "He also wrote two collections of short stories: The Ribbajack & Other Curious Yarns and Seven Strange and Ghostly Tales.",
+                "He completed two collections of short stories.  They were titled The RIbbajack & Other Curious Yarns and Seven Strange and Ghostly Tales.",
+                "He also wrote two books of short stories called \"The ribbajack & other Curious Yarns\" and \"Seven Strange and Ghostly Tales\".",
+                "He also wrote two collections of short stories called The Ribbajack & Other Curious Yarns and Seven Strange and Ghostly Tales.",
+                "He made two short story groups called The Ribbajack & Other Curious Yarns and Seven Strange and Ghostly Tales."
+            ],
+            "output": "In August 2007, Hager was moved to Florida Championship Wrestling. There, he started a feud with TJ Wilson."
+        },
+        {
+            "input": "At the Voyager 2 images Ophelia appears as an elongated object, the major axis pointing towards Uranus.",
+            "references": [
+                "Ophelia looks like a long item from Voyager 2 images with the large part pointing toward Uranus.",
+                "In the images of Voyager 2, Ophelia looks like a long object with its main axis pointed towards Uranus.",
+                "Ophelia looks like a long object pointed at Uranus.",
+                "A Voyager 2 picture was an object called Ophelia pointing toward Uranus.",
+                "In the Voyager 2 images, Ophelia looks like an elogated object, with the major axis pointing towards Uranus.",
+                "Images of Ophelia, an elongated object, point toward Uranus.",
+                "At the Voyager 2 images, Ophelia appears as a lengthen object with the major center line pointing towards Uranus.",
+                "In the Voyager 2 images, Ophelia appears as an elongated object with the major axis pointing towards Uranus.",
+                "At the Voyager 2 images Ophelia appears as an long object, the major axis pointing towards Uranus",
+                "The Voyager 2 images showed Ophelia as a long object with the major axis pointing at Uranus."
+            ],
+            "output": "These rock formations are mainly made of sandstone. They also have layers of quartz."
+        },
+        {
+            "input": "The British decided to eliminate him and take the land by force.",
+            "references": [
+                "The British decided to take him out and land by force.",
+                "The British decided to get rid of him, and take the land by force.",
+                "The British decided to get rid of him and seize the land.",
+                "He was killed by the British and his land was taken.",
+                "The British removed him and took the land by force.",
+                "The British chose to kill him and take the land.",
+                "The British decided to kill him and take the land by force.",
+                "The British decided to get rid of him and take the land by force.",
+                "The British decided to kill him and take the land by force.",
+                "The British decided to kill him and take the land by force."
+            ],
+            "output": "The city lacks fortifications and military structures."
+        },
+        {
+            "input": "Some towns on the Eyre Highway in the south-east corner of Western Australia, between the South Australian border almost as far as Caiguna, do not follow official Western Australian time.",
+            "references": [
+                "Some towns on the Eyre Highway in southeast Western Australia between Australia and Caiguna don't follow Western Australia time.",
+                "Some towns on the Eyre Highway do not follow official Western Australia time.",
+                "Some towns in Western Australia do not use Western Australian time.",
+                "Towns between Western Australia up to Caiguna don't follow Western Australian time.",
+                "Some towns on the Eyre Highway in Western Australia do not follow official Western Australian time.",
+                "Some towns in Western Australia do not follow the area's time.",
+                "Some towns located on the Eyre Highway in the south-east corner of Western Australia and between the South Australian border (almost as far as Caiguna), do not follow official Western Australian time.",
+                "Some towns on the Eyre Highway in the south-east corner of Western Australia, do not follow official Western Australian time.",
+                "Some towns on the Eyre Highway in the south-east corner of Western Australia, almost as far as Caiguna, do not follow official Western Australian time.",
+                "Some towns in the south-east area of Western Australia do not follow official West Australian time."
+            ],
+            "output": "San Francisco Bay is in California. It is surrounded by a region called the San Francisco Bay Area. This area includes the large cities of San Francisco, Oakland, and San Jose."
+        },
+        {
+            "input": "In architectural decoration Small pieces of colored and iridescent shell have been used to create mosaics and inlays, which have been used to decorate walls, furniture and boxes.",
+            "references": [
+                "In designing small pieces of colored shells are used to make decorations which are used to decorate walls, furniture, and boxes.",
+                "In architectural decoration, small pieces of colored shell have been used to make mosaics and inlays.  These have been used to decorate walls, furniture, and boxes.",
+                "Small pieces of colored shells make mosaics.  These mosaics decorate walls, furniture, and boxes.",
+                "Mosaics and inlays are made with small pieces of colored shells.",
+                "Small pieces of shell have been used to create mosiacs and inlays.  These have been used to decorate walls, furniture, and boxes.",
+                "Small pieces of colored shells are used to decorate walls, furniture and boxes.",
+                "In architectural decoration, Small pieces of colored and sparkling shell have been used to create mosaics and inlays. Those shells have been used to decorate walls, furniture and boxes.",
+                "In architectural decoration, small pieces of colored and iridescent shell have been used to create mosaics and inlays. These mosaics and inlays have been used to decorate walls, furniture and boxes.",
+                "In building design Small pieces of colored and shiny shells have been used to decorate walls, furniture and boxes.",
+                "Coloured and clear shells are used to create mosaics and inlays which are used to decorate walls, furniture and boxes."
+            ],
+            "output": "Adrastea was discovered in photographs taken by the Voyager 2 probe. David C. Jewitt and G. Edward Danielson made the discovery on July 8, 1979. Adrastea was then given its designation."
+        },
+        {
+            "input": "The other incorporated cities on the Palos Verdes Peninsula include Rancho Palos Verdes, Rolling Hills Estates and Rolling Hills.",
+            "references": [
+                "The other cities on the Peninsula are Rancho Palos Verdes, Rolling Hills Estates and Rolling Hills.",
+                "Other cities on the Palos Verdes Peninsula include Rancho Palos Verdes, Rolling Hills Estates, and Rolling Hills.",
+                "Other cities include Rancho Palos Verdes, Rolling Hills Estates and Rolling Hills.",
+                "The other cities on the Palos Verdes Peninsula are Ranch Palos Verdes, Rolling Hills Estates and Rolling Hills.",
+                "The other cities on the Palos Verdes Peninsula include Rancho Palos Verdes, Rolling Hills Estates and Rolling Hills.",
+                "The other incorporated cities in the Palos Verdes Peninsula include Rancho Palos Verdes, Rolling Hills Estates and Rolling Hills",
+                "There are several incorporated cities on the Palos Verdes Peninsula.",
+                "The other cities on the Palos Verdes Peninsula are Racho Palos Verdes, Rolling Hill Estates and Rolling Hills.",
+                "The other cities on the Palos Verdes Peninsula are: Racho Palos Verdes, Rolling Hills Estates and Rolling Hills.",
+                "The Palos Verdes Penisula has incorporated cities. Some are Rancho Palos Verdes, Rolling Hills Estates and Rolling Hills."
+            ],
+            "output": "Picasa Web Albums was leaked on June 6, 2006."
+        },
+        {
+            "input": "Fearing that Drek will destroy the galaxy, Clank asks Ratchet to help him find the famous superhero Captain Qwark, in an effort to stop Drek.",
+            "references": [
+                "Fearing that Drek will destroy the galaxy, a search is underway for Captain Qwark, to help stop Drek.",
+                "In an effort to stop Drek from destroying the galaxy, Clank asks Rachet to help him find Captain Qwark.",
+                "While trying to stop Drek, Clank asks Ratchet to help him find Captain Quark.",
+                "Clank was afraid that Drek would destroy the galaxy, so he asked Ratchet to help him find the famous superhero Captain Qwark.",
+                "Clank asks Ratchet to help him find the famous superhero Captain Qwark in an effort to stop Drek from destroying the galaxy.",
+                "Fearing that Drek will destroy the galaxy, Clank asks Ratchet to help him find the famous superhero Captain Qwark. He hopes this will stop Drek.",
+                "To stop Drek from destroying the galaxy, Clank  asks for help from Ratchet to find Captain Qwark.",
+                "Clank asks Ratchet to help him find Captain Qwark to stop Drek from destroying the galaxy.",
+                "Clank fears that Drek will destroy the galaxy.  Therefore, Clank asks Ratchet to help him found the famous superhero Captain Qwark.  Maybe Qwark will be able to stop Drek.",
+                "Drek might destroy the galaxy. Clank and Ratchet need to locate Captain Qwark. He might be able to stop Drek."
+            ],
+            "output": "It is likely a basic structure made of carbonates."
+        },
+        {
+            "input": "It is not actually a true louse.",
+            "references": [
+                "It is not a louse.",
+                "It is not a real louse.",
+                "It is not a true louse.",
+                "It is not really a louse.",
+                "It is actually not a true louse.",
+                "It is not actually a louse.",
+                "It is not a louse.",
+                "That is not actually a louse.",
+                "It is not a really lice.",
+                "It's not a real louse."
+            ],
+            "output": "Artemis was born first. After that, she helped with the birth of Apollo."
+        },
+        {
+            "input": "He advocates applying a user-centered design process in product development cycles and also works towards popularizing interaction design as a mainstream discipline.",
+            "references": [
+                "He recommends using a user-centered design process in product development cycles and also to popularize interaction design as a mainstream discipline.",
+                "He recommends applying a user-centered design process and also works towards popularizing interaction design.",
+                "He recommends using a user-centered design process.",
+                "He says to use a user-centered design process. He also tries to get more people to use interaction design.",
+                "He suggests using a user-centered design process when developing products and also works towards making interaction design popular.",
+                "He advocates applying a user-centered design process in product development cycles. He also works towards popularizing interaction design as a mainstream discipline.",
+                "He suggests a user process in the development cycle and wants to popularize  an interaction design.",
+                "He advocates for a user-centered design process and works towards making interaction design more mainstream.",
+                "He recommends applying a user-centered design process in product development cycles.  He also works towards making interactive design a mainsteam subject.",
+                "He believes interaction design should be the normal. He also prefers user-centered design processes in his product development."
+            ],
+            "output": "The park is a popular place for large protests."
+        },
+        {
+            "input": "It is theoretically possible that the other editors who may have reported you, and the administrator who blocked you, are part of a conspiracy against someone half a world away they've never met in person.",
+            "references": [
+                "It may be possible that others are a part of a conspiracy against you.",
+                "It's theoretically possible that the other editors who reported you, and the administrator who blocked you, are part of a conspiracy against someone half a world away they've never met in person.",
+                "Other editors and the administrator might be part of a conspiracy to report and block you. They could live half the world away.",
+                "It is possible that the editors who may have reported you, and the administrator who blocked you, are part of a conspiracy against someone they've never met.",
+                "It is possible that the editors and administrators are conspiring against you.",
+                "It is possible the editors and administrators are part of a conspiracy against you.",
+                "It's possible editors that didn't let you participate were against you even though they never met you.",
+                "The editors that might have reported you and the administrator who blocked you, could be working against you. Someone they have never met in person.",
+                "It is possible that the people who reported you and blocked you are part of a group. They live far away and plan to hurt a person they never met.",
+                "It is possible that the editors who may have reported you and the administrator who blocked you, are part of a plot against someone who they've never met and is half a world away."
+            ],
+            "output": "Breaking Dawn is the fourth novel in the Twilight series. It is also the final book written by Stephenie Meyer."
+        },
+        {
+            "input": "Working Group I: Assesses scientific aspects of the climate system and climate change.",
+            "references": [
+                "Working Group I: Looks at the aspects of climate change and the climate",
+                "Working Group I: Assesses the climate system and climate change.",
+                "The Working Group I have reviewed the climate system and change.",
+                "Working Group 1 rates scientific features of the climate system and climate change.",
+                "Working Group One investigates climate system and climate change.",
+                "Group 1: evaluate climate change and systems.",
+                "Working Group I looks at the science of weather patterns.",
+                "Working Group I: Looks at scientific aspects of the climate system and climate change.",
+                "Working Group 1: Judges parts of the climate system and changes in climate.",
+                "Working Group I: Evaluates scientific parts of the climate system and climate change."
+            ],
+            "output": "The main town is Abingdon. Other places are Faringdon and Wantage."
+        },
+        {
+            "input": "The island chain forms part of the Hebrides, separated from the Scottish mainland and from the Inner Hebrides by the stormy waters of the Minch, the Little Minch and the Sea of the Hebrides.",
+            "references": [
+                "The island chain is part of the Hebrides. It is separated from the Scottish mainland and from the Inner Hebrides.",
+                "The island chain is part of the Hebrides, separated from the Scottish mainland and from the Inner Hebrides by the Minch, the Little Minch and the Sea of the Hebrides.",
+                "The Minch, Little Minch, and Sea of Hebrides separates Scotland's mainland from the island chain.",
+                "The island chain forms part of the Hebrides.  It is separate from the Scottish mainland and the Inner Hebrides by theh Minch, the Little Minch, and the Sea of the Hebrides.",
+                "The island chain is part of the Hebrides, and is separated from the Scottish mainland by several different bodies of water.",
+                "Hebrides are an island chain separated from the Scottish mainland and from the Inner Hebrides by the Minch waters little Minch and the sea of the hebrides.",
+                "Hebrides Islands are apart from Scotland's mainland and Inner Hebrides by rough waters of Minch, Little Minch and the Sea of the Hebrides.",
+                "The islands are part of the Hebrides. They are separated from the Scottish mainland by the waters of the Minch, the Little Minch and the Sea of the Hebrides.",
+                "The chain of islands makes up part of Hebrides. It is kept apart from mainland Scotland and the Inner Hebrides by waters.",
+                "The island chain makes part of the Hebrides, aside from the Scottish mainland and from the Inner side of Hebrides by the stormy waters of the Minch, the Little Minch and the Sea of the Hebrides."
+            ],
+            "output": "The municipality has around 5,700 residents."
+        },
+        {
+            "input": "Orton and his wife welcomed Alanna Marie Orton on July 12, 2008.",
+            "references": [
+                "Orton and his wife had a child named Alanna Marie Orton on July 12, 2088.",
+                "Orton and his wife welcomed Alanna Marie Orton July 12, 2008.",
+                "Alanna Marie Orton was born on July 12th, 2008.",
+                "Orton and his wife welcomed Alanna Marie on July 12, 2008.",
+                "Alanna Marie Orton was born on July 12, 2008 to Orton and his wife.",
+                "Orton and his wife had baby alanna Marie Orton on july 12, 2008",
+                "Alanna Marie Orton was born to Orton and his wife on July 12, 2008.",
+                "Orton's wife gave birth to  Alanna Marie Orton on 12/07/2008.",
+                "Orton and his wife had a baby named Alanna Marie Orton on July 12, 2008.",
+                "Alanna Marie Orton was born to Orton and his wife on July 12, 2008."
+            ],
+            "output": "The 2001 Census data can be found through external links. It was accessed on November 29, 2006."
+        },
+        {
+            "input": "Formal minor planet designations are number-name combinations overseen by the Minor Planet Center, a branch of the IAU.",
+            "references": [
+                "The Minor Planet Center gives number name combinations to minor planets.",
+                "Formal minor planet names are combinations of numbers and a name overseen by the Minor Planet Center.",
+                "Planet names are number-name combinations named by the Minor Planet Center.",
+                "Formal minor planet designations are number-name combinations overseen by the Minor Planet Center.",
+                "Minor planets were named using a combination of numbers and names. The Minor Planet Center, part of the IAU, oversaw the project.",
+                "The Minor Planet Center gives number-names to small planets.",
+                "Small planets are given a number-name by the Minor Planet Center a part of the IAU.",
+                "Formal minor planet classifications are number-name combinations managed by the Minor Planet Center, a branch of the IAU.",
+                "Formal minor planets are designated with a number-name combination.  The designation is supervised by the Minor Planet Center.  The Minor Planet Center is a branch of the IAU.",
+                "The Minor Planet Center, a branch of the IAU, is responsible for giving minor planets number-name combinations."
+            ],
+            "output": "A team of astronomers from the University of Hawaii discovered it. The team was led by Scott S. Sheppard and others."
+        },
+        {
+            "input": "By early on September 30, wind shear began to dramatically increase and a weakening trend began.",
+            "references": [
+                "On September 30 the wind increased.",
+                "By September 30, wind shear began to increase and weakening began.",
+                "On September 30, wind shear began to rise and a weakening trend started.",
+                "Early September 30, wind shear began to dramatically increase and a weakening trend began.",
+                "By early September 30, wind shear increased and weakening began.",
+                "On September 30, the wind got worse and then weakened.",
+                "Wind changes went up then down beginning September 30.",
+                "Early on September 30, wind shear began to increase dramatically and weakening trend started.",
+                "Early on September 30, the wind began to change speed and direction.  A weakening trend began.",
+                "Wind shear greatly increased early on September 30th and the storm began to weaken."
+            ],
+            "output": "Nocturnes is a piece of orchestral music. It has three movements and was composed by Claude Debussy, a French composer."
+        },
+        {
+            "input": "Each entry has a datum (a nugget of data) which is a copy of the datum in some backing store.",
+            "references": [
+                "There is a copy of each datum entry in some backing store.",
+                "Each entry has a copy of data in a backing store.",
+                "Each entry has a datum and is copied on a back up.",
+                "Each entry has a datum which is a copy of the datum in some backing store.",
+                "Each entry has a small bit of data which is a copy of another bit of data.",
+                "Each entry has a data copy",
+                "The entry has a small amount of information which is a copy of stored information.",
+                "Each entry has an information (a nugget of data) which is a copy of the information in some backing store.",
+                "Each entry has a small piece of information which is a copy of the information in a backup storage.",
+                "Each entry has a datum (a nugget of data) that is a copy of the datum in back-up storage."
+            ],
+            "output": "The Alexandrian Life of Aeschylus states that the playwright won the first prize at the City Dionysia thirteen times."
+        },
+        {
+            "input": "As a result, although many mosques will not enforce violations, both men and women when attending a mosque must adhere to these guidelines.",
+            "references": [
+                "Men and women attending a mosque must follow certain guidelines.",
+                "While many mosques will not enforce violations, everyone at a mosque must follow these guidelines.",
+                "Many mosques will not punish violations, anyone attending a mosque must obey the guidelines.",
+                "Although many mosques don't enforce violations, both men and women attending a mosque must adhere to these guidelines.",
+                "While many mosques do not enforce violations, men and women must follow the guidelines.",
+                "Everyone must follow the rules when at a mosque.",
+                "Men and women have to follow rules at a mosque even though many mosques don't punish.",
+                "As a result, men and women who attend a mosque must adhere to these guidelines although many mosques will not give out violations.",
+                "Many mosques will not enforce violations.  But, both men and women must follow the rules when attending a mosque.",
+                "Even though many mosques will not enforce violations, men and women must adhere to the guidelines."
+            ],
+            "output": "Calvinism became somewhat popular in Scandinavia, particularly in Sweden. However, after the synod of Uppsala in 1593, it was rejected in favor of Lutheranism."
+        },
+        {
+            "input": "Mariel of Redwall is a fantasy novel by Brian Jacques, published in 1991.",
+            "references": [
+                "Mariel of Redwall is a novel written by Brian Jacques. It was published in 1991.",
+                "Mariel of Redwall is a 1991 fantasy book by Brian Jacques.",
+                "Mariel of Redwall\" by Brian Jacques is a fantasy book.  It was published in 1991.",
+                "Brian Jacques published the fantasy novel Mariel of Redwall in 1991.",
+                "Mariel of Redwall is a fantasy book by Brian Jacques that was published in 1991.",
+                "Mariel of Redwall is a novel by Brian Jacques.",
+                "Mariel of Redwall is a fantasy novel. Brian Jaqcues is the author. It was published in 1991.",
+                "Mariel of Redwall is a fantasy novel by Brian Jacques.  It was published in 1991.",
+                "Mariel Redwall is a pretend book by Brian Jacques, made in 1991.",
+                "Mariel of Redwall is a 1991 fantasy novel by Brian Jacques."
+            ],
+            "output": "He was on vacation in Germany the next summer. That was when World War I started."
+        },
+        {
+            "input": "Ryan Prosser (born 10 July, 1988) is a professional rugby union player for Bristol Rugby in the Guinness Premiership.",
+            "references": [
+                "Born in 1988, Ryan Prosser is a professional rugby player. He plays for Bristol Rugby in the Guinness Premiership.",
+                "Ryan Prosser is a ruby union player for Bristol Rugby.",
+                "Ryan Prosser was born on 10 July 1988.  He plays rugby professionally for the Bristol Rugby team, and plays at the Guinness Premiership game.",
+                "Ryan Prosser is a professional rugby player for Bristol Rugby in the Guinness Premiership.",
+                "Ryan Prosser (born 10 July, 2988) is a nonamateur rugby union player for Bristol Rugby in the Guinness Premiership.",
+                "Ryan Prosser is a professional ruby player for Bristol Ruby.",
+                "Ryan Prosser plays professional rugby for Bristol Rugby.",
+                "Ryan Prosser is a professional rugby player for Bristol Rugby.  The team competes in the Guinness Premiership.",
+                "Ryan Prosser (born 10 July, 1988) is a pro rugby player for Bristol Rugby in the Guinness Premiership.",
+                "Ryan Prosser plays for Bristol Rugby in the Guinness Premiership."
+            ],
+            "output": "Surveyors use geometry, engineering, trigonometry, mathematics, physics, and law. They do this to achieve their goals."
+        },
+        {
+            "input": "Like previous assessment reports, it consists of four reports, three of them from its working groups.",
+            "references": [
+                "It consists of four reports. Three of them are from its working groups.",
+                "It is made of four reports, with three from its working groups, like previous assessment reports.",
+                "It is made up of four reports. Three out of the four reports are from its working groups.",
+                "The assessment consists of four reports, three of them from working group.",
+                "Like earlier evaluation reports it contains four reports, three of them from its working groups.",
+                "The assessment reports contain three from its working group.",
+                "There are four assessment reports. Three reports come from working reports.",
+                "Like usual, it has four assessment reports.  Three of them are from its working groups.",
+                "Like ones in the past, there are four reports with three from the working groups.",
+                "Like past assessment reports, it consists of four reports, three from working groups."
+            ],
+            "output": "Vampire Squid have a low metabolic rate and find few prey at great depths. To save energy, they must use clever tactics to avoid predators."
+        },
+        {
+            "input": "Their granddaughter H\u00e9l\u00e8ne Langevin-Joliot is a professor of nuclear physics at the University of Paris, and their grandson Pierre Joliot, who was named after Pierre Curie, is a noted biochemist.",
+            "references": [
+                "Their granddaughter is a professor of nuclear physics at the University of Paris and their grandson is a renowned biochemist.",
+                "Their granddaughter H\u00e9l\u00e8ne Langevin-Joliot is a professor of nuclear physics at the University of Paris. Their grandson Pierre Joliot is a noted biochemist.",
+                "Their granddaughter H\u00e9l\u00e8ne teaches nuclear physics at the University of Paris.  Their grandson Pierre is a biochemist.",
+                "Their granddaughter Helene is a professor of nuclear physics at the University of Paris, and their grandson Pierre is a biochemist.",
+                "Their granddaughter H\u00e9l\u00e8ne Langevin-Joliot is a teacher of nuclear physics at the University of Paris, and their grandson Pierre Joliot is a well known biochemist.",
+                "Their granddaughter Helene Langevin-Joliot is a professor of nuclear physics and their grand son Pierre Joliot is a bichemist.",
+                "H\u00e9l\u00e8ne Langevin-Joliot is a professor of nuclear physics. She works at the University of Paris. Pierre Joliot is a noted biochemist.",
+                "Their granddaughter, H\u00e9l\u00e8ne Langevin-Joliot is a professor of nuclear physics at the University of Paris.  Their grandson,  Pierre Joliot is a biochemist.",
+                "Their granddaughter H\u00e9l\u00e8ne Langevin-Joliot teaches college nuclear physics at The University of Paris, and their grandson Pierre Joliot, named after Pierre Curie is a famous biochemist.",
+                "Their granddaughter H\u00e9l\u00e8ne Langevin-Joliot is a professor of nuclear physics, and their grandson Pierre Joliot, named after Pierre Curie, is a noted biochemist."
+            ],
+            "output": "In the 1950s, Camus focused on human rights."
+        },
+        {
+            "input": "This stamp remained the standard letter stamp for the remainder of Victoria's reign, and vast quantities were printed.",
+            "references": [
+                "This remained the standard letter stamp for the rest of Victoria's reign.  Vast quantities were printed.",
+                "For the remainder of Victoria's reign, this continued to be the standard stamp, and vast quantities were printed.",
+                "They printed vast amounts of Queen Victoria's postage stamp. It was standard during her time as Queen.",
+                "The stamp was used by Victoria until she was no longer the ruler, and many copies were printed.",
+                "This stamp stayed the standard letter stamp for the rest of Queen Victoria's reign.  Many were printed.",
+                "This stamp was the one for letters during Victoria's leading and there were many printed.",
+                "This stamp was the standard stamp for letters for the rest of Victoria's reign, and many were printed.",
+                "This stamp remained the standard for the rest of Victoria's reign. Many of these stamps were printed.",
+                "Large quantities of this stamp were printed and it became the standard letter stamp of Queen Victoria's reign.",
+                "This stamp remained the standard for the rest of Victoria's reign, and many were printed."
+            ],
+            "output": "Iron Maiden is the debut album by the heavy metal band Iron Maiden. It was released on April 14, 1980."
+        },
+        {
+            "input": "The International Fight League was an American mixed martial arts (MMA) promotion billed as the world's first MMA league.",
+            "references": [
+                "The International Fight League was an American MMA promotion, known as the world's first MMA league.",
+                "The world's first MMA (American mixed martial arts) promotion was The International Fight League.",
+                "The International Fight League is the world's first mixed martial arts league.",
+                "The International Fight League was known as the first American mixed martial arts (MMA) group.",
+                "The International Fight League was an American mixed martial arts promotion.  It was billed as the world's first MMA league.",
+                "The International Fight League was an American mixed martial arts  MMA that was the first league.",
+                "The International Fight League was an American mixed martial arts (MMA) group that is considered the first MMA League.",
+                "The International Fight League was presented as the world's first mixed martial arts league.",
+                "The International Fight League was an American promotion that was advertised as the world's first league for mixed martial arts (MMA.)",
+                "The International Fight League was an American mixed martial arts (MMA) event advertised as the world's first MMA league."
+            ],
+            "output": "The Vezina Trophy is given every year. It is awarded to the best goaltender in the National Hockey League."
+        },
+        {
+            "input": "Giardia lamblia (synonymous with Lamblia intestinalis and Giardia duodenalis) is a flagellated protozoan parasite that colonises and reproduces in the small intestine, causing giardiasis.",
+            "references": [
+                "Giardia lamblia is a flagellated protozoan parasite that colonises and reproduces in the small intestine, causing giardiasis.",
+                "Giardiasisi scaused by giardia lamblia (synonymous with Lamblia intestinalis and Giardia duodenalis).  It is a flagellated protozoan parasite that colonises and reproduces in the small intestine.",
+                "Giardia lamblia is a parasite. It can live in the intestines. It causes giardiasis.",
+                "Giardia lamblia is a parasite with whip-like appendages that lives and reproduces in the small intestine, causing giardiasis.",
+                "Giardia lamblia is a flagellated protozoan parasite.  It gathers and reproduces in the small intestine.  This causes giardiasis.",
+                "Giardia lamblia also known as Lamblia intestinalis and Giardia duodenalis is a parasite with parts that goes into the small intestine causing infection.",
+                "Giardia lamblia is a parasite that grows in the small intestine and causes giardiasis.",
+                "Giardia lamblia is a parasite that makes its home and reproduces within the small intestine. This causes giardiasis.",
+                "Giardia lamblia is similar to Lamblia intestinalis and Giardia duodenalis. This is a microscopic animal which has one cell and is classified as a protozoa. The Giardia lamblia has whip-like arms (flagella) and lives and thrives in the small intestine. It causes giardiasis which is an inflammation of the small intestine..",
+                "Giardia lamblia is a parasite that colonises and reproduces in the small intestine, causing giardiasis."
+            ],
+            "output": "A team of astronomers from the University of Hawaii, led by Scott S. Sheppard, discovered it in 2000. They gave it a temporary designation."
+        },
+        {
+            "input": "Aside from this, Cameron has often worked in Christian-themed productions, among them the post-Rapture films Left Behind: The Movie, Left Behind II: Tribulation Force, and Left Behind: World at War, in which he plays Cameron \"Buck\" Williams.",
+            "references": [
+                "Cameron has often worked in Christian productions.  They include Left Behind:  The Movie, Left Behind II: Tribulation Force, and Left Behind:  World at War.",
+                "Cameron has often worked in Christian-themed productions, among them are Left Behind: The Movie, Left Behind II: Tribulation Force, and Left Behind: World at War, in which he plays Cameron \"Buck\" Williams.",
+                "Cameron often works on Christian-based and inspirational film productions.",
+                "Cameron has worked in Christian-themed productions, including Left Behind: The Movie, Left Behind II: Tribulation Force, and Left Behind: World at War, where he plays the character Cameron \"Buck\" Williams.",
+                "Cameron has often worked in Christian-themed productions.  These include the following post-Rapture films: Left Behind: The Movie, Left Behind II: Tribulation Force, and Left Behind: World at War.  In these films he plays Cameron \"Buck\" Williams.",
+                "Cameron worked a lot in Christian movies like  the post-Rapture films Left Behind: The Movie, Left Behind II: Tribulation Force, and Left Behind: World at War, in which he plays Cameron \"Buck\" Williams.",
+                "Also, Cameron has done a lot of work in Christian productions, including the Left Behind films.",
+                "Cameron has often worked in Christian-themed productions. Among these are Left Behind: The Movie, Left Behind II: Tribulation Force, and Left Behind: World at War.",
+                "Cameron has often worked in Christian-themed productions such as the post-Rapture films: \"Left Behind;",
+                "Left Behind II: Tribulation Force;\" and \"Left Behind: World at War.\" He played the character Cameron \"Buck\" Williams."
+            ],
+            "output": "Hydra seems to have a neutral color like Charon and Nix. However, Pluto has a reddish color."
+        },
+        {
+            "input": "This was the area east of the mouth of the Vistula River, later sometimes called \"Prussia proper\".",
+            "references": [
+                "Prussia proper was the area east of the mouth of the Vistual River.",
+                "The area was east of the beginning of the Vistula River. Later on, some people called it \"Prussia proper.",
+                "Prussia proper was the place east of the mouth of the Vistula River.",
+                "The area east of the mouth of the Vistula River was sometimes called \"Prussia proper\".",
+                "This area east of the mouth of the Vistula River was later sometimes called \"Prussia proper\".",
+                "This was the area which is east of the opening of the Vistula River and later people sometimes called it \"Prussia proper\".",
+                "This was east of the mouth of Vistula River, sometimes called \"Prussia proper.",
+                "This was the location east of the mouth of the Vistula River, later sometimes called \"Prussia proper.",
+                "The area east of the mouth of the Vistula River is sometimes called Prussia proper.",
+                "Prussia proper was another name for the eastern mouth of the Vistuala River."
+            ],
+            "output": "Key factors in an RTOS are minimal interrupt latency and minimal thread switching latency."
+        },
+        {
+            "input": "After graduation he returned to Yerevan to teach at the local Conservatory and later he was appointed artistic director of the Armenian Philarmonic Orchestra.",
+            "references": [
+                "After graduation he returned to Yerevan to teach at the conservatory. Later he was appointed artistic director of the Armenian Philarmonic Orchestra.",
+                "After graduation, he came back to Yerevan to teach at the local Conservatory. He later became artistic director of the Armenian Philarmonic Orchestra.",
+                "After finishing school he went back to Yerevan to teach at the local Conservatory and later became leader of the American Philharmonic Orchestra.",
+                "After he graduated he went back to Yerevan.  In Yerevan he taught at the local Conservatory.  Later he became artistic director of the Armenian Philharmonic Orchestra.",
+                "After graduation he returned to Yerevan to teach at the local Conservatory and later became director of the Armenian Philarmonic Orchestra",
+                "After graduation, he returned to Yerevan to teach at the local music college and later he was appointed as artistic director of the Armenian Philarmonic Orchestra.",
+                "He returned to Yerevan after graduation to teach at the local Conservatory.  He was later appointed artistic director of the Armenian Philarmonic Orchestra.",
+                "After graduating he returned to Yerevan to teach at the local Conservatory and later was made the artistic director of the Armenian Philharmonic Orchestra.",
+                "After graduation, he went back to Yerevan to teach and was later appointed director of the Armenian Philarmonic Ochestra.",
+                "He taught at the local Conservatory. He became the artistic director of the Armenian Philarmonic Orchestra."
+            ],
+            "output": "The waxing crescent moon symbolizes a young nation that is rising."
+        },
+        {
+            "input": "The story of Christmas is based on the biblical accounts given in the Gospel of Matthew, namely - and the Gospel of Luke, specifically -.",
+            "references": [
+                "The story of Christmas is based on the Gospel of Matthew and Luke.",
+                "The Christmas story is based on the biblical versions of the story. The biblical versions come from the Gospels of Matthew and Luke.",
+                "Christmas is based on Bible stories in the Gospel of Matthew, Luke mainly.",
+                "The Christmas story is based on the biblical stories in the Gospels of Matthew and Luke.",
+                "Christmas is based on stories from the Gospel of Matthew and the Gospel of Luke.",
+                "The story of Christmas is based on the bible in the Gospel of Matthew and The Gospel of Luke, specifically .",
+                "The story of Christmas is based on the biblical accounts given in the Gospels of Matthew and Luke.",
+                "The story of Christmas is about the stories from the bible in the Gospel of Matthew and the Gospel of Luke.",
+                "Christmas is based on biblical accounts in the Gospel of Matthew and the Gospel of Luke.",
+                "The story of Christmas is based on the Gospel of Matthew and Luke."
+            ],
+            "output": "The ALU is a key part of a computer's central processing unit (CPU). Even basic microprocessors have an ALU to help with tasks like keeping timers."
+        },
+        {
+            "input": "Weelkes was later to find himself in trouble with the Chichester Cathedral authorities for his heavy drinking and immoderate behaviour.",
+            "references": [
+                "Weelkes was in trouble with Chinchester Cathedral authorities for his heavy drinking and poor behaviour.",
+                "Weelkes got in trouble with the Chichester Cathedral authorities because he drank a lot and behaved poorly.",
+                "Weelkes was in trouble with the Chichester Cathedral leaders later for drinking and misbehaving.",
+                "Later Weelkes found himself in trouble with the Chichester Cathedral authorities, due to his heavy drinking and improper behaviour.",
+                "Weelkes later got in trouble with the Chichester Cathedral authorities for his drinking and bad behavior",
+                "Later, Weelkes found himself in trouble with the Chichester Cathedral authorities for his drunk and inappropriate behaviour.",
+                "Weelkes got in trouble with the Chichester Cathedral authorities for heavy drinking and extreme behavior.",
+                "Weelkes would later find himself in trouble with the Chichester Cathedral authorities for his heavy drinking and unruly behavior.",
+                "Weelkes later found himself in trouble with the Chichester Cathedral's officials because of his heavy drinking and behavior.",
+                "Excessive drinking and bad behavior got him in trouble with Chichester Cathedral."
+            ],
+            "output": "The village likely joined the territory of the Reichenau monastery in the ninth century."
+        },
+        {
+            "input": "So far the 'celebrity' episodes have included Vic Reeves, Nancy Sorrell, Gaby Roslin, Scott Mills, Mark Chapman, Simon Gregson, Sue Cleaver, Carol Thatcher, Paul O'Grady and Lee Ryan.",
+            "references": [
+                "The 'celebrity' shows have included the following individuals: Vic Reeves, Nancy Sorrell, Gaby Roslin, Scott Mills, Mark Chapman, Simon Gregson, Sue Cleaver, Carol Thatcher, Paul O'Grady and Lee Ryan.",
+                "So far the 'celebrity' episodes have included Vic Reeves, Nancy Sorrell, Gaby Roslin, Scott Mills, Mark Chapman, Simon Gregson, Sue Cleaver, Carol Thatcher, Paul O'Grady and Lee Ryan.",
+                "So far the 'celebrity' episodes have included Vic Reeves, Nancy Sorrell, Gaby Roslin, Scott Mills, Mark Chapman, and Simon Gregson. Other celebrities have been Sue Cleaver, Carol Thatcher, Paul O'Grady and Lee Ryan.",
+                "Vic Reeves, Nancy Sorrell, Gaby Roslin, Scott Mills, Mark Chapman, Simon Gregson, Sue Cleaver, Carol Thatcher, Paul O'Grady and Lee Ryan have appeared in 'celebrity' episodes.",
+                "The VIP Episodes inclduded Vic Reeves, Nancy Sorrell, Gaby Roslin, Scott Mills, Mark Chapman, Simon Gregson, Sue Cleaver, Carol Thatcher, Paul O'Grady and Lee Ryan.",
+                "The celebrity episodes have included Vic Reeves, Nancy Sorrell, Gaby Roslin, Scott Mills, Mark Chapman, Simon Gregson, Sue Cleaver, Carol Thatcher, Paul O'Grady and Lee Ryan.",
+                "Vic Reeves, Nancy Sorrell, Gay Roslin, Scot Mills, Mark Chapman, Simon Gregson, Sue Cleaver, Carol Thatcher, Paul O'Grady, and Lee Ryan have been on the show.",
+                "Special episodes have contained famous people.",
+                "So far movie stars Vic Reeves, Nancy Sorrell, Gaby Roslin, Scott Mills, Mark Chapman, Simon Gregson, Sue Cleaver, Carol Thatcher, Paul O'Grady and Lee Ryan are in the shows.",
+                "The celebrity episodes have included several big name stars."
+            ],
+            "output": "In 2008, at the Cannes Film Festival, Alain Siritzky announced a global search. They were looking for a new Emmanuelle to star in a series of films."
+        },
+        {
+            "input": "It was discovered by Stephen P. Synnott in images from the Voyager 1 space probe taken on March 5, 1979 while orbiting around Jupiter.",
+            "references": [
+                "Stephen P. Synnott discovered it.  He found it in images from the Voyager 1 space probe taken on March 5, 1979 while spinning around Jupiter.",
+                "Stephen P. Synnott noticed it in pictures from the Voyager 1 space probe.",
+                "It was discovered by Stephen P. Synnott in images from the Voyager 1 space probe.The images were taken on March 5, 1979 while orbiting around Jupiter.",
+                "It was found by Stephen P. Synnott in images taken by the Voyager 1 space probe.They were taken on March 5, 1979 near Jupiter.",
+                "The discovery was made by Stephen P. Synott. The images where taken from the Voyager 1 space probe on March 5, 1979 in Orbit.",
+                "It was discovered by Stephen P. Synnott in the Voyager 1 space probe's photos taken March 5, 1979 while orbiting around Jupiter.",
+                "It was found by Stephen P. Synnott in pictures taken from the Voyager 1 space probe that were taken March 5, 1979 while the probe was travelling around Jupiter.",
+                "The Voyager 1 was orbiting around Jupiter, and Stephen P. Synnot discovered it .",
+                "Stephen P. Synnott found it in pictures from the Voyager 1 space ship taken March 5, 1979 while going around Jupiter.",
+                "Stephen Synnott discovered this using pictures from Voyager 1 taken in orbit around Jupiter."
+            ],
+            "output": "Hardy mentions \"burn out\" as a reason for leaving WWE. He also highlights the need for time off."
+        },
+        {
+            "input": "Gomaespuma was a Spanish radio show, hosted by Juan Luis Cano and Guillermo Fesser.",
+            "references": [
+                "Gomaespuma was a Spanish radio show.  It was hosted by Juan Luis Cano and Guillermo Fesser.",
+                "Gomaespuma was a Spanish radio show, hosted by Juan Luis Cano and Guillermo Fesser.",
+                "Gomaespuma was a Spanish radio show. It was hosted by Juan Luis Cano and Guillermo Fesser.",
+                "Gomaespuma\" was a Spanish radio show.  The hosts were Juan Luis Cano and Guillermo Fesser.",
+                "Juan Luis Cano and Guillermo Fesser hosted Gomaespuma, a Spanish radio show.",
+                "Gomaespuma was a Spanish radio show, with Juan Luis Cano and Guillermo Fesser.",
+                "Gomaespuma was a radio show hosted by Juan Luis Cano and Guillermo Fesser.",
+                "Juan Luis Cano and Guillermo Fesser hosted a Spanish radio show called Gomaespuma.",
+                "Gomaespuma was a Spanish radio show led by Juan Luis Cano and Guillermo Fesser.",
+                "Cano and Fesser hosted this Spanish radio show."
+            ],
+            "output": "Q is the seventeenth letter. It is part of the basic modern Latin alphabet."
+        },
+        {
+            "input": "On 16 June 2009, the official release date of The Resistance was announced on the band's website.",
+            "references": [
+                "On June 16, 2009 the official release date of The Resistance was announced.  It was announced on the band's website.",
+                "The album, The Resistance was announced on the website in 2009.",
+                "The official release date of The Resistance was announced on the band's website on 16 June 2009.",
+                "On 16/06/2009 the release date of the album \"The Resistance\" was announced on the band\\'s website.",
+                "The offical release date of The Resistance was announced on June 16th 2009.",
+                "On 16 June 2009, the release date of The Resistance was announced on the band's website.",
+                "On June 16, 2009 the band announced the release date of The Resistance.",
+                "The Resistance announced their official release date on their website in 2009.",
+                "The Resistance was shown first on 16 June 2009 on the band's website.",
+                "The band released The Resistance on June 16, 2009."
+            ],
+            "output": "Two fishers were reported missing among the casualties."
+        },
+        {
+            "input": "He is also a member of another Jungiery boyband 183 Club.",
+            "references": [
+                "He's also a member of another Jungiery boyband, 183 Club.",
+                "He belonged to the Jungiery boyband 183 Club.",
+                "He is a member of two singing musical groups. The names of these groups are Jungiery and 183 Club.",
+                "He is also a member of the Jungiery boyband named 183 Club.",
+                "He is also in 183 Club.",
+                "He was in the Jungiery boyband 183 Club too.",
+                "He is a member of Jungiery boyband 183 Club.",
+                "He is also a member of boyband 183 club.",
+                "He is also part of another Jungiery band called 183 Club.",
+                "He is a member of a boyband called Jungiery."
+            ],
+            "output": "This book is out of print. It was published in 1990 as part of a collection called The Worthing Saga, which includes nine short stories."
+        },
+        {
+            "input": "The Apostolic Tradition, attributed to the theologian Hippolytus, attests the singing of Hallel psalms with Alleluia as the refrain in early Christian agape feasts.",
+            "references": [
+                ": The Apostolic Tradition, attributed to the theologian Hippolytus, cites of Hallel psalms with Alleluia as the refrain in early Christian agape feasts.",
+                "Religious leader Hippolytus made the Apostolic Tradition which says to sing Hallel poems with Alleluia as in early Christian agape feasts.",
+                "The Apostolic Tradition includes singing Hallel psalms. Hallel psalms have the word Alleluia in the chorus. These songs were sung during Christian agape feasts. Scholars believe this singing tradition was started by the Bible scholar Hippolytus.",
+                "The Apostolic Tradition was created by the religion expert Hippolytus. It shows the singing of Hallel psalms with Alleluia as the refrain in early Christian feasts.",
+                "The Apostolic Tradition, shows the singing of Hallel psalms with Alleluia as the refrain.",
+                "Hippolytus created the tradition of singing Hallel psalms with the chorus Alleluia during feasts.",
+                "he Apostolic Tradition disallows singing of some psalms during feasts.",
+                "The Apostolic Tradition involves the singing of Hallel psalms with Alleluia as the refrain.",
+                "According to the Apostolic Tradition of Hippolytus, Hallel psalms are sung with Alleluia at early Christian feasts.",
+                "In early Agape feasts the singing of Hallel psalms included the use of Aleluia."
+            ],
+            "output": "The 1977 Atlantic hurricane season started on June 1, 1977. It ended on November 30, 1977."
+        },
+        {
+            "input": "In return, Rollo swore fealty to Charles, converted to Christianity, and undertook to defend the northern region of France against the incursions of other Viking groups.",
+            "references": [
+                "In return, Rollo swore fealty to Charles, converted to Christianity, and began defending the northern region of France against the incursions of other Viking groups.",
+                "Rollo swore loyalty to Charles becoming a Christian and defended France against the Viking groups.",
+                "Rollo swore to be loyal to Charles, then he changed his religion to Christianity. Rollo protected northern France by fighting Viking invaders.",
+                "In return, Rollo swore loyalty to Charles and changed his religion to Christianity. He vowed to defend the northern region of France against other Viking groups.",
+                "Rollo swore to Charles, converted to Christianity, and took over defending the northern region of France.",
+                "Rollo promised to serve Charles, became a Christian and agreed to defend northern France against Vikings.",
+                "Rollo bowed to Charles. He converted to Christianity. He defended the northern area of France from Vikings.",
+                "In return, Rollo swore loyalty to Charles, converted to Christianity, and defended north France against other Viking groups.",
+                "Rollo swore to be loyal to Charles, converted to Christianity and agreed to defend northern France against the entry of other Viking groups.",
+                "Rollo swore loyalty to Charles and defended northern France against the Vikings."
+            ],
+            "output": "The Cold War prevented any further trials from happening."
+        },
+        {
+            "input": "It is derived from Voice of America (VoA) Special English.",
+            "references": [
+                "It is derived from Voice of America Special English.",
+                "It comes from Voice of America (VoA) Special English.",
+                "It comes from the Voice of America Special English.",
+                "It is created from Voice of America (VoA) Special English.",
+                "It came from Voice of America (VoA) Special English.",
+                "It comes from Voice of America Special English.",
+                "It is based on Voice of America (VoA) Special English.",
+                "It comes from Voice of America (VoA) Special English.",
+                "It comes from Voice of America (VoA) Special English.",
+                "It is taken from Voice of America."
+            ],
+            "output": "Dundee has two universities. They are the University of Abertay Dundee and the University of Dundee."
+        },
+        {
+            "input": "Disney received a full-size Oscar statuette and seven miniature ones, presented to him by 10-year-old child actress Shirley Temple.",
+            "references": [
+                "Disney got a full-size Oscar statue and seven little ones given to him by 10 year old actress Shirley Temple.",
+                "Disney got a full-size Oscar statuette and seven miniature ones, presented by 10-year-old actress Shirley Temple.",
+                "Disney got a full-size Oscar statue and seven small ones. Child actress Shirley Temple gave them to him.",
+                "10-year-old child actress Shirley Temple presented Disney with one full size and 7 miniature Oscar statuettes.",
+                "10 year old shirley temple presented disney a full-size oscar statue and seven small ones.",
+                "Disney was given a full-size Oscar and seven miniature Oscars.  The awards were presented to him by 10-year-old actress Shirley Temple.",
+                "Shirley Temple presented a large Oscar statuette and seven small ones to Disney.",
+                "Shirley Temple presented Disney with a full-size Oscar statue and seven miniature ones.",
+                "Disney received eight total Oscar statuettes presented to him by Shirley Temple.",
+                "Disney was given a full-size Oscar statuette and seven small statues by 10-year-old child actress Shirley Temple."
+            ],
+            "output": "John Paul Stevens was born on April 20, 1920. He is the senior Associate Justice of the Supreme Court of the United States."
+        },
+        {
+            "input": "It was the first asteroid to be discovered by a spacecraft.",
+            "references": [
+                "It was the first asteroid found by a spaceship.",
+                "It was the first asteroid discovered by a spacecraft.",
+                "The asteroid was the first one that a spacecraft discovered.",
+                "It was the first asteroid to be found be a spacecraft.",
+                "it was the first piece of rock in space to be found by a spacecraft.",
+                "It was the first asteroid found by a spacecraft.",
+                "It was the first asteroid discovered by a spacecraft.",
+                "It was the first asteroid discovered by a spacecraft.",
+                "It was the first asteroid to be discovered by a spacecraft.",
+                "It was the first asteroid to be found by a spacecraft."
+            ],
+            "output": "The platforms at both the old and new stations were in use for a while. Eventually, the original station closed and was demolished."
+        },
+        {
+            "input": "Hinterrhein is an administrative district in the canton of Graub\u00fcnden, Switzerland.",
+            "references": [
+                "Hinterrhein is a leading district in the place of Graub\u00fcnden, Switzerland.",
+                "Hinterrhein is a district in the canton of Graub\u00fcnden, Switzerland.",
+                "Hinterrhein is a district of Graubunden, Switzerland.",
+                "Hinterrhein is a business district in Graubunden, Switzerland.",
+                "Hiterrhein is a district in Graubunden, Switzerland.",
+                "Hinterrhein is an administrative district.  It is located in the canton of Graub\u00fcnden, Switzerland.",
+                "Hinterrhein is a district in Graubunden, Switzerland.",
+                "Hinterrhein is a district in Graubunden, Switzerland.",
+                "Hinterrhein is in the canton of Graub\u00fcnden, Switzerland.",
+                "Hinterrhein is an administrative district in the small area of Graub\u00fcnden, Switzerland."
+            ],
+            "output": "All storms that have affected Arizona formed in the later part of the Pacific hurricane season. Before August, only remnants of storms have impacted the state."
+        },
+        {
+            "input": "It continues as the Bohemian Switzerland in the Czech Republic.",
+            "references": [
+                "It goes on as the Bohemian Switzerland in the Czech Republic.",
+                "It continues as Bohemian Switzerland in the Czech Republic.",
+                "Now, it is Bohemian Switzerland in the Czech Republic.",
+                "It remains the Bohemian Switzerland in the Czech Republic.",
+                "It is now the Bohemian Switzerland in the Czech Republic.",
+                "It continues as Bohemian Switzerland and is located in the Czech Republic.",
+                "It continues as the Bohemian Switzerland.",
+                "It is now the Bohemian Switzerland in the Czech Republic.",
+                "It continues as the Bohemian Switzerland in the Czech Republic.",
+                "It continues as the Bohemian Switzerland in the Czech Republic."
+            ],
+            "output": "The two Byzantine outbreaks in the 8th and 9th centuries were unusual. The main issue in the dispute was the use of images. This was different from other disputes, where the issue was a result of broader concerns."
+        },
+        {
+            "input": "This leads to consumer confusion when 220 (1,048,576) bytes is referenced as 1 MB (megabyte) instead of 1 MiB.",
+            "references": [
+                "People get confused when the term MB is used instead of MiB.",
+                "This made people not understand when 220 (1,048,576) bytes is referenced as 1 MB (megabyte) instead of 1 MiB.",
+                "People become confused when 220 bytes are called 1 MB (megabyte) instead of 1 MiB.",
+                "Customer confusion entails when 220 (1,048,576) bytes is referred to as 1 MB instead of 1 MiB.",
+                "This leads to confusion when 1,048,576 bytes is referred to as 1 MB instead of 1 MiB.",
+                "Consumers are confused when  220 (1,048,576) bytes is called 1 MB (megabyte) instead of 1 MiB.",
+                "Consumers become confused when 220 (1,048,576) bytes is referred to as 1 MB (megabyte) instead of 1 MiB.",
+                "Confusion is caused when 220 (1,048,576) bytes is referred to 1 MB (megabyte) rather than 1 MiB.",
+                "This leads to confusion when 220 (1,048,576) bytes is referenced as 1 MB (megabyte) instead of 1 MiB.",
+                "This causes people to not understand when 220 (1,048,576) bytes is referenced as 1 MB (megabyte) instead of 1 MiB."
+            ],
+            "output": "A team of astronomers from the University of Hawaii discovered it in 2003. The team was led by Scott S. Sheppard, and the discovery received a temporary designation."
+        },
+        {
+            "input": "The incident has been the subject of numerous reports as to ethics in scholarship.",
+            "references": [
+                "The incident has raised concerns about ethics in scholarships.",
+                "What happened was in ethics reports in schooling subject.",
+                "The act is the subject of many reports on ethics in academics.",
+                "The incident was the subject of many reports as to ethics in scholarship.",
+                "The incident has been the subject of many reports on ethics in scholarship.",
+                "The incident caused many reports about ethics in scholarship.",
+                "The incident is discussed in many reports about ethics in scholarship.",
+                "Many reports about the incident relates to activity in scholarships.",
+                "The incident has been the subject of numerous reports as to the ethics in scholarships.",
+                "The incident has been the topic of reports on ethics in scholarship."
+            ],
+            "output": "The French word \"bourgeois\" comes from the Old French word \"burgeis.\" This earlier term means \"an inhabitant of a town."
+        },
+        {
+            "input": "They are castrated so that the animal may be more docile or may put on weight more quickly.",
+            "references": [
+                "The animals are castrated so they become more calm and put on weight.",
+                "The animal is made less wild and gain weight by castrating him.",
+                "The animals are castrated so they can be more tame gain weight faster.",
+                "The animals are castrated to be more docile or put on weight quicker.",
+                "They are castrated to make the animal more obedient or gain weight quickly.",
+                "Animals are castrated to become more docile and so they can gain weight easier.",
+                "They are castrated.  In this way, the animal becames tamer or may gain weight faster.",
+                "Animals genitallia are removed to increase weight faster or to increase learning.",
+                "They are castrated so that the animal may be more docile.  They also may put on weight more quickly.",
+                "They are castrated so that the animal may be lazier or may gain weight."
+            ],
+            "output": "The Book of Nehemiah is part of the Hebrew Bible. It is often seen as a continuation of the Book of Ezra. Sometimes, it is referred to as the second book of Ezra."
+        }
+    ]
+}

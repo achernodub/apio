@@ -1,0 +1,222 @@
+2025-02-13 12:41 - INFO - 
+iter_no = 00, valid_scores = [51.18615376831578, 50.793625962952284, 50.74822429551879, 49.72514588847056]
+2025-02-13 12:41 - INFO - --------------------------------------------------------------------------------
+2025-02-13 12:41 - INFO - init_valid_score = 51.19
+2025-02-13 12:41 - INFO - best_valid_score = 51.19 [ *** BEST *** ]
+2025-02-13 12:41 - INFO - --------------------------------------------------------------------------------
+2025-02-13 12:41 - INFO - best_instructions = [
+    "Simplify the complex sentence by breaking it down into shorter, clearer sentences that convey the main ideas without unnecessary details. Use straightforward language to enhance readability.",
+    "Simplify the complex sentence by breaking it into clearer, shorter sentences while retaining the main ideas and essential information. Ensure that the rewritten version is easier to understand.",
+    "Simplify the given complex sentence into a more straightforward and concise version while maintaining the core meaning."
+]
+2025-02-13 12:41 - INFO - --------------------------------------------------------------------------------
+2025-02-13 12:45 - INFO - 
+iter_no = 01, valid_scores = [51.2469779542065, 51.09709728013333, 50.98080771272017, 50.97723138161485, 50.97479163719026, 50.94130662290658, 50.87289868525443, 50.870264415072505, 50.86065441331905, 50.82778638802535, 50.82729374512028, 50.76716881884553, 50.76080112684824, 50.72270385191572, 50.71002813763376, 50.69979364989172, 50.627355376649156, 50.55778078180611, 50.30903660726384, 50.12266790082601, 49.71087150254524, 49.61852733182375, 49.11539018138357, 48.59461572855114, 48.53302921984581, 48.20218951481534]
+2025-02-13 12:45 - INFO - --------------------------------------------------------------------------------
+2025-02-13 12:45 - INFO - init_valid_score = 51.19
+2025-02-13 12:45 - INFO - best_valid_score = 51.25 [ *** BEST *** ]
+2025-02-13 12:45 - INFO - --------------------------------------------------------------------------------
+2025-02-13 12:45 - INFO - best_instructions = [
+    "Simplify the given complex sentence by breaking it down into simpler sentences while maintaining the original meaning. Use clear and concise language to ensure ease of understanding.",
+    "Simplify the given complex sentence while retaining its main idea and ensuring it remains clear and accessible.",
+    "Rewrite the given complex sentence into a simpler form while retaining the original meaning and key information. Make it easy to understand by using more straightforward language and sentence structure."
+]
+2025-02-13 12:45 - INFO - --------------------------------------------------------------------------------
+2025-02-13 12:49 - INFO - 
+iter_no = 02, valid_scores = [51.64247867714553, 51.45492249304572, 51.286082658681714, 51.15486146696889, 51.13739145001667, 51.09762993745363, 51.07818932219855, 51.043875432023384, 50.990084522269704, 50.97262353411389, 50.892933055425054, 50.87686630952407, 50.875781284374234, 50.85619484802057, 50.85102411286695, 50.76223482367019, 50.75147317951862, 50.73615645697013, 50.71967122973003, 50.71629957268188, 50.62915274750359, 50.62409400648304, 50.56989046916724, 50.39009196029851, 50.233890425398954, 50.222811772892165, 49.890198639823126]
+2025-02-13 12:49 - INFO - --------------------------------------------------------------------------------
+2025-02-13 12:49 - INFO - init_valid_score = 51.19
+2025-02-13 12:49 - INFO - best_valid_score = 51.64 [ *** BEST *** ]
+2025-02-13 12:49 - INFO - --------------------------------------------------------------------------------
+2025-02-13 12:49 - INFO - best_instructions = [
+    "Simplify the complex sentence by breaking it down into shorter, clearer sentences that convey the main ideas without unnecessary details. Use straightforward language to enhance readability.",
+    "Make sure the simplified sentences align closely with the structure and language of the simplest version while preserving the essential meaning. Aim to minimize word variation by altering the original sentence as little as possible without changing its purpose.",
+    "Simplify the complex sentence by breaking it into clearer, shorter sentences while retaining the main ideas and essential information. Ensure that the rewritten version is easier to understand.",
+    "Rephrase the complex sentence into a simpler and clearer form while preserving its essential meaning."
+]
+2025-02-13 12:49 - INFO - --------------------------------------------------------------------------------
+2025-02-13 12:52 - INFO - 
+iter_no = 03, valid_scores = [51.729390094280916, 51.54107446557702, 51.52468829821825, 51.453714859038094, 51.28623034549802, 51.22854581404604, 51.20736522086903, 51.19368988175386, 51.12080662464871, 51.11232398574848, 51.10491888061646, 51.03279248173076, 51.00021344733535, 50.92580507506167, 50.84146741937813, 50.81927093947967, 50.76895760672403, 50.73565071970131, 50.71627529040842, 50.535030820068734, 50.52822086129179, 50.527578765855104, 50.45802236564392, 50.3612500715008, 50.20191490254212, 50.158984184605494]
+2025-02-13 12:52 - INFO - --------------------------------------------------------------------------------
+2025-02-13 12:52 - INFO - init_valid_score = 51.19
+2025-02-13 12:52 - INFO - best_valid_score = 51.73 [ *** BEST *** ]
+2025-02-13 12:52 - INFO - --------------------------------------------------------------------------------
+2025-02-13 12:52 - INFO - best_instructions = [
+    "Make sure the simplified sentences follow the structure and language of the simplest version, preserving the main idea. Aim to minimize word variation by making only slight adjustments to the original sentence without changing its meaning.",
+    "Break the complex sentence into shorter, clearer sentences that focus on the main ideas without extraneous details. Use simple language to improve readability.",
+    "Simplify the complex sentence by breaking it into clearer, shorter sentences while retaining the main ideas and essential information. Ensure that the rewritten version is easier to understand.",
+    "Simplify the given complex sentence into a more straightforward and concise version while maintaining the core meaning."
+]
+2025-02-13 12:52 - INFO - --------------------------------------------------------------------------------
+2025-02-13 12:55 - INFO - 
+iter_no = 04, valid_scores = [51.8717537956641, 51.63435770280472, 51.569738099299634, 51.543158082065595, 51.52700123844031, 51.50740252227197, 51.50181316007606, 51.48605600072015, 51.48214368725208, 51.46737640692648, 51.44830008558318, 51.44201024306281, 51.343745599721046, 51.31428214205115, 51.23584636774433, 51.21606072828587, 51.20486476701535, 51.1045716283821, 51.06774487427331, 51.060734068399036, 51.00385420805577, 51.000171250602385, 50.9501978213215, 50.88140745474151, 50.83038914570117, 50.740114679044005, 50.666516473381186]
+2025-02-13 12:55 - INFO - --------------------------------------------------------------------------------
+2025-02-13 12:55 - INFO - init_valid_score = 51.19
+2025-02-13 12:55 - INFO - best_valid_score = 51.87 [ *** BEST *** ]
+2025-02-13 12:55 - INFO - --------------------------------------------------------------------------------
+2025-02-13 12:55 - INFO - best_instructions = [
+    "Ensure that the simplified sentences closely match the structure and language of the simplest version while maintaining the core meaning. Strive to limit variations in wording by making only minor adjustments to the original sentence without altering its intent.",
+    "Simplify the complex sentence by breaking it down into shorter, clearer sentences that convey the main ideas without unnecessary details. Use straightforward language to enhance readability.",
+    "Break down the complicated sentence into shorter, clearer sentences while preserving the core ideas and vital information. Make sure the revised version is simpler to comprehend.",
+    "Rephrase the complex sentence into a simpler and clearer form while preserving its essential meaning."
+]
+2025-02-13 12:55 - INFO - --------------------------------------------------------------------------------
+2025-02-13 12:58 - INFO - 
+iter_no = 05, valid_scores = [52.04320550379472, 51.76870065393228, 51.72810990872764, 51.72582090209509, 51.64654770297136, 51.641401196852094, 51.555023182339625, 51.53509829388552, 51.53375099104077, 51.47835254394037, 51.46786289929204, 51.45063956158551, 51.41606417960745, 51.39754498795799, 51.33636136837143, 51.32456140318036, 51.3209071984046, 51.318372959041106, 51.17188676333094, 51.12161480284201, 51.08521771281351, 51.00855306881619, 50.89702839775625, 50.879862152881486, 50.86949321491026, 50.67309982421073]
+2025-02-13 12:58 - INFO - --------------------------------------------------------------------------------
+2025-02-13 12:58 - INFO - init_valid_score = 51.19
+2025-02-13 12:58 - INFO - best_valid_score = 52.04 [ *** BEST *** ]
+2025-02-13 12:58 - INFO - --------------------------------------------------------------------------------
+2025-02-13 12:58 - INFO - best_instructions = [
+    "Ensure that the simplified sentences closely match the structure and language of the simplest version while maintaining the core meaning. Strive to limit variations in wording by making only minor adjustments to the original sentence without altering its intent.",
+    "Simplify the complex sentence by breaking it down into shorter, clearer sentences that convey the main ideas without unnecessary details. Use straightforward language to enhance readability.",
+    "Break down the complicated sentence into shorter, clearer sentences while preserving the core ideas and vital information. Make sure the revised version is simpler to comprehend.",
+    "Rephrase the complex sentence into a simpler and clearer form while preserving its essential meaning."
+]
+2025-02-13 12:58 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:01 - INFO - 
+iter_no = 06, valid_scores = [52.09217702945321, 52.01930272670587, 51.98766948183184, 51.90842226719797, 51.85443593038841, 51.85041335773425, 51.83458467118493, 51.795256118874555, 51.78996906497391, 51.77436239582452, 51.757186729807586, 51.747432089889, 51.686846835700216, 51.67588290045635, 51.62423249611631, 51.595251605707425, 51.48657601783967, 51.425842303236124, 51.354791591379694, 51.31462101090755, 51.241397148228685, 51.15960810587868, 51.06218508168905, 51.02963119708761, 50.874942704190424, 50.85382596071105, 50.55904664296717, 50.10584316015854]
+2025-02-13 13:01 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:01 - INFO - init_valid_score = 51.19
+2025-02-13 13:01 - INFO - best_valid_score = 52.09 [ *** BEST *** ]
+2025-02-13 13:01 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:01 - INFO - best_instructions = [
+    "Ensure the simplified sentences closely mirror the structure and wording of the simplest version while retaining the core meaning. Strive to keep word changes minimal, altering the original sentence only slightly without shifting its intent.",
+    "Aim to achieve precise similarities in wording and structure with the original sentences, utilizing minimal changes to ensure exact alignment while still conveying the same core meaning. Focus on maintaining the original sentence's intent through careful word choice and phrasing.",
+    "Break the complex sentence into shorter, clearer sentences that highlight the main ideas without extra details. Use simple language to improve readability.",
+    "Break down the complex sentence into shorter, clearer sentences that maintain the main ideas and essential information, making it easier to understand.",
+    "Simplify the complex sentence to make it more straightforward and easier to understand, while maintaining its core meaning."
+]
+2025-02-13 13:01 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:04 - INFO - 
+iter_no = 07, valid_scores = [52.220165132061204, 52.193932193001274, 52.05580325342896, 52.053386303377614, 52.03051033352957, 51.93633903622496, 51.81801720108901, 51.779553917772205, 51.755582898031406, 51.6750605471208, 51.625155706956356, 51.615415089482745, 51.58483551454807, 51.58406301265368, 51.57298669098856, 51.331974572001855, 51.184259752925776, 51.128826112658544, 51.036248480007295, 50.98786175971045, 50.81548142981088, 50.62062479217335, 50.57484109003848, 50.5736497459391, 50.26380979633323, 50.23112765110202, 49.57671753183848]
+2025-02-13 13:04 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:04 - INFO - init_valid_score = 51.19
+2025-02-13 13:04 - INFO - best_valid_score = 52.22 [ *** BEST *** ]
+2025-02-13 13:04 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:04 - INFO - best_instructions = [
+    "Ensure that the output matches the wording and structure of the given sentence as closely as possible, using simple language while retaining the original meaning. Focus on producing a result that includes the same key terms and phrases to minimize differences.",
+    "Ensure that the simplified sentences closely match the structure and wording of the simplest version while maintaining the core meaning. Strive to keep changes minimal, avoiding significant alterations to the original sentence's intent.",
+    "Split the long sentence into shorter, more straightforward sentences that emphasize the key points without unnecessary details. Use plain language to enhance clarity.",
+    "Simplify the complex sentence by dividing it into shorter, more straightforward sentences that preserve the key concepts and important details for better comprehension.",
+    "Simplify the complex sentence into a more straightforward and understandable version while maintaining its core meaning."
+]
+2025-02-13 13:04 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:07 - INFO - 
+iter_no = 08, valid_scores = [52.204970479946645, 52.19843534527919, 52.196030985816456, 52.17710726667516, 52.17092223166685, 52.099626182470665, 51.98045839794273, 51.909168442975805, 51.88673011481776, 51.81491145303028, 51.743669719262606, 51.68233679976819, 51.67419263780988, 51.67219503689259, 51.53625278172556, 51.38113227968275, 51.26483694598705, 51.2297408114698, 50.99848580495158, 50.95556423161944, 50.92278088451625, 50.621545589005194, 50.46579062282609, 50.36689356427534, 50.04825524082653, 49.86761853261149]
+2025-02-13 13:07 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:07 - INFO - init_valid_score = 51.19
+2025-02-13 13:07 - INFO - best_valid_score = 52.22 
+2025-02-13 13:07 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:07 - INFO - best_instructions = [
+    "Ensure that the output matches the wording and structure of the given sentence as closely as possible, using simple language while retaining the original meaning. Focus on producing a result that includes the same key terms and phrases to minimize differences.",
+    "Ensure that the simplified sentences closely match the structure and wording of the simplest version while maintaining the core meaning. Strive to keep changes minimal, avoiding significant alterations to the original sentence's intent.",
+    "Split the long sentence into shorter, more straightforward sentences that emphasize the key points without unnecessary details. Use plain language to enhance clarity.",
+    "Simplify the complex sentence by dividing it into shorter, more straightforward sentences that preserve the key concepts and important details for better comprehension.",
+    "Simplify the complex sentence into a more straightforward and understandable version while maintaining its core meaning."
+]
+2025-02-13 13:07 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:11 - INFO - 
+iter_no = 09, valid_scores = [52.309663130749776, 52.228895540429924, 52.22207796066292, 52.17666040134585, 52.15890278840387, 52.09703294667236, 52.08653813413246, 52.086395443055245, 52.073346999607054, 52.057604556293505, 51.992663871043725, 51.983548104242914, 51.9684934179683, 51.88023636837607, 51.7451953012799, 51.68128605880033, 51.67214824967482, 51.58512219842331, 51.52130576280384, 51.22166761195607, 51.19846660222405, 50.801759488224405, 50.69968992726172, 50.017458671144965, 48.59766170038503, 48.312400890781895]
+2025-02-13 13:11 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:11 - INFO - init_valid_score = 51.19
+2025-02-13 13:11 - INFO - best_valid_score = 52.31 [ *** BEST *** ]
+2025-02-13 13:11 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:11 - INFO - best_instructions = [
+    "Ensure that the output matches the wording and structure of the given sentence as closely as possible, using simple language while retaining the original meaning. Focus on producing a result that includes the same key terms and phrases to minimize differences.",
+    "Ensure that the simplified sentences closely match the structure and wording of the simplest version while maintaining the core meaning. Strive to keep changes minimal, avoiding significant alterations to the original sentence's intent.",
+    "Split the long sentence into shorter, more straightforward sentences that emphasize the key points without unnecessary details. Use plain language to enhance clarity.",
+    "Simplify the complex sentence by dividing it into shorter, more straightforward sentences that preserve the key concepts and important details for better comprehension.",
+    "Simplify the complex sentence into a more straightforward and understandable version while maintaining its core meaning."
+]
+2025-02-13 13:11 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:14 - INFO - 
+iter_no = 10, valid_scores = [52.40753613793552, 52.348005292477204, 52.33784768527233, 52.30255761979871, 52.21560860510673, 52.19181042722689, 52.16712379703322, 52.16521207851167, 52.02932016004744, 52.02376072630534, 51.9247611176588, 51.73583221314459, 51.6696186812753, 51.61002049738577, 51.468442178180716, 51.46665916995693, 51.35234331818928, 51.324957738088216, 51.184236200596594, 51.09842589778242, 51.05563500122785, 50.95099331902594, 50.79746074582783, 49.99344665020655, 49.527870895053724, 48.616928380534965]
+2025-02-13 13:14 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:14 - INFO - init_valid_score = 51.19
+2025-02-13 13:14 - INFO - best_valid_score = 52.41 [ *** BEST *** ]
+2025-02-13 13:14 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:14 - INFO - best_instructions = [
+    "Ensure that the output matches the wording and structure of the given sentence as closely as possible, using simple language while retaining the original meaning. Focus on producing a result that includes the same key terms and phrases to minimize differences.",
+    "Make sure that the simplified sentences closely align with the structure and phrasing of the simplest version, preserving the core meaning. Aim for minimal changes to avoid significantly altering the original sentence's intent.",
+    "Make certain that the output aligns closely with the given sentence, utilizing the same wording and structure from the simplest version while maintaining its essential meaning. Aim for exact key terms and phrases to reduce discrepancies.",
+    "Split the long sentence into shorter, more straightforward sentences that emphasize the key points without unnecessary details. Use plain language to enhance clarity.",
+    "Simplify the complex sentence by dividing it into shorter, more straightforward sentences that preserve the key concepts and important details for better comprehension.",
+    "Simplify the complex sentence into a more straightforward and understandable version while maintaining its core meaning."
+]
+2025-02-13 13:14 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:17 - INFO - 
+iter_no = 11, valid_scores = [52.368200905743, 52.361183085996736, 52.33935579762732, 52.24879577671735, 52.20229808462657, 52.179997008815214, 52.17747680026607, 52.166879602863766, 52.10791463331435, 52.08481236349871, 51.93496756730624, 51.91634861973387, 51.9161332750854, 51.89768421064491, 51.89025146315945, 51.829097166807685, 51.78618172199172, 51.726641790023564, 51.59119172556714, 51.27192865404938, 51.19462952675898, 50.9176947956341, 50.89538199299127, 50.70615528520478, 50.51143767503884, 50.48735083897602]
+2025-02-13 13:17 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:17 - INFO - init_valid_score = 51.19
+2025-02-13 13:17 - INFO - best_valid_score = 52.41 
+2025-02-13 13:17 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:17 - INFO - best_instructions = [
+    "Ensure that the output matches the wording and structure of the given sentence as closely as possible, using simple language while retaining the original meaning. Focus on producing a result that includes the same key terms and phrases to minimize differences.",
+    "Make sure that the simplified sentences closely align with the structure and phrasing of the simplest version, preserving the core meaning. Aim for minimal changes to avoid significantly altering the original sentence's intent.",
+    "Make certain that the output aligns closely with the given sentence, utilizing the same wording and structure from the simplest version while maintaining its essential meaning. Aim for exact key terms and phrases to reduce discrepancies.",
+    "Split the long sentence into shorter, more straightforward sentences that emphasize the key points without unnecessary details. Use plain language to enhance clarity.",
+    "Simplify the complex sentence by dividing it into shorter, more straightforward sentences that preserve the key concepts and important details for better comprehension.",
+    "Simplify the complex sentence into a more straightforward and understandable version while maintaining its core meaning."
+]
+2025-02-13 13:17 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:21 - INFO - 
+iter_no = 12, valid_scores = [52.41002271009855, 52.37397446795969, 52.14040236221069, 52.13514292875584, 52.13292710486922, 52.11885476137331, 52.1058247217272, 52.08388290724027, 52.03451849272369, 52.023295776520264, 51.896573387860805, 51.87774699700719, 51.76196466844683, 51.63133665848596, 51.57567638979017, 51.559812702386616, 51.550617310539906, 51.51963558348289, 51.43262850441592, 51.303309263062, 51.29019480566399, 51.21133826853574, 51.05255853580096, 51.03012127606805, 50.931278091675914, 49.22077753745169, 48.20926961677293]
+2025-02-13 13:21 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:21 - INFO - init_valid_score = 51.19
+2025-02-13 13:21 - INFO - best_valid_score = 52.41 [ *** BEST *** ]
+2025-02-13 13:21 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:21 - INFO - best_instructions = [
+    "Make sure the output closely resembles the wording and structure of the provided sentence, using straightforward language to maintain its original meaning. Aim to keep the same key terms and phrases to limit any variations.",
+    "Ensure that the simplified sentences closely match the structure and wording of the simplest version while maintaining the core meaning. Strive to keep changes minimal, avoiding significant alterations to the original sentence's intent.",
+    "Split the long sentence into shorter, more straightforward sentences that emphasize the key points without unnecessary details. Use plain language to enhance clarity.",
+    "Make sure the output closely aligns with the simplest version of the input sentence by retaining key terms and phrasing to minimize differences. Prioritize preserving the original meaning while following the structure and language of the simplest version.",
+    "Simplify the complex sentence by dividing it into shorter, more straightforward sentences that preserve the key concepts and important details for better comprehension.",
+    "Simplify the complex sentence into a more straightforward and understandable version while maintaining its core meaning."
+]
+2025-02-13 13:21 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:24 - INFO - 
+iter_no = 13, valid_scores = [52.43397969872481, 52.2163803171784, 52.21232268108319, 52.13810373006752, 52.12089195957541, 52.12084793150203, 52.11007365583464, 52.081440011520385, 51.905688821871074, 51.79235987725203, 51.72798342983766, 51.66240068671624, 51.648056322384356, 51.64083042398945, 51.61004020767543, 51.5112522430074, 51.493513763863284, 51.30828131958334, 51.298379632951594, 51.18247814556461, 51.12095536487406, 51.038552832933, 50.82439919982151, 50.81456832017954, 50.13576543945148]
+2025-02-13 13:24 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:24 - INFO - init_valid_score = 51.19
+2025-02-13 13:24 - INFO - best_valid_score = 52.43 [ *** BEST *** ]
+2025-02-13 13:24 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:24 - INFO - best_instructions = [
+    "Make sure the output closely resembles the wording and structure of the provided sentence, using straightforward language to maintain its original meaning. Aim to keep the same key terms and phrases to limit any variations.",
+    "Ensure that the simplified sentences closely match the structure and wording of the simplest version while maintaining the core meaning. Strive to keep changes minimal, avoiding significant alterations to the original sentence's intent.",
+    "Split the long sentence into shorter, more straightforward sentences that emphasize the key points without unnecessary details. Use plain language to enhance clarity.",
+    "Make sure the output closely aligns with the simplest version of the input sentence by retaining key terms and phrasing to minimize differences. Prioritize preserving the original meaning while following the structure and language of the simplest version.",
+    "Simplify the complex sentence by dividing it into shorter, more straightforward sentences that preserve the key concepts and important details for better comprehension.",
+    "Simplify the complex sentence into a more straightforward and understandable version while maintaining its core meaning."
+]
+2025-02-13 13:24 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:27 - INFO - 
+iter_no = 14, valid_scores = [52.32325873418932, 52.25147079814658, 52.21986953609712, 52.205942843915885, 52.078624834454935, 52.06642416740681, 52.05525655268408, 52.0494730590456, 52.04319433925237, 52.02610149315598, 52.01064302563007, 52.005386929996156, 51.97755545311268, 51.82014918968963, 51.760231396895996, 51.73408078909043, 51.67976545588085, 51.583916509025755, 51.55710860216697, 51.442407361701875, 51.43497336518308, 51.391907857234024, 51.29374307058012, 50.40184828393845, 49.850647530778964, 49.8171223781217, 49.669054840057186]
+2025-02-13 13:27 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:27 - INFO - init_valid_score = 51.19
+2025-02-13 13:27 - INFO - best_valid_score = 52.43 
+2025-02-13 13:27 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:27 - INFO - best_instructions = [
+    "Make sure the output closely resembles the wording and structure of the provided sentence, using straightforward language to maintain its original meaning. Aim to keep the same key terms and phrases to limit any variations.",
+    "Ensure that the simplified sentences closely match the structure and wording of the simplest version while maintaining the core meaning. Strive to keep changes minimal, avoiding significant alterations to the original sentence's intent.",
+    "Split the long sentence into shorter, more straightforward sentences that emphasize the key points without unnecessary details. Use plain language to enhance clarity.",
+    "Make sure the output closely aligns with the simplest version of the input sentence by retaining key terms and phrasing to minimize differences. Prioritize preserving the original meaning while following the structure and language of the simplest version.",
+    "Simplify the complex sentence by dividing it into shorter, more straightforward sentences that preserve the key concepts and important details for better comprehension.",
+    "Simplify the complex sentence into a more straightforward and understandable version while maintaining its core meaning."
+]
+2025-02-13 13:27 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:30 - INFO - 
+iter_no = 15, valid_scores = [52.33507976244471, 52.2687277468421, 52.1369721845419, 52.117127884475906, 52.10868695225156, 52.10594449679502, 52.09931825295215, 52.071474044233526, 52.03647034983897, 52.03191920123911, 52.01334124226034, 52.0080742427511, 51.98559933699695, 51.953394829480004, 51.84848646982626, 51.789859467368274, 51.718362694829885, 51.68671949039604, 51.60286329476108, 51.54654615400639, 51.34807941283723, 51.291970962227744, 51.27997591685139, 51.15551101513515, 51.03950705367087, 50.87243561073808]
+2025-02-13 13:30 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:30 - INFO - init_valid_score = 51.19
+2025-02-13 13:30 - INFO - best_valid_score = 52.43 
+2025-02-13 13:30 - INFO - --------------------------------------------------------------------------------
+2025-02-13 13:30 - INFO - best_instructions = [
+    "Make sure the output closely resembles the wording and structure of the provided sentence, using straightforward language to maintain its original meaning. Aim to keep the same key terms and phrases to limit any variations.",
+    "Ensure that the simplified sentences closely match the structure and wording of the simplest version while maintaining the core meaning. Strive to keep changes minimal, avoiding significant alterations to the original sentence's intent.",
+    "Split the long sentence into shorter, more straightforward sentences that emphasize the key points without unnecessary details. Use plain language to enhance clarity.",
+    "Make sure the output closely aligns with the simplest version of the input sentence by retaining key terms and phrasing to minimize differences. Prioritize preserving the original meaning while following the structure and language of the simplest version.",
+    "Simplify the complex sentence by dividing it into shorter, more straightforward sentences that preserve the key concepts and important details for better comprehension.",
+    "Simplify the complex sentence into a more straightforward and understandable version while maintaining its core meaning."
+]
+2025-02-13 13:30 - INFO - --------------------------------------------------------------------------------

@@ -1,0 +1,233 @@
+2025-03-26 10:00 - INFO - 
+iter_no = 00, valid_scores = [46.03, 45.629999999999995, 43.830000000000005, 43.669999999999995]
+2025-03-26 10:00 - INFO - --------------------------------------------------------------------------------
+2025-03-26 10:00 - INFO - init_valid_score = 46.03
+2025-03-26 10:00 - INFO - best_valid_score = 46.03 [ *** BEST *** ]
+2025-03-26 10:00 - INFO - --------------------------------------------------------------------------------
+2025-03-26 10:00 - INFO - best_instructions = [
+    "Provide a corrected version of the given sentence by identifying and fixing any grammatical errors present, if there are any. If the sentence is already correct, leave it unchanged.",
+    "Identify and correct any grammatical errors in the given sentence to improve its clarity and coherence.",
+    "Identify and correct any grammatical errors in the given sentence, ensuring the output is grammatically accurate while maintaining the original meaning. If the sentence is already correct, reaffirm its accuracy."
+]
+2025-03-26 10:00 - INFO - --------------------------------------------------------------------------------
+2025-03-26 10:41 - INFO - 
+iter_no = 01, valid_scores = [49.13, 48.68, 47.760000000000005, 47.699999999999996, 47.260000000000005, 47.15, 47.13, 46.94, 46.83, 46.800000000000004, 46.760000000000005, 46.03, 45.739999999999995, 45.33, 44.11, 44.080000000000005, 44.05, 43.82, 43.730000000000004, 43.61, 42.47, 42.4, 42.04, 41.6, 41.25, 41.25]
+2025-03-26 10:41 - INFO - --------------------------------------------------------------------------------
+2025-03-26 10:41 - INFO - init_valid_score = 46.03
+2025-03-26 10:41 - INFO - best_valid_score = 49.13 [ *** BEST *** ]
+2025-03-26 10:41 - INFO - --------------------------------------------------------------------------------
+2025-03-26 10:41 - INFO - best_instructions = [
+    "Ensure that no unnecessary changes are made to word choice, phrasing, or structure beyond correcting grammatical errors to preserve the original expression.",
+    "Identify and correct any grammatical or spelling errors in the given sentence while preserving the original meaning.",
+    "Please correct the grammatical errors in the given sentence while maintaining its original meaning.",
+    "Sure! Here's an instruction for the given task:\n\n\"Identify and correct any grammatical errors in the provided sentence while maintaining the original meaning as closely as possible.\""
+]
+2025-03-26 10:41 - INFO - --------------------------------------------------------------------------------
+2025-03-26 11:06 - INFO - 
+iter_no = 02, valid_scores = [50.349999999999994, 49.69, 49.55, 48.89, 48.76, 48.32, 48.29, 48.22, 48.17, 47.81, 47.69, 47.589999999999996, 47.54, 47.3, 47.22, 46.83, 46.400000000000006, 45.989999999999995, 45.53, 45.22, 44.85, 44.800000000000004, 44.32]
+2025-03-26 11:06 - INFO - --------------------------------------------------------------------------------
+2025-03-26 11:06 - INFO - init_valid_score = 46.03
+2025-03-26 11:06 - INFO - best_valid_score = 50.35 [ *** BEST *** ]
+2025-03-26 11:06 - INFO - --------------------------------------------------------------------------------
+2025-03-26 11:06 - INFO - best_instructions = [
+    "When a sentence is already grammatically correct, do not change it in any way. When correcting sentences, prioritize maintaining the original words and phrasing whenever possible to preserve the original structure and meaning.",
+    "Identify and fix any spelling mistakes in the sentence without altering its original meaning or structure.",
+    "Certainly! Here is an appropriate instruction for the given example:\n\n\"Identify and correct any grammatical errors in the provided sentence, paying attention to punctuation, syntax, and overall clarity to ensure the sentence is grammatically correct.\"",
+    "Identify and fix any grammatical mistakes in the sentence without altering its intended meaning."
+]
+2025-03-26 11:06 - INFO - --------------------------------------------------------------------------------
+2025-03-26 11:50 - INFO - 
+iter_no = 03, valid_scores = [50.660000000000004, 50.519999999999996, 49.97, 49.61, 49.370000000000005, 49.36, 49.15, 49.13, 49.1, 49.1, 49.03, 49.01, 48.67, 48.66, 48.61, 48.51, 48.39, 48.33, 47.86, 47.4, 47.36, 47.28, 46.96, 45.21, 44.9]
+2025-03-26 11:50 - INFO - --------------------------------------------------------------------------------
+2025-03-26 11:50 - INFO - init_valid_score = 46.03
+2025-03-26 11:50 - INFO - best_valid_score = 50.66 [ *** BEST *** ]
+2025-03-26 11:50 - INFO - --------------------------------------------------------------------------------
+2025-03-26 11:50 - INFO - best_instructions = [
+    "When a sentence is already grammatically correct, do not change it in any way. When correcting sentences, prioritize maintaining the original words and phrasing whenever possible to preserve the original structure and meaning.",
+    "Identify and fix any spelling mistakes in the sentence without altering its original meaning or structure.",
+    "Certainly! Here is an appropriate instruction for the given example:\n\n\"Identify and correct any grammatical errors in the provided sentence, paying attention to punctuation, syntax, and overall clarity to ensure the sentence is grammatically correct.\"",
+    "Identify and fix any grammatical mistakes in the sentence without altering its intended meaning."
+]
+2025-03-26 11:50 - INFO - --------------------------------------------------------------------------------
+2025-03-26 12:17 - INFO - 
+iter_no = 04, valid_scores = [50.519999999999996, 50.349999999999994, 50.11, 50.1, 49.63, 49.46, 49.0, 48.97, 48.96, 48.8, 48.71, 48.43, 48.32, 48.010000000000005, 47.56, 47.53, 47.449999999999996, 47.27, 46.910000000000004, 46.87, 45.62]
+2025-03-26 12:17 - INFO - --------------------------------------------------------------------------------
+2025-03-26 12:17 - INFO - init_valid_score = 46.03
+2025-03-26 12:17 - INFO - best_valid_score = 50.66 
+2025-03-26 12:17 - INFO - --------------------------------------------------------------------------------
+2025-03-26 12:17 - INFO - best_instructions = [
+    "When a sentence is already grammatically correct, do not change it in any way. When correcting sentences, prioritize maintaining the original words and phrasing whenever possible to preserve the original structure and meaning.",
+    "Identify and fix any spelling mistakes in the sentence without altering its original meaning or structure.",
+    "Certainly! Here is an appropriate instruction for the given example:\n\n\"Identify and correct any grammatical errors in the provided sentence, paying attention to punctuation, syntax, and overall clarity to ensure the sentence is grammatically correct.\"",
+    "Identify and fix any grammatical mistakes in the sentence without altering its intended meaning."
+]
+2025-03-26 12:17 - INFO - --------------------------------------------------------------------------------
+2025-03-26 12:55 - INFO - 
+iter_no = 05, valid_scores = [50.46000000000001, 50.09, 50.029999999999994, 50.029999999999994, 49.769999999999996, 49.769999999999996, 49.76, 49.74, 49.7, 49.45, 49.44, 49.32, 49.27, 49.220000000000006, 49.19, 49.1, 49.07, 48.9, 48.13, 48.08, 46.410000000000004, 46.31, 46.050000000000004, 45.97, 45.85, 45.629999999999995]
+2025-03-26 12:55 - INFO - --------------------------------------------------------------------------------
+2025-03-26 12:55 - INFO - init_valid_score = 46.03
+2025-03-26 12:55 - INFO - best_valid_score = 50.66 
+2025-03-26 12:55 - INFO - --------------------------------------------------------------------------------
+2025-03-26 12:55 - INFO - best_instructions = [
+    "When a sentence is already grammatically correct, do not change it in any way. When correcting sentences, prioritize maintaining the original words and phrasing whenever possible to preserve the original structure and meaning.",
+    "Identify and fix any spelling mistakes in the sentence without altering its original meaning or structure.",
+    "Certainly! Here is an appropriate instruction for the given example:\n\n\"Identify and correct any grammatical errors in the provided sentence, paying attention to punctuation, syntax, and overall clarity to ensure the sentence is grammatically correct.\"",
+    "Identify and fix any grammatical mistakes in the sentence without altering its intended meaning."
+]
+2025-03-26 12:55 - INFO - --------------------------------------------------------------------------------
+2025-03-26 13:32 - INFO - 
+iter_no = 06, valid_scores = [50.739999999999995, 50.17, 50.11, 49.97, 49.61, 49.519999999999996, 49.45, 49.35, 49.220000000000006, 49.2, 48.69, 48.59, 48.309999999999995, 48.230000000000004, 47.980000000000004, 47.81, 47.71, 47.660000000000004, 47.510000000000005, 47.39, 46.29, 45.17]
+2025-03-26 13:32 - INFO - --------------------------------------------------------------------------------
+2025-03-26 13:32 - INFO - init_valid_score = 46.03
+2025-03-26 13:32 - INFO - best_valid_score = 50.74 [ *** BEST *** ]
+2025-03-26 13:32 - INFO - --------------------------------------------------------------------------------
+2025-03-26 13:32 - INFO - best_instructions = [
+    "When a sentence is already grammatically correct, do not change it in any way. When correcting sentences, prioritize maintaining the original words and phrasing whenever possible to preserve the original structure and meaning.",
+    "Identify and fix any misspelled words in the sentence without altering its original meaning or structure.",
+    "Certainly! Here is an appropriate instruction for the given example:\n\n\"Identify and correct any grammatical errors in the provided sentence, paying attention to punctuation, syntax, and overall clarity to ensure the sentence is grammatically correct.\"",
+    "Identify and rectify any grammatical mistakes in the sentence while preserving its original meaning."
+]
+2025-03-26 13:32 - INFO - --------------------------------------------------------------------------------
+2025-03-26 14:09 - INFO - 
+iter_no = 07, valid_scores = [51.080000000000005, 50.93, 50.44, 50.44, 50.31, 50.29, 50.239999999999995, 49.84, 49.75, 49.63, 49.63, 49.28, 49.21, 48.99, 48.99, 48.63, 48.61, 47.92, 47.68, 47.58, 47.39, 47.3, 46.78, 46.5]
+2025-03-26 14:09 - INFO - --------------------------------------------------------------------------------
+2025-03-26 14:09 - INFO - init_valid_score = 46.03
+2025-03-26 14:09 - INFO - best_valid_score = 51.08 [ *** BEST *** ]
+2025-03-26 14:09 - INFO - --------------------------------------------------------------------------------
+2025-03-26 14:09 - INFO - best_instructions = [
+    "When a sentence is already grammatically correct, do not change it in any way. When correcting sentences, prioritize maintaining the original words and phrasing whenever possible to preserve the original structure and meaning.",
+    "Correct the grammatical errors in the given sentence while retaining its original meaning.",
+    "Certainly! Here is an appropriate instruction for the given example:\n\n\"Identify and correct any grammatical errors in the provided sentence, paying attention to punctuation, syntax, and overall clarity to ensure the sentence is grammatically correct.\"",
+    "Ensure that all corrections strictly maintain the original intention and phrasing as closely as possible, including punctuation. Do not add or omit any information that is not present in the original sentence.",
+    "Focus on retaining the original tense and conjunctions used to connect clauses, and pay attention to the specific words chosen in the input, ensuring they align closely with the intended meaning.",
+    "Correct any spelling errors in the given sentence while maintaining the original meaning and structure."
+]
+2025-03-26 14:09 - INFO - --------------------------------------------------------------------------------
+2025-03-26 14:44 - INFO - 
+iter_no = 08, valid_scores = [50.6, 49.97, 49.91, 49.71, 49.65, 49.43, 49.309999999999995, 48.980000000000004, 48.86, 48.67, 48.59, 48.480000000000004, 48.42, 48.39, 48.339999999999996, 48.16, 47.65, 47.46, 47.010000000000005, 46.87, 46.339999999999996, 46.22, 46.050000000000004]
+2025-03-26 14:44 - INFO - --------------------------------------------------------------------------------
+2025-03-26 14:44 - INFO - init_valid_score = 46.03
+2025-03-26 14:44 - INFO - best_valid_score = 51.08 
+2025-03-26 14:44 - INFO - --------------------------------------------------------------------------------
+2025-03-26 14:44 - INFO - best_instructions = [
+    "When a sentence is already grammatically correct, do not change it in any way. When correcting sentences, prioritize maintaining the original words and phrasing whenever possible to preserve the original structure and meaning.",
+    "Correct the grammatical errors in the given sentence while retaining its original meaning.",
+    "Certainly! Here is an appropriate instruction for the given example:\n\n\"Identify and correct any grammatical errors in the provided sentence, paying attention to punctuation, syntax, and overall clarity to ensure the sentence is grammatically correct.\"",
+    "Ensure that all corrections strictly maintain the original intention and phrasing as closely as possible, including punctuation. Do not add or omit any information that is not present in the original sentence.",
+    "Focus on retaining the original tense and conjunctions used to connect clauses, and pay attention to the specific words chosen in the input, ensuring they align closely with the intended meaning.",
+    "Correct any spelling errors in the given sentence while maintaining the original meaning and structure."
+]
+2025-03-26 14:44 - INFO - --------------------------------------------------------------------------------
+2025-03-26 15:20 - INFO - 
+iter_no = 09, valid_scores = [51.970000000000006, 50.54, 50.5, 50.5, 50.17, 49.97, 49.9, 49.84, 49.65, 49.559999999999995, 49.14, 49.09, 49.05, 48.8, 48.78, 48.61, 48.5, 48.230000000000004, 47.94, 47.72, 46.82, 45.910000000000004, 45.86, 44.879999999999995]
+2025-03-26 15:20 - INFO - --------------------------------------------------------------------------------
+2025-03-26 15:20 - INFO - init_valid_score = 46.03
+2025-03-26 15:20 - INFO - best_valid_score = 51.97 [ *** BEST *** ]
+2025-03-26 15:20 - INFO - --------------------------------------------------------------------------------
+2025-03-26 15:20 - INFO - best_instructions = [
+    "When a sentence is already grammatically correct, do not change it in any way. When correcting sentences, prioritize maintaining the original words and phrasing whenever possible to preserve the original structure and meaning.",
+    "Correct the grammatical errors in the given sentence while retaining its original meaning.",
+    "Certainly! Here is an appropriate instruction for the given example:\n\n\"Identify and correct any grammatical errors in the provided sentence, paying attention to punctuation, syntax, and overall clarity to ensure the sentence is grammatically correct.\"",
+    "Ensure that all corrections strictly maintain the original intention and phrasing as closely as possible, including punctuation. Do not add or omit any information that is not present in the original sentence.",
+    "Focus on retaining the original tense and conjunctions used to connect clauses, and pay attention to the specific words chosen in the input, ensuring they align closely with the intended meaning.",
+    "Correct any spelling errors in the given sentence while maintaining the original meaning and structure.",
+    "Pay close attention to the specific placement and repetition of words or phrases used in the original sentence to ensure the output matches exactly. Make sure not to alter words such as \"the\" and \"a\" unless strictly necessary, and preserve repeated phrases even if they seem redundant."
+]
+2025-03-26 15:20 - INFO - --------------------------------------------------------------------------------
+2025-03-26 15:52 - INFO - 
+iter_no = 10, valid_scores = [51.910000000000004, 51.05, 50.57000000000001, 50.57000000000001, 50.41, 50.029999999999994, 49.9, 49.830000000000005, 49.669999999999995, 49.39, 49.36, 49.33, 49.16, 49.14, 49.04, 48.730000000000004, 48.69, 48.67, 48.339999999999996, 47.96, 47.910000000000004, 47.8, 47.5, 47.08, 46.83, 46.73]
+2025-03-26 15:52 - INFO - --------------------------------------------------------------------------------
+2025-03-26 15:52 - INFO - init_valid_score = 46.03
+2025-03-26 15:52 - INFO - best_valid_score = 51.97 
+2025-03-26 15:52 - INFO - --------------------------------------------------------------------------------
+2025-03-26 15:52 - INFO - best_instructions = [
+    "When a sentence is already grammatically correct, do not change it in any way. When correcting sentences, prioritize maintaining the original words and phrasing whenever possible to preserve the original structure and meaning.",
+    "Correct the grammatical errors in the given sentence while retaining its original meaning.",
+    "Certainly! Here is an appropriate instruction for the given example:\n\n\"Identify and correct any grammatical errors in the provided sentence, paying attention to punctuation, syntax, and overall clarity to ensure the sentence is grammatically correct.\"",
+    "Ensure that all corrections strictly maintain the original intention and phrasing as closely as possible, including punctuation. Do not add or omit any information that is not present in the original sentence.",
+    "Focus on retaining the original tense and conjunctions used to connect clauses, and pay attention to the specific words chosen in the input, ensuring they align closely with the intended meaning.",
+    "Correct any spelling errors in the given sentence while maintaining the original meaning and structure.",
+    "Pay close attention to the specific placement and repetition of words or phrases used in the original sentence to ensure the output matches exactly. Make sure not to alter words such as \"the\" and \"a\" unless strictly necessary, and preserve repeated phrases even if they seem redundant."
+]
+2025-03-26 15:52 - INFO - --------------------------------------------------------------------------------
+2025-03-26 16:49 - INFO - 
+iter_no = 11, valid_scores = [52.73, 52.12, 51.71, 50.94, 50.17, 49.97, 49.84, 49.830000000000005, 49.58, 49.3, 49.25, 49.08, 48.9, 48.64, 48.41, 48.28, 48.28, 48.209999999999994, 48.13, 46.6]
+2025-03-26 16:49 - INFO - --------------------------------------------------------------------------------
+2025-03-26 16:49 - INFO - init_valid_score = 46.03
+2025-03-26 16:49 - INFO - best_valid_score = 52.73 [ *** BEST *** ]
+2025-03-26 16:49 - INFO - --------------------------------------------------------------------------------
+2025-03-26 16:49 - INFO - best_instructions = [
+    "Make sure all revisions adhere closely to the original meaning and wording, including punctuation. Avoid adding or omitting any details not found in the original sentence.",
+    "In addition to grammatical corrections, carefully match the output\u2019s wording and punctuation to the input\u2019s original style and language variety, such as British or American English, unless changes are necessary for grammatical accuracy. Pay special attention to cases where the structure or phrasing closely resembles the input to avoid unnecessary alterations.",
+    "When a sentence is already grammatically correct, do not change it in any way. When correcting sentences, prioritize maintaining the original words and phrasing whenever possible to preserve the original structure and meaning.",
+    "Fix any spelling mistakes in the provided sentence, ensuring the original meaning and structure are preserved.",
+    "Correct the grammatical errors in the given sentence while retaining its original meaning.",
+    "Certainly! Here is an appropriate instruction for the given example:\n\n\"Identify and correct any grammatical errors in the provided sentence, paying attention to punctuation, syntax, and overall clarity to ensure the sentence is grammatically correct.\""
+]
+2025-03-26 16:49 - INFO - --------------------------------------------------------------------------------
+2025-03-26 17:22 - INFO - 
+iter_no = 12, valid_scores = [52.15, 52.0, 51.83, 51.61, 50.94, 50.480000000000004, 50.4, 50.339999999999996, 50.160000000000004, 50.029999999999994, 49.89, 49.72, 49.5, 49.480000000000004, 49.27, 48.9, 48.89, 48.25, 47.85, 47.65, 47.46, 47.4, 46.32]
+2025-03-26 17:22 - INFO - --------------------------------------------------------------------------------
+2025-03-26 17:22 - INFO - init_valid_score = 46.03
+2025-03-26 17:22 - INFO - best_valid_score = 52.73 
+2025-03-26 17:22 - INFO - --------------------------------------------------------------------------------
+2025-03-26 17:22 - INFO - best_instructions = [
+    "Make sure all revisions adhere closely to the original meaning and wording, including punctuation. Avoid adding or omitting any details not found in the original sentence.",
+    "In addition to grammatical corrections, carefully match the output\u2019s wording and punctuation to the input\u2019s original style and language variety, such as British or American English, unless changes are necessary for grammatical accuracy. Pay special attention to cases where the structure or phrasing closely resembles the input to avoid unnecessary alterations.",
+    "When a sentence is already grammatically correct, do not change it in any way. When correcting sentences, prioritize maintaining the original words and phrasing whenever possible to preserve the original structure and meaning.",
+    "Fix any spelling mistakes in the provided sentence, ensuring the original meaning and structure are preserved.",
+    "Correct the grammatical errors in the given sentence while retaining its original meaning.",
+    "Certainly! Here is an appropriate instruction for the given example:\n\n\"Identify and correct any grammatical errors in the provided sentence, paying attention to punctuation, syntax, and overall clarity to ensure the sentence is grammatically correct.\""
+]
+2025-03-26 17:22 - INFO - --------------------------------------------------------------------------------
+2025-03-26 17:59 - INFO - 
+iter_no = 13, valid_scores = [52.15, 51.61, 51.17, 50.82, 50.79, 50.64999999999999, 50.6, 50.449999999999996, 50.39, 50.29, 50.23, 50.1, 49.97, 49.9, 49.72, 49.559999999999995, 49.45, 48.79, 48.67, 48.449999999999996, 48.199999999999996, 48.13, 47.67, 47.260000000000005]
+2025-03-26 17:59 - INFO - --------------------------------------------------------------------------------
+2025-03-26 17:59 - INFO - init_valid_score = 46.03
+2025-03-26 17:59 - INFO - best_valid_score = 52.73 
+2025-03-26 17:59 - INFO - --------------------------------------------------------------------------------
+2025-03-26 17:59 - INFO - best_instructions = [
+    "Make sure all revisions adhere closely to the original meaning and wording, including punctuation. Avoid adding or omitting any details not found in the original sentence.",
+    "In addition to grammatical corrections, carefully match the output\u2019s wording and punctuation to the input\u2019s original style and language variety, such as British or American English, unless changes are necessary for grammatical accuracy. Pay special attention to cases where the structure or phrasing closely resembles the input to avoid unnecessary alterations.",
+    "When a sentence is already grammatically correct, do not change it in any way. When correcting sentences, prioritize maintaining the original words and phrasing whenever possible to preserve the original structure and meaning.",
+    "Fix any spelling mistakes in the provided sentence, ensuring the original meaning and structure are preserved.",
+    "Correct the grammatical errors in the given sentence while retaining its original meaning.",
+    "Certainly! Here is an appropriate instruction for the given example:\n\n\"Identify and correct any grammatical errors in the provided sentence, paying attention to punctuation, syntax, and overall clarity to ensure the sentence is grammatically correct.\""
+]
+2025-03-26 17:59 - INFO - --------------------------------------------------------------------------------
+2025-03-26 18:36 - INFO - 
+iter_no = 14, valid_scores = [53.300000000000004, 52.629999999999995, 52.400000000000006, 51.980000000000004, 51.71, 51.04, 50.78, 50.77, 50.74999999999999, 50.51, 50.480000000000004, 50.029999999999994, 49.84, 49.82, 49.669999999999995, 49.63, 49.63, 49.41, 49.3, 49.17, 48.96, 48.74, 48.309999999999995, 48.06, 47.949999999999996]
+2025-03-26 18:36 - INFO - --------------------------------------------------------------------------------
+2025-03-26 18:36 - INFO - init_valid_score = 46.03
+2025-03-26 18:36 - INFO - best_valid_score = 53.30 [ *** BEST *** ]
+2025-03-26 18:36 - INFO - --------------------------------------------------------------------------------
+2025-03-26 18:36 - INFO - best_instructions = [
+    "Ensure that all corrections strictly maintain the original intention and phrasing as closely as possible, including punctuation. Do not add or omit any information that is not present in the original sentence.",
+    "If a sentence is grammatically correct, leave it as it is. When making corrections, try to keep the original wording and structure to maintain the intended meaning.",
+    "Fix any typos in the provided sentence without altering its original meaning or structure.",
+    "Correct the grammatical errors in the given sentence while retaining its original meaning.",
+    "Focus on retaining the original tense and conjunctions used to connect clauses, and pay attention to the specific words chosen in the input, ensuring they align closely with the intended meaning.",
+    "When correcting punctuation, consider replacing dashes with periods if it aligns better with standard grammar conventions, ensuring sentences remain clear and concise. Pay close attention to British versus American English spellings, and maintain consistency with the input's original spelling style.",
+    "Ensure the precise replication of hyphenation and British/American spelling from the original text, and adhere strictly to the inclusion or omission of definite articles like \"the\" where specified in the input sentence.",
+    "Certainly! Here is an appropriate instruction for the given example:\n\n\"Identify and correct any grammatical errors in the provided sentence, paying attention to punctuation, syntax, and overall clarity to ensure the sentence is grammatically correct.\"",
+    "Pay close attention to the exact placement and repetition of words in the original sentence to ensure the output matches exactly. Only modify words like \"the\" and \"a\" when necessary, and keep any phrases that repeat, even if they seem redundant."
+]
+2025-03-26 18:36 - INFO - --------------------------------------------------------------------------------
+2025-03-26 19:02 - INFO - 
+iter_no = 15, valid_scores = [52.38, 52.14, 52.03, 51.970000000000006, 51.41, 51.41, 51.339999999999996, 51.27, 51.2, 51.07000000000001, 50.760000000000005, 50.64999999999999, 50.64999999999999, 50.64999999999999, 50.61, 50.23, 50.22, 50.1, 50.1, 49.9, 49.39, 49.13, 47.620000000000005]
+2025-03-26 19:02 - INFO - --------------------------------------------------------------------------------
+2025-03-26 19:02 - INFO - init_valid_score = 46.03
+2025-03-26 19:02 - INFO - best_valid_score = 53.30 
+2025-03-26 19:02 - INFO - --------------------------------------------------------------------------------
+2025-03-26 19:02 - INFO - best_instructions = [
+    "Ensure that all corrections strictly maintain the original intention and phrasing as closely as possible, including punctuation. Do not add or omit any information that is not present in the original sentence.",
+    "If a sentence is grammatically correct, leave it as it is. When making corrections, try to keep the original wording and structure to maintain the intended meaning.",
+    "Fix any typos in the provided sentence without altering its original meaning or structure.",
+    "Correct the grammatical errors in the given sentence while retaining its original meaning.",
+    "Focus on retaining the original tense and conjunctions used to connect clauses, and pay attention to the specific words chosen in the input, ensuring they align closely with the intended meaning.",
+    "When correcting punctuation, consider replacing dashes with periods if it aligns better with standard grammar conventions, ensuring sentences remain clear and concise. Pay close attention to British versus American English spellings, and maintain consistency with the input's original spelling style.",
+    "Ensure the precise replication of hyphenation and British/American spelling from the original text, and adhere strictly to the inclusion or omission of definite articles like \"the\" where specified in the input sentence.",
+    "Certainly! Here is an appropriate instruction for the given example:\n\n\"Identify and correct any grammatical errors in the provided sentence, paying attention to punctuation, syntax, and overall clarity to ensure the sentence is grammatically correct.\"",
+    "Pay close attention to the exact placement and repetition of words in the original sentence to ensure the output matches exactly. Only modify words like \"the\" and \"a\" when necessary, and keep any phrases that repeat, even if they seem redundant."
+]
+2025-03-26 19:02 - INFO - --------------------------------------------------------------------------------

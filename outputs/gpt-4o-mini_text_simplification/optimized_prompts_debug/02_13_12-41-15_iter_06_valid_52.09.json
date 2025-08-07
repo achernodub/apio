@@ -1,0 +1,89 @@
+{
+    "config": {
+        "main": {
+            "task_name": "text_simplification",
+            "task_description": "Text Simplification",
+            "few_shot_num_examples": 3,
+            "sample_num_train": -1,
+            "sample_num_valid": -1,
+            "sample_num_test": -1,
+            "save_prompt_builder_zero_shot": true,
+            "save_prompt_builder_few_shot": true,
+            "save_prompt_builder_instruction_induction": true,
+            "save_prompt_builder_mixed": false,
+            "save_prompt_builder_instruction_optimization": true
+        },
+        "backend_llm": {
+            "model_name": "gpt-4o-mini",
+            "temperature": 0.0,
+            "max_output_tokens": 256,
+            "num_threads": 30,
+            "top_p": 0.1
+        },
+        "prompt_builder_llm": {
+            "model_name": "gpt-4o-mini",
+            "temperature": 1.0,
+            "max_output_tokens": 4096,
+            "num_threads": 30,
+            "top_p": 1.0
+        },
+        "prompt_builder_zero_shot": {
+            "prompt_header": "Rewrite to make this easier to understand: <input_text>",
+            "prompt_footer": "\nANSWER:"
+        },
+        "prompt_builder_few_shot": {
+            "prompt_header": "",
+            "input_example_label": "Complex sentence:",
+            "output_example_label": "Simple sentence:",
+            "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:",
+            "random_search_num_trials": 10
+        },
+        "prompt_builder_instruction_induction": {
+            "prompt_header": "",
+            "input_example_label": "Complex sentence:",
+            "output_example_label": "Simple sentence:",
+            "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:",
+            "random_search_num_trials": 10
+        },
+        "prompt_builder_mixed": {
+            "prompt_header": "",
+            "input_example_label": "Complex sentence:",
+            "output_example_label": "Simple sentence:",
+            "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:"
+        },
+        "prompt_builder_instruction_optimization": {
+            "prompt_header": "",
+            "input_example_label": "Complex sentence:",
+            "output_example_label": "Simple sentence:",
+            "prompt_footer": "Complex sentence: <input_text>\nSimple sentence:",
+            "beam_size": 4,
+            "num_optimization_iterations": 15,
+            "rephrase_random_instructions_num_samples": 2,
+            "rephrase_random_instructions_scale_factor": 2,
+            "generate_permuted_instructions_scale_factor": 2,
+            "improve_by_feedback_scale_factor": 2,
+            "train_batch_size": 4,
+            "max_instructions_num": 20,
+            "instructions_feedback_num_trials": 3
+        },
+        "args": {
+            "config": "text_simplification/config_text_simplification.yaml",
+            "output_path": "/home/a_chernodub/prompts-instructions-induction/text_simplification/generated_prompts"
+        }
+    },
+    "PROMPT_TEMPLATE": "* Ensure the simplified sentences closely mirror the structure and wording of the simplest version while retaining the core meaning. Strive to keep word changes minimal, altering the original sentence only slightly without shifting its intent.\n* Aim to achieve precise similarities in wording and structure with the original sentences, utilizing minimal changes to ensure exact alignment while still conveying the same core meaning. Focus on maintaining the original sentence's intent through careful word choice and phrasing.\n* Break the complex sentence into shorter, clearer sentences that highlight the main ideas without extra details. Use simple language to improve readability.\n* Break down the complex sentence into shorter, clearer sentences that maintain the main ideas and essential information, making it easier to understand.\n* Simplify the complex sentence to make it more straightforward and easier to understand, while maintaining its core meaning.\nComplex sentence: <input_text>\nSimple sentence:",
+    "initial_instructions": [
+        "Simplify the complex sentence by rephrasing it into a more straightforward version while maintaining the original meaning and key information.",
+        "Break down the complex sentence into simpler, more concise sentences while maintaining the original meaning. Ensure clarity and ease of understanding in the rephrased sentences.",
+        "Simplify the given complex sentence by breaking it into shorter, clearer sentences while maintaining the original meaning. Focus on using straightforward language and avoiding any unnecessary jargon or complexity."
+    ],
+    "initial_valid_score": 51.18615376831578,
+    "instructions": [
+        "Ensure the simplified sentences closely mirror the structure and wording of the simplest version while retaining the core meaning. Strive to keep word changes minimal, altering the original sentence only slightly without shifting its intent.",
+        "Aim to achieve precise similarities in wording and structure with the original sentences, utilizing minimal changes to ensure exact alignment while still conveying the same core meaning. Focus on maintaining the original sentence's intent through careful word choice and phrasing.",
+        "Break the complex sentence into shorter, clearer sentences that highlight the main ideas without extra details. Use simple language to improve readability.",
+        "Break down the complex sentence into shorter, clearer sentences that maintain the main ideas and essential information, making it easier to understand.",
+        "Simplify the complex sentence to make it more straightforward and easier to understand, while maintaining its core meaning."
+    ],
+    "best_valid_score": 52.09217702945321
+}

@@ -1,0 +1,5 @@
+* Identify and correct any grammatical errors present in the given sentence.
+* Identify and correct any grammatical errors in the given sentence to ensure it is grammatically accurate.
+* Identify any grammatical errors in the provided sentence and correct them, ensuring the sentence is grammatically accurate. If the sentence is already correct, leave it unchanged.
+Sentence: <input_text>
+Corrected sentence:
