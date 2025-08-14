@@ -1,7 +1,7 @@
 # APIO: Automatic Prompt Induction and Optimization for Grammatical Error Correction and Text Simplification
 ## Introduction
-This page contains the official implementation for the paper *"APIO: Automatic Prompt Induction and Optimization 
-for Grammatical Error Correction and Text Simplification,"* which has been accepted for publication at 
+This page contains the official implementation for the paper ["APIO: Automatic Prompt Induction and Optimization 
+for Grammatical Error Correction and Text Simplification](https://arxiv.org/pdf/2508.09378), which has been accepted for publication at 
 [RANLP 2025](https://ranlp.org/ranlp2025/). The repository includes prompts, data, code, and outputs used in the paper.
 
 <p align="center">
