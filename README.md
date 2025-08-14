@@ -11,7 +11,7 @@ for Grammatical Error Correction and Text Simplification,"* which has been accep
 </p>
 
 ## Citation
-Please cite our paper if you use it in your research.
+Please cite our [paper](https://arxiv.org/pdf/2508.09378) if you use it in your research.
 
 ```
 @article{chernodub2025apio,
