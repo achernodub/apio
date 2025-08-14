@@ -10,6 +10,20 @@ for Grammatical Error Correction and Text Simplification,"* which has been accep
   </a>
 </p>
 
+## Citation
+Please cite our paper if you use it in your research.
+
+```
+@article{chernodub2025apio,
+  title={APIO: Automatic Prompt Induction and Optimization for Grammatical Error Correction and Text Simplification},
+  author={Chernodub, Artem and Saini, Aman and Huh, Yejin and Kulkarni, Vivek and Raheja, Vipul},
+  journal={arXiv preprint arXiv:2508.09378},
+  year={2025},
+  note={Accepted for publication at Recent Advances in Natural Language Processing conference (RANLP 2025)},
+  url={https://arxiv.org/abs/2508.09378}
+}
+```
+
 ## Requirements
 
 - Python 3.9 or higher
@@ -227,16 +241,3 @@ prompt_builder_llm:
 Metrics: GEC (BEA-2019-Test | $F_{0.5}$) and Text Simplification results (ASSET-Test | SARI).  Results are grouped by 
 baselines (Copy, Best-reference, and SFT), and by other prompt-based methods from different models. Best reference 
 baseline is unavailable for the GEC task because the BEA-2019-Test dataset has not been published.
-
-## Citation
-Please cite our paper if you use it in your research (TO BE ADDED):
-
-```
-@inproceedings{achernodub-etal-2025-apio,
-    title = "APIO: Automatic Prompt Induction and Optimization for Grammatical Error Correction and Text Simplification",
-    author = "Chernodub, Artem and
-        Saini, Aman and 
-        Huh, Yejin and 
-        Kulkarni, Vivek and 
-        Raheja, Vipul"}
-```
