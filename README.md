@@ -30,9 +30,26 @@ Please cite our [paper](https://arxiv.org/pdf/2508.09378) if you use it in your 
 
 ## Installation
 
+It is recommended to set up a virtual environment first:
+```
+python3.9 -m venv venv
+. venv/bin/activate
+```
+
+Install the required packages:
 ```
 pip install -r requirements.txt
+```
 
+Clone and install the EASSE package from the source:
+```
+git clone https://github.com/feralvam/easse.git
+cd easse
+pip install -e .
+```
+
+Install SpaCy and download the necessary data:
+```
 python -m spacy download en_core_web_sm
 python -c "import nltk; nltk.download('punkt')"
 python -c "import nltk; nltk.download('punkt_tab')"
