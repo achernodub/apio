@@ -32,7 +32,7 @@ Please cite our [paper](https://arxiv.org/pdf/2508.09378) if you use it in your 
 
 It is recommended to set up a virtual environment first:
 ```
-python3.9 -m venv venv
+python -m venv venv
 . venv/bin/activate
 ```
 
